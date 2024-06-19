@@ -2,8 +2,9 @@ import styled from "styled-components";
 import "./App.css";
 import GlobalStyle from "./globalStyles";
 
-const Title = styled.h1`
+const Title = styled.p`
   font-family: "Apercu Mono";
+  font-weight: 100;
 `;
 
 function App() {
