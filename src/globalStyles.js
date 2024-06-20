@@ -114,7 +114,6 @@ const GlobalStyles = createGlobalStyle`
     font-style: normal;
     font-display: fallback;
   }
-  
 `;
 
 export default GlobalStyles;
