@@ -1,13 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 import {
-  ApercuMonoBold,
   ApercuMonoLight,
-  ApercuMonoMedium,
   ApercuMonoRegular,
-  WhyteBold,
-  WhyteMedium,
+  ApercuMonoMedium,
+  ApercuMonoBold,
+  WhyteLight,
   WhyteRegular,
-  WytheLight,
+  WhyteMedium,
+  WhyteBold,
 } from "./assets/fonts";
 
 const GlobalStyles = createGlobalStyle`
@@ -84,8 +84,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @font-face {
-    font-family: "Wythe";
-    src: url(${WytheLight}) format("truetype");
+    font-family: "Whyte";
+    src: url(${WhyteLight}) format("truetype");
     font-weight: 300;
     font-style: normal;
     font-display: fallback;

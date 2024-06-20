@@ -3,8 +3,9 @@ import "./App.css";
 import GlobalStyle from "./globalStyles";
 
 const Title = styled.p`
-  font-family: "Wythe";
-  font-size: 2rem;
+  font-family: "Whyte";
+  font-size: 30px;
+  font-weight: 300;
 `;
 
 function App() {
