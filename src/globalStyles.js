@@ -1,9 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 import {
-  ApercuMonoLight,
-  ApercuMonoRegular,
-  ApercuMonoMedium,
   ApercuMonoBold,
+  ApercuMonoLight,
+  ApercuMonoMedium,
+  ApercuMonoRegular,
+  WhyteBold,
+  WhyteMedium,
+  WhyteRegular,
+  WytheLight,
 } from "./assets/fonts";
 
 const GlobalStyles = createGlobalStyle`
@@ -78,6 +82,39 @@ const GlobalStyles = createGlobalStyle`
     font-style: normal;
     font-display: fallback;
   }
+
+  @font-face {
+    font-family: "Wythe";
+    src: url(${WytheLight}) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: "Whyte";
+    src: url(${WhyteRegular}) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: "Whyte";
+    src: url(${WhyteMedium}) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: "Whyte";
+    src: url(${WhyteBold}) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+  }
+  
 `;
 
 export default GlobalStyles;
