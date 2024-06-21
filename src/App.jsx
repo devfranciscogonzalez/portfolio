@@ -1,11 +1,10 @@
 import styled, { ThemeProvider } from "styled-components";
-import "./App.css";
 import GlobalStyle from "./globalStyles";
 import { theme } from "./theme";
 
-const Title = styled.p`
+const Title = styled.h1`
   font-family: "Whyte";
-  font-size: 30px;
+  font-size: 3em;
   font-weight: 300;
   color: ${(props) => props.theme.colors.primary};
 `;

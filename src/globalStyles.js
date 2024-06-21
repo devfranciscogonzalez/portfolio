@@ -18,6 +18,10 @@ const GlobalStyles = createGlobalStyle`
   
   *,*::before,*::after {
     box-sizing: border-box;
+  } 
+
+  :root {
+    font-size: 100%;
   }
 
   body {
