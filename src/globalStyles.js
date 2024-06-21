@@ -22,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
 
   :root {
     font-size: 100%;
+    scroll-behavior: smooth;
   }
 
   body {
