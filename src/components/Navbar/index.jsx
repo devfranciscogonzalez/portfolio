@@ -1,35 +1,4 @@
-import styled from "styled-components";
-
-const Nav = styled.nav`
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: #333;
-  padding: 1rem;
-  z-index: 1000;
-`;
-
-const NavList = styled.ul`
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-`;
-
-const NavItem = styled.li`
-  color: white;
-
-  a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-
-    &:hover {
-      color: #ddd;
-    }
-  }
-`;
+import { Nav, NavList, NavItem } from "./Navbar.styles";
 
 const Navbar = () => {
   return (

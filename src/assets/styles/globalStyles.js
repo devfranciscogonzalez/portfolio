@@ -27,6 +27,9 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     min-height: 100dvh;
+    /* background-color: ${({ theme }) => theme.colors.background.default}; */
+    background-color:#08090a;
+    color: ${({ theme }) => theme.colors.primary};
   }
 
   input, button {
