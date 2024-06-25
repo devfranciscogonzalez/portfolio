@@ -8,7 +8,7 @@ import {
   WhyteRegular,
   WhyteMedium,
   WhyteBold,
-} from "./assets/fonts";
+} from "../fonts";
 
 const GlobalStyles = createGlobalStyle`
   * {

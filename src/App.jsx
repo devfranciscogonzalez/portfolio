@@ -1,12 +1,8 @@
 import styled, { ThemeProvider } from "styled-components";
-import GlobalStyle from "./globalStyles";
-import { theme } from "./theme";
+import GlobalStyle from "./assets/styles/globalStyles";
 import Navbar from "./components/Navbar";
-import Home from "./view/Home";
-import Education from "./view/Education";
-import Technology from "./view/Technology";
-import Project from "./view/Project";
-import Contact from "./view/Contact";
+import { theme } from "./theme";
+import { Contact, Education, Home, Project, Technology } from "./view";
 
 const Section = styled.section`
   padding: 100px 20px;
