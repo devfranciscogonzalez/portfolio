@@ -5,7 +5,8 @@ import { Contact, Education, Home, Project, Technology } from "./view";
 import { Layout } from "./components";
 
 const Section = styled.section`
-  min-height: 100vh;
+  height: 100vh;
+  padding-top: ${({ theme }) => theme.spacing.header};
 `;
 
 function App() {

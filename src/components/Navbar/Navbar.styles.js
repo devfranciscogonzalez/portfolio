@@ -8,6 +8,7 @@ const Nav = styled.nav`
   background-color: hsla(0, 0%, 4%, 0.2);
   box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.08);
   backdrop-filter: blur(24px) saturate(140%);
+  margin: 0 auto;
 `;
 
 const NavList = styled.ul`

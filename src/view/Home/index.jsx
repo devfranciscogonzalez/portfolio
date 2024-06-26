@@ -1,9 +1,11 @@
+import { HomeContainer } from "./Home.styles";
+
 const Home = () => {
   return (
-    <section>
+    <HomeContainer>
       <h1>Home</h1>
       <p>Bienvenido a la página de inicio.</p>
-    </section>
+    </HomeContainer>
   );
 };
 
