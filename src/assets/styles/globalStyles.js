@@ -11,7 +11,8 @@ import {
 } from "../fonts";
 
 const GlobalStyles = createGlobalStyle`
-  * {
+ 
+ * {
     margin: 0;
     padding: 0;
   }
@@ -27,9 +28,8 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     min-height: 100dvh;
-    /* background-color: ${({ theme }) => theme.colors.background.default}; */
-    background-color:#08090a;
-    color: ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.background.light};
+    color: ${({ theme }) => theme.colors.text.primary};
   }
 
   input, button {
