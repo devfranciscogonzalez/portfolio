@@ -23,7 +23,7 @@ export const theme = {
       light: "#FFF5DA",
       dark: "#333333",
     },
-    border: "#e0e0e0",
+    border: "#10162F",
   },
   spacing: {
     xsmall: ".25rem",
@@ -44,7 +44,7 @@ export const theme = {
   },
   borderRadius: {
     small: "2px",
-    medium: "4px",
+    medium: "5px",
     large: "8px",
     xlarge: "16px",
   },

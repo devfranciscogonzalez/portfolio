@@ -6,8 +6,7 @@ const MainContainer = styled.main`
   justify-content: center;
   align-items: stretch;
   width: 100%;
-  max-width: 75rem;
-  background-color: #fff;
+  max-width: ${({ theme }) => theme.breakpoints.laptop};
 `;
 
 export default MainContainer;
