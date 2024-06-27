@@ -61,7 +61,7 @@ export const theme = {
     mobile: "36rem",
     tablet: "48rem",
     laptop: "62rem",
-    desktop: "75rem",
+    desktop: "70rem",
   },
   fontSizes: {
     xsmall: ".625rem",
