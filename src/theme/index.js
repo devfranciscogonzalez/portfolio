@@ -74,5 +74,6 @@ export const theme = {
   fonts: {
     primary: "Whyte",
     secondary: "Apercu Mono",
+    tertiary: "Playfair Display",
   },
 };

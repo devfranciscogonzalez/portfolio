@@ -8,6 +8,7 @@ import {
   WhyteRegular,
   WhyteMedium,
   WhyteBold,
+  PlayfairDisplay,
 } from "../fonts";
 
 const GlobalStyles = createGlobalStyle`
@@ -119,6 +120,14 @@ const GlobalStyles = createGlobalStyle`
     font-family: "Whyte";
     src: url(${WhyteBold}) format("truetype");
     font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: "Playfair Display";
+    src: url(${PlayfairDisplay}) format("truetype");
+    font-weight: 400;
     font-style: normal;
     font-display: fallback;
   }

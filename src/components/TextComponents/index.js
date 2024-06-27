@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const H1 = styled.h1`
-  font-size: ${({ theme }) => theme.fontSizes.xlarge};
-  font-family: ${({ theme }) => theme.fonts.primary};
+  font-size: ${({ theme }) => theme.fontSizes.xxlarge};
+  font-family: ${({ theme }) => theme.fonts.tertiary};
   line-height: 1.2;
   margin: 0.5em 0;
   /* color: ${({ theme }) => theme.colors.text.primary}; */

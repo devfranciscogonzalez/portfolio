@@ -6,3 +6,4 @@ export { default as WhyteLight } from "./Whyte-Light.ttf";
 export { default as WhyteRegular } from "./Whyte-Regular.ttf";
 export { default as WhyteMedium } from "./Whyte-Medium.ttf";
 export { default as WhyteBold } from "./Whyte-Bold.ttf";
+export {default as PlayfairDisplay} from "./PlayfairDisplay.ttf";
