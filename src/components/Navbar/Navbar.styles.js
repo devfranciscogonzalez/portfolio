@@ -12,6 +12,7 @@ const Nav = styled.nav`
   /* backdrop-filter: blur(24px) saturate(140%); */
   backdrop-filter: blur(10px);
   margin: 0 auto;
+  position: relative;
 `;
 
 const NavList = styled.ul`

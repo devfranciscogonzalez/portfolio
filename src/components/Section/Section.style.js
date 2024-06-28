@@ -5,6 +5,7 @@ const Section = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: ${({ theme }) => theme.padding.header};
 `;
 
 export default Section;
