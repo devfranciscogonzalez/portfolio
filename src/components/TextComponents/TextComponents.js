@@ -10,9 +10,9 @@ const H1 = styled.h1`
 
 const H2 = styled.h2`
   font-size: ${({ theme }) => theme.fontSizes.xlarge};
-  font-family: ${({ theme }) => theme.fonts.primary};
+  font-family: ${({ theme }) => theme.fonts.secondary};
   line-height: 1.3;
-  margin: 0.5em 0;
+  font-weight: 300;
   /* color: ${({ theme }) => theme.colors.secondary}; */
 `;
 

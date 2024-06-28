@@ -23,10 +23,8 @@ const NavList = styled.ul`
 `;
 
 const NavItem = styled.li`
-  color: white;
-
   a {
-    color: #09f;
+    color: ${({ theme }) => theme.colors.text.primary};
     text-decoration: none;
     cursor: pointer;
 

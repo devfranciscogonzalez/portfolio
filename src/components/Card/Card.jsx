@@ -1,4 +1,4 @@
-import { H1, MediumText, Paragraph } from "../TextComponents";
+import { H1, MediumText, Paragraph } from "../TextComponents/TextComponents";
 import {
   CardContainer,
   CardContent,
