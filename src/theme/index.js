@@ -13,7 +13,7 @@ export const theme = {
     text: {
       primary: "#252525",
       secondary: "#FFF5DA",
-      // light: "#ffffff",
+      light: "#FFF5DA",
     },
     background: {
       // default: "#f0f0f0",
@@ -75,5 +75,16 @@ export const theme = {
     primary: "Whyte",
     secondary: "Apercu Mono",
     tertiary: "Playfair Display",
+  },
+  lineHeights: {
+    small: 1.0,
+    medium: 1.3,
+    large: 1.6,
+  },
+  letterSpacings: {
+    small: ".0625rem",
+    medium: ".125rem",
+    large: ".25rem",
+    // large: "1rem",
   },
 };

@@ -1,21 +1,28 @@
-import { H1, H2, PrimaryButton, SecondaryButton } from "../../components";
-import { HomeContainer } from "./Home.styles";
+import { H1, H3, PrimaryButton, SecondaryButton } from "../../components";
+import { HomeContainer, HomeButtonContainer } from "./Home.styles";
 
 const Home = () => {
   return (
     <HomeContainer>
       <H1>Francisco Miguel González Placencia</H1>
-      <H2>Ingeniero Civil Informático</H2>
-      <br />
-      <PrimaryButton onClick={() => (window.location.href = "/path/to/CV.pdf")}>
-        Descargar CV
-      </PrimaryButton>
-      <SecondaryButton
-        onClick={() => (window.location.href = "/path/to/Contact")}
-      >
-        {" "}
-        Contacto{" "}
-      </SecondaryButton>
+      <H3>Ingeniero Civil Informático</H3>
+
+      <HomeButtonContainer>
+        <PrimaryButton
+          href="/path/to/CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Descargar CV
+        </PrimaryButton>
+        <SecondaryButton
+          href="https://www.linkedin.com/in/tu-perfil"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        Correo Electrónico
+        </SecondaryButton>
+      </HomeButtonContainer>
     </HomeContainer>
   );
 };

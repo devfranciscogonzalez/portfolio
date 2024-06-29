@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const H1 = styled.h1`
-  font-size: ${({ theme }) => theme.fontSizes.xxlarge};
   font-family: ${({ theme }) => theme.fonts.tertiary};
-  line-height: 1.3em;
-  text-decoration: underline;
+  font-size: ${({ theme }) => theme.fontSizes.xxlarge};
+  line-height: ${({ theme }) => theme.lineHeights.medium};
+  /* letter-spacing: ${({ theme }) => theme.letterSpacings.large}; */
+  /* text-decoration: underline; */
   /* color: ${({ theme }) => theme.colors.text.primary}; */
 `;
 
@@ -17,10 +18,10 @@ const H2 = styled.h2`
 `;
 
 const H3 = styled.h3`
+  font-family: ${({ theme }) => theme.fonts.secondary};
   font-size: ${({ theme }) => theme.fontSizes.large};
-  font-family: ${({ theme }) => theme.fonts.primary};
-  line-height: 1.4;
-  margin: 0.5em 0;
+  font-weight: 300;
+  letter-spacing: ${({ theme }) => theme.letterSpacings.small};
   /* color: ${({ theme }) => theme.colors.tertiary}; */
 `;
 
