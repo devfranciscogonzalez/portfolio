@@ -18,6 +18,9 @@ const HeaderContainer = styled.header`
 `;
 
 const NavBarContainer = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: ${({ theme }) => theme.spacing.xxlarge};
   padding: 0 ${({ theme }) => theme.padding.large};
   margin-top: ${({ theme }) => theme.spacing.medium};

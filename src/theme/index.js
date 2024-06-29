@@ -1,7 +1,7 @@
 export const theme = {
   colors: {
-    primary: "#FFFF00",
-    // secondary: "#ff5722",
+    primary: "#252525",
+    secondary: "#FFF5DA",
     // success: "#4caf50",
     // danger: "#ff5722",
     // warning: "#ffeb3b",
@@ -12,7 +12,7 @@ export const theme = {
     pruebaDos: "#FFFF00",
     text: {
       primary: "#252525",
-      // secondary: "#757575",
+      secondary: "#FFF5DA",
       // light: "#ffffff",
     },
     background: {
@@ -21,7 +21,7 @@ export const theme = {
       // primary: "#4caf50",
       // secondary: "#ff5722",
       light: "#FFF5DA",
-      dark: "#333333",
+      dark: "#252525",
     },
     border: "#10162F",
   },
