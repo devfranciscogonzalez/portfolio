@@ -1,5 +1,5 @@
 import { Home } from "../../view";
-import Section from "./Section.style";
+import Section from "./Section.styles";
 
 const HomeSection = () => (
   <Section id="home">

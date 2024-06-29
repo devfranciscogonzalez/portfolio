@@ -1,5 +1,5 @@
 import { Technology } from "../../view";
-import Section from "./Section.style";
+import Section from "./Section.styles";
 
 const TechnologySection = () => (
   <Section id="technology">

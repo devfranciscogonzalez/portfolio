@@ -26,11 +26,9 @@ const H3 = styled.h3`
 `;
 
 const Paragraph = styled.p`
-  font-size: ${({ theme }) => theme.fontSizes.medium};
   font-family: ${({ theme }) => theme.fonts.primary};
-  line-height: 1.5;
-  margin: 1em 0;
-  color: ${({ theme }) => theme.colors.text};
+  font-size: ${({ theme }) => theme.fontSizes.medium};
+  /* color: ${({ theme }) => theme.colors.text}; */
 `;
 
 const SmallText = styled.p`

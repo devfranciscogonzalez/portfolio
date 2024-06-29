@@ -4,6 +4,7 @@ import { theme } from "./theme";
 import {
   Layout,
   HomeSection,
+  ProfileSection,
   EducationSection,
   TechnologySection,
   ProjectSection,
@@ -17,6 +18,7 @@ function App() {
         <GlobalStyle />
         <Layout>
           <HomeSection />
+          <ProfileSection />
           <EducationSection />
           <TechnologySection />
           <ProjectSection />

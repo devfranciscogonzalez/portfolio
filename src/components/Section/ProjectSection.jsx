@@ -1,5 +1,5 @@
 import { Project } from "../../view";
-import Section from "./Section.style";
+import Section from "./Section.styles";
 
 const ProjectSection = () => (
   <Section id="project">

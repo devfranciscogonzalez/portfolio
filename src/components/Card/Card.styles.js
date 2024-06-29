@@ -3,7 +3,7 @@ import styled from "styled-components";
 const CardContainer = styled.article`
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.secondary};
   border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: ${({ theme }) => theme.borderRadius.medium};
 `;
