@@ -1,25 +1,31 @@
-import { H1, MediumText, Paragraph } from "../TextComponents/TextComponents";
+import { H2, Paragraph } from "../TextComponents/TextComponents";
 import {
   CardContainer,
   CardContent,
   CardFooter,
   CardHeader,
+  CardContentLeft,
+  CardContentRight,
 } from "./Card.styles";
-
+import lorem from "../../assets/images/lorem.jpg";
 const Card = () => {
   return (
     <CardContainer>
       <CardHeader>
-        <H1>Francisco Miguel González Placencia</H1>
-        <MediumText>Ingeniero Civil Informático </MediumText>
+        <H2>Perfil</H2>
       </CardHeader>
       <CardContent>
-        <Paragraph>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deserunt
-          magnam voluptatibus odit aliquid ab libero, iure reprehenderit
-          debitis. Expedita non illum ut illo officia nihil culpa et accusamus
-          totam.
-        </Paragraph>
+        <CardContentLeft>
+          <Paragraph>
+            Conocimientos sólidos en HTML, CSS, JavaScript y React. Manejo de
+            sistema de control de versiones Git y de alojamiento de repositorios
+            Github . Proactivo, trabajo en equipo, liderazgo, búsqueda de
+            soluciones de alta calidad.
+          </Paragraph>
+        </CardContentLeft>
+        <CardContentRight>
+          <img src={lorem} alt="lorem" />
+        </CardContentRight>
       </CardContent>
       <CardFooter>
         <Paragraph>Soy el Footer</Paragraph>

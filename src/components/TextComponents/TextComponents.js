@@ -10,8 +10,8 @@ const H1 = styled.h1`
 `;
 
 const H2 = styled.h2`
+  font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.xlarge};
-  font-family: ${({ theme }) => theme.fonts.secondary};
   line-height: 1.3;
   font-weight: 300;
   /* color: ${({ theme }) => theme.colors.secondary}; */
@@ -28,6 +28,8 @@ const H3 = styled.h3`
 const Paragraph = styled.p`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.medium};
+  font-weight: 300;
+  line-height: 1.6;
   /* color: ${({ theme }) => theme.colors.text}; */
 `;
 
@@ -41,7 +43,7 @@ const SmallText = styled.p`
 
 const MediumText = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.medium};
-  font-family: ${({ theme }) => theme.fonts.secondary};
+  font-family: ${({ theme }) => theme.fonts.primary};
   line-height: 1.4;
   margin: 0.5em 0;
   /* color: ${({ theme }) => theme.colors.text}; */
