@@ -4,6 +4,7 @@ const H1 = styled.h1`
   font-family: ${({ theme }) => theme.fonts.tertiary};
   font-size: ${({ theme }) => theme.fontSizes.xxlarge};
   line-height: ${({ theme }) => theme.lineHeights.medium};
+  font-weight: 600;
   /* letter-spacing: ${({ theme }) => theme.letterSpacings.large}; */
   /* text-decoration: underline; */
   /* color: ${({ theme }) => theme.colors.text.primary}; */
@@ -13,7 +14,7 @@ const H2 = styled.h2`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.xlarge};
   line-height: 1.3;
-  font-weight: 300;
+  font-weight: 600;
   /* color: ${({ theme }) => theme.colors.secondary}; */
 `;
 
@@ -22,6 +23,7 @@ const H3 = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.large};
   font-weight: 300;
   letter-spacing: ${({ theme }) => theme.letterSpacings.small};
+  color: ${({ theme }) => theme.colors.text.subPrimary};
   /* color: ${({ theme }) => theme.colors.tertiary}; */
 `;
 

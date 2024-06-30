@@ -6,9 +6,9 @@ const Nav = styled.nav`
   height: ${({ theme }) => theme.spacing.xxlarge};
   border-radius: ${({ theme }) => theme.borderRadius.medium};
   background-color: hsla(44, 100%, 93%, 0.2);
-  /* box-shadow: 0 0 0 0.0625rem hsla(0, 0%, 0%, 0.08); */
   box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.08);
   backdrop-filter: blur(10px);
+  /* box-shadow: 0 0 0 0.0625rem hsla(0, 0%, 0%, 0.08); */
   /* background-color: hsla(0, 0%, 4%, 0.2);
   box-shadow: 0 0 0 .0625rem hsla(0, 0%, 100%, 0.08); */
   /* backdrop-filter: blur(1.5rem) saturate(140%); */
