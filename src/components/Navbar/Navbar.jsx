@@ -8,6 +8,9 @@ const Navbar = () => {
           <a href="#home">Home</a>
         </NavItem>
         <NavItem>
+          <a href="#profile">Perfil</a>
+        </NavItem>
+        <NavItem>
           <a href="#education">Educación</a>
         </NavItem>
         <NavItem>

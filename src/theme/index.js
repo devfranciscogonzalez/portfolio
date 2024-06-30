@@ -31,8 +31,8 @@ export const theme = {
     border: "#252525",
   },
   spacing: {
-    xsmall: ".25rem",
-    small: ".5rem",
+    // xsmall: ".25rem",
+    // small: ".5rem",
     medium: "1rem",
     large: "1.5rem",
     xlarge: "2rem",
@@ -54,13 +54,7 @@ export const theme = {
     xlarge: "16px",
   },
   zIndex: {
-    dropdown: 1000,
-    sticky: 1020,
-    fixed: 1030,
-    backdrop: 1040,
-    modal: 1050,
-    popover: 1060,
-    tooltip: 1070,
+    fixed: 1000,
   },
   breakpoints: {
     mobile: "36rem",
