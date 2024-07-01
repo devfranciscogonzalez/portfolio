@@ -12,7 +12,7 @@ const Nav = styled.nav`
   @media (width <= 768px) {
     
     height: ${({ theme }) => theme.spacing.xxlarge};
-    max-height: ${({ theme }) => theme.spacing.header};
+    max-height: ${({ theme }) => theme.spacing.xxlarge};
     transition: all 0.3s linear;
 
     ${({ $menuOpen, theme }) =>
@@ -54,7 +54,7 @@ const NavItem = styled.li`
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
-
+    
     &:hover {
       font-weight: 700;
     }
@@ -121,7 +121,7 @@ const MenuButton = styled.button`
 const Svg = styled.svg`
   width: 16px;
   height: 16px;
-  fill: currentColor;
+  fill: ${({ theme }) => theme.colors.primary};
   cursor: pointer;
 `;
 

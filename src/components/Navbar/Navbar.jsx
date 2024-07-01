@@ -75,6 +75,7 @@ const Navbar = () => {
                 href={`#${id}`}
                 className={activeSection === id ? "active" : ""}
                 aria-label={label}
+                onClick={toggleMenu}
               >
                 {label}
               </a>

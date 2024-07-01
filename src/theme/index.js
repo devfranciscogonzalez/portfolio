@@ -43,7 +43,7 @@ export const theme = {
     header: "4rem",
   },
   padding: {
-    // xsmall: ".25rem",
+    xsmall: ".25rem",
     small: ".5rem",
     medium: "1rem",
     large: "1.5rem",
@@ -73,7 +73,7 @@ export const theme = {
   fontSizes: {
     // xsmall: ".625rem",
     small: ".75rem",
-    // medium: "1rem",
+    medium: "1rem",
     // large: "1.5rem",
     // xlarge: "2rem",
     // xxlarge: "4rem",
@@ -85,7 +85,7 @@ export const theme = {
   },
   letterSpacings: {
     small: ".0625rem",
-    // medium: ".125rem",
+    medium: ".125rem",
     // large: ".25rem",
     // large: "1rem",
   },
