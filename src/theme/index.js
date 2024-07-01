@@ -36,7 +36,7 @@ export const theme = {
   spacing: {
     // xsmall: ".25rem",
     // small: ".5rem",
-    // medium: "1rem",
+    medium: "1rem",
     large: "1.5rem",
     // xlarge: "2rem",
     xxlarge: "3rem",
@@ -73,8 +73,8 @@ export const theme = {
   fontSizes: {
     // xsmall: ".625rem",
     small: ".75rem",
-    // medium: "1rem",
-    large: "1.5rem",
+    medium: "1rem",
+    // large: "1.5rem",
     // xlarge: "2rem",
     // xxlarge: "4rem",
   },
@@ -85,7 +85,7 @@ export const theme = {
   },
   letterSpacings: {
     small: ".0625rem",
-    // medium: ".125rem",
+    medium: ".125rem",
     // large: ".25rem",
     // large: "1rem",
   },

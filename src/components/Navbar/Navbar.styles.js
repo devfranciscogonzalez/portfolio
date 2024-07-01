@@ -10,21 +10,14 @@ const Nav = styled.nav`
   backdrop-filter: blur(10px);
 
   @media (width <= 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    max-height: ${({ theme }) => theme.spacing.xxlarge};
-    border-bottom: 1px solid red;
-    transition: max-height 0.2s linear;
     height: ${({ theme }) => theme.spacing.xxlarge};
-    position:relative;
-    ${({ $menuOpen }) =>
-      $menuOpen &&
-      `
-      height: 100%;
-      max-height: 100dvh; 
-    `}
+    max-height: ${({ theme }) => theme.spacing.header};
+    transition: max-height 0.3s linear;
+
+  ${({ $menuOpen, theme }) => $menuOpen && `
+    max-height: 100dvh;
+    height: calc(100vh - ${theme.spacing.medium}); 
+  `}
   }
 `;
 
@@ -75,8 +68,9 @@ const NavItem = styled.li`
     }
 
     @media (width <= 768px) {
-      font-size: ${({ theme }) => theme.fontSizes.large};
-      background-color: transparent;
+      /* font-size: ${({ theme }) => theme.fontSizes.medium}; */
+      
+      letter-spacing: ${({ theme }) => theme.letterSpacings.medium};
     }
   }
 `;
@@ -86,11 +80,11 @@ const MobileNavList = styled.ul`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: calc(100dvh - ${({ theme }) => theme.spacing.header});
+  gap: ${({ theme }) => theme.spacing.medium};
+  height: 100%;
+  max-height: calc(100dvh - ${({ theme }) => theme.spacing.header});
   padding: ${({ theme }) => theme.padding.medium} ${({ theme }) => theme.padding.large};
   list-style: none;
-
   @media (width <= 768px) {
     display: flex;
   }
@@ -103,8 +97,9 @@ const MenuButton = styled.button`
   font-size: 1.5rem;
   cursor: pointer;
   height: ${({ theme }) => theme.spacing.xxlarge};
+  margin-left: auto;
 
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
     display: block;
   }
 `;
