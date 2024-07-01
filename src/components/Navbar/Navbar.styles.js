@@ -10,15 +10,26 @@ const Nav = styled.nav`
   backdrop-filter: blur(10px);
 
   @media (width <= 768px) {
+    
     height: ${({ theme }) => theme.spacing.xxlarge};
     max-height: ${({ theme }) => theme.spacing.header};
-    transition: max-height 0.3s linear;
+    transition: all 0.3s linear;
 
-  ${({ $menuOpen, theme }) => $menuOpen && `
-    max-height: 100dvh;
-    height: calc(100vh - ${theme.spacing.medium}); 
-  `}
+    ${({ $menuOpen, theme }) =>
+      $menuOpen &&
+      `
+      max-height: 100dvh;
+      height: calc(100dvh - ${theme.spacing.medium}); 
+    `}
+
+    ${({ $menuOpen,theme }) =>
+      !$menuOpen &&
+      ` 
+      height: ${theme.spacing.xxlarge}; 
+      min-height: ${theme.spacing.xxlarge};
+    `}
   }
+
 `;
 
 const NavList = styled.ul`
@@ -27,6 +38,7 @@ const NavList = styled.ul`
   align-items: center;
   list-style: none;
   height: 100%;
+
   @media (width <= 768px) {
     display: none;
   }
@@ -44,18 +56,18 @@ const NavItem = styled.li`
     text-decoration: none;
 
     &:hover {
-      color: ${({ theme }) => theme.colors.text.subPrimary};
+      font-weight: 700;
     }
 
     &::after {
       content: "";
       position: absolute;
-      top: 100%;
       left: 50%;
+      bottom: 0%;
       width: 0;
       height: 1px;
       background-color: ${({ theme }) => theme.colors.primary};
-      transition: width 0.2s ease, left 0.2s ease;
+      transition: width 0.3s ease, left 0.2s ease;
     }
 
     &:hover::after {
@@ -64,27 +76,28 @@ const NavItem = styled.li`
     }
 
     &.active {
-      color: ${({ theme }) => theme.colors.text.subPrimary};
+      font-weight: 700;
     }
 
     @media (width <= 768px) {
-      /* font-size: ${({ theme }) => theme.fontSizes.medium}; */
-      
+      font-size: ${({ theme }) => theme.fontSizes.medium};
       letter-spacing: ${({ theme }) => theme.letterSpacings.medium};
     }
+  
   }
 `;
 
 const MobileNavList = styled.ul`
   display: none;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: ${({ theme }) => theme.spacing.medium};
   height: 100%;
   max-height: calc(100dvh - ${({ theme }) => theme.spacing.header});
   padding: ${({ theme }) => theme.padding.medium} ${({ theme }) => theme.padding.large};
   list-style: none;
+
   @media (width <= 768px) {
     display: flex;
   }
@@ -97,11 +110,24 @@ const MenuButton = styled.button`
   font-size: 1.5rem;
   cursor: pointer;
   height: ${({ theme }) => theme.spacing.xxlarge};
-  margin-left: auto;
+  margin: 0 ${({ theme }) => theme.spacing.medium} 0 auto;
+  padding: ${({ theme }) => theme.padding.xsmall};
 
   @media (width <= 768px) {
     display: block;
   }
 `;
 
-export { Nav, NavItem, NavList, MenuButton, MobileNavList };
+const Svg = styled.svg`
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  cursor: pointer;
+`;
+
+const Rect = styled.rect`
+  transform-origin: center;
+  transition: transform 0.3ms ease;
+`;
+
+export { Nav, NavItem, NavList, MenuButton, MobileNavList, Svg, Rect };

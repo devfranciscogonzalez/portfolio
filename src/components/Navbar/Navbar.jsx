@@ -6,6 +6,7 @@ import {
   NavItem,
   NavList,
 } from "./Navbar.styles";
+import NavbarSvg from "./NavbarSvg/NavbarSvg";
 
 const sections = [
   { id: "home", label: "Home" },
@@ -22,7 +23,6 @@ const Navbar = () => {
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY + window.innerHeight / 2;
-    console.log(scrollPosition);
     let currentSection = "";
     sections.forEach(({ id }) => {
       const element = document.getElementById(id);
@@ -32,7 +32,6 @@ const Navbar = () => {
         element.offsetTop + element.offsetHeight > scrollPosition
       ) {
         currentSection = id;
-        console.log(currentSection);
       }
     });
 
@@ -42,7 +41,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
     if (!menuOpen) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = "auto";
     } else {
       document.body.style.overflow = "auto";
     }
@@ -58,7 +57,9 @@ const Navbar = () => {
 
   return (
     <Nav $menuOpen={menuOpen}>
-      <MenuButton onClick={toggleMenu}>&#9776;</MenuButton>
+      <MenuButton onClick={toggleMenu}>
+        <NavbarSvg isOpen={menuOpen} />
+      </MenuButton>
       <NavList>
         {sections.map(({ id, label }) => (
           <NavItem key={id}>
@@ -73,7 +74,7 @@ const Navbar = () => {
         ))}
       </NavList>
       {menuOpen && (
-        <MobileNavList >
+        <MobileNavList>
           {sections.map(({ id, label }) => (
             <NavItem key={id}>
               <a
