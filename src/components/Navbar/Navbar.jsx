@@ -40,18 +40,12 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    if (!menuOpen) {
-      document.body.style.overflow = "auto";
-    } else {
-      document.body.style.overflow = "auto";
-    }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      document.body.style.overflow = "auto";
     };
   }, []);
 
