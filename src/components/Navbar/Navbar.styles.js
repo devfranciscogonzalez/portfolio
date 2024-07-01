@@ -9,10 +9,22 @@ const Nav = styled.nav`
   box-shadow: 0 2px 6px 0 ${({ theme }) => theme.colors.boxShadow.primary};
   backdrop-filter: blur(10px);
 
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    max-height: ${({ theme }) => theme.spacing.xxlarge};
+    border-bottom: 1px solid red;
+    transition: max-height 0.2s linear;
+    height: ${({ theme }) => theme.spacing.xxlarge};
+    position:relative;
+    ${({ $menuOpen }) =>
+      $menuOpen &&
+      `
+      height: 100%;
+      max-height: 100dvh; 
+    `}
   }
 `;
 
@@ -21,7 +33,7 @@ const NavList = styled.ul`
   justify-content: space-around;
   align-items: center;
   list-style: none;
-
+  height: 100%;
   @media (width <= 768px) {
     display: none;
   }
@@ -64,33 +76,19 @@ const NavItem = styled.li`
 
     @media (width <= 768px) {
       font-size: ${({ theme }) => theme.fontSizes.large};
+      background-color: transparent;
     }
   }
 `;
-
-// const MobileNavList = styled.ul`
-//   display: none;
-//   flex-direction: column;
-//   position: absolute;
-//   top: 100%;
-//   left: 0;
-//   width: 100%;
-//   background-color: hsla(44, 100%, 93%, 0.2);
-//   list-style: none;
-
-//   @media (width <= 768px) {
-//     display: flex;
-//   }
-// `;
 
 const MobileNavList = styled.ul`
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
-  padding: ${({ theme }) => theme.padding.medium}
-    ${({ theme }) => theme.padding.large} 0;
+  width: 100%;
+  height: calc(100dvh - ${({ theme }) => theme.spacing.header});
+  padding: ${({ theme }) => theme.padding.medium} ${({ theme }) => theme.padding.large};
   list-style: none;
 
   @media (width <= 768px) {
@@ -104,7 +102,8 @@ const MenuButton = styled.button`
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  height: 100%;
+  height: ${({ theme }) => theme.spacing.xxlarge};
+
   @media (max-width: 768px) {
     display: block;
   }

@@ -57,7 +57,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <Nav menuOpen={menuOpen}>
+    <Nav $menuOpen={menuOpen}>
       <MenuButton onClick={toggleMenu}>&#9776;</MenuButton>
       <NavList>
         {sections.map(({ id, label }) => (
@@ -73,7 +73,7 @@ const Navbar = () => {
         ))}
       </NavList>
       {menuOpen && (
-        <MobileNavList>
+        <MobileNavList >
           {sections.map(({ id, label }) => (
             <NavItem key={id}>
               <a

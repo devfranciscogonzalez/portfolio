@@ -40,15 +40,15 @@ export const theme = {
     large: "1.5rem",
     // xlarge: "2rem",
     xxlarge: "3rem",
+    header: "4rem",
   },
   padding: {
     // xsmall: ".25rem",
-    // small: ".5rem",
+    small: ".5rem",
     medium: "1rem",
     large: "1.5rem",
     // xlarge: "2rem",
     // xxlarge: "3rem",
-    // header: "4rem",
   },
   borderRadius: {
     // small: "2px",

@@ -18,6 +18,11 @@ const NavBarContainer = styled.section`
   justify-content: center;
   padding: ${({ theme }) => theme.padding.medium}
     ${({ theme }) => theme.padding.large} 0;
+
+  @media (width <= 768px) {
+    padding: ${({ theme }) => theme.padding.small}
+      ${({ theme }) => theme.padding.small} 0;
+  }
 `;
 
 export { HeaderContainer, NavBarContainer };
