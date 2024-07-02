@@ -1,6 +1,6 @@
 import { H1, H3, PrimaryButton, SecondaryButton } from "../../components";
 import { HomeContainer, HomeButtonContainer } from "./Home.styles";
-
+import { EmailSvg, DownloadSvg } from "../../assets/icon";
 const Home = () => {
   return (
     <HomeContainer>
@@ -13,6 +13,7 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <DownloadSvg />
           Descargar CV
         </PrimaryButton>
         <SecondaryButton
@@ -20,7 +21,8 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-        Correo Electrónico
+          <EmailSvg />
+          Correo Electrónico
         </SecondaryButton>
       </HomeButtonContainer>
     </HomeContainer>

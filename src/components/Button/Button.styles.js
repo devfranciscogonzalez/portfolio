@@ -1,25 +1,29 @@
 import styled from "styled-components";
 
 const AnchorButton = styled.a`
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: ${({ theme }) => theme.spacing.small};
+
   font-family: ${({ theme }) => theme.fonts.primary};
-  font-size: ${({ theme }) => theme.fontSizes.small};
+  font-size: ${({ theme }) => theme.fontSizes.medium};
   text-decoration: none;
   text-align: center;
-  padding: ${({ theme }) => theme.spacing.medium} ${({ theme }) => theme.spacing.large};
+  height: ${({ theme }) => theme.spacing.xxlarge};
+  padding: ${({ theme }) => theme.spacing.medium};
   border-radius: ${({ theme }) => theme.borderRadius.medium};
   cursor: pointer;
 
   transition: background-color 0.3s ease;
 
-  &:hover {
-    opacity: 0.9;
-  }
+
 `;
 
 const PrimaryButton = styled(AnchorButton)`
+  color: ${({ theme }) => theme.colors.text.secondary};
+  border: 1px solid ${({ theme }) => theme.colors.secondary};
   background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.secondary};
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.primaryHover};
@@ -27,10 +31,10 @@ const PrimaryButton = styled(AnchorButton)`
 `;
 
 const SecondaryButton = styled(AnchorButton)`
-  background-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.primary};
-  /* box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); */
   border: 1px solid ${({ theme }) => theme.colors.primary};
+  background-color: transparent;
+
   &:hover {
     background-color: ${({ theme }) => theme.colors.secondaryHover};
   }

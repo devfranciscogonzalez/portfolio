@@ -1,7 +1,9 @@
 export const theme = {
   colors: {
     primary: "#262626",
-    // secondary: "#FFF5DB",
+    primaryHover: "hsla(0, 0%, 15%, 0.8)",
+    secondary: "#FFF5DB",
+    secondaryHover: "hsla(0, 0%, 15%, 0.1)",
     // success: "#4caf50",
     // danger: "#ff5722",
     // warning: "#ffeb3b",
@@ -13,8 +15,8 @@ export const theme = {
     text: {
       primary: "hsl(0, 0%, 15%)",
       subPrimary: "hsl(0, 0%, 54%)",
-      // secondary: "hsl(44, 100%, 93%)",
-      // subSecondary: "hsl(44, 100%, 100%)",
+      secondary: "hsl(44, 100%, 93%)",
+      subSecondary: "hsl(44, 100%, 100%)",
       // primary: "hsla(0, 0%, 14.50%, 1)",
       // secondary: "hsla(44, 100%, 92.70%, 1)",
       // subPrimary: "hsla(0, 0%, 14.50%, 0.7)",
@@ -35,10 +37,10 @@ export const theme = {
   },
   spacing: {
     // xsmall: ".25rem",
-    // small: ".5rem",
+    small: ".5rem",
     medium: "1rem",
     large: "1.5rem",
-    // xlarge: "2rem",
+    xlarge: "2rem",
     xxlarge: "3rem",
     header: "4rem",
   },
@@ -62,7 +64,7 @@ export const theme = {
   breakpoints: {
     // mobile: "36rem",
     // tablet: "48rem",
-    // laptop: "62rem",
+    laptop: "62rem",
     desktop: "70rem",
   },
   fonts: {
@@ -72,15 +74,15 @@ export const theme = {
   },
   fontSizes: {
     // xsmall: ".625rem",
-    small: ".75rem",
+    // small: ".75rem",
     medium: "1rem",
-    // large: "1.5rem",
+    large: "1.5rem",
     // xlarge: "2rem",
-    // xxlarge: "4rem",
+    xxlarge: "4rem",
   },
   lineHeights: {
     // small: 1.0,
-    // medium: 1.3,
+    medium: 1.3,
     // large: 1.6,
   },
   letterSpacings: {

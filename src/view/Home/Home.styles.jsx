@@ -9,7 +9,7 @@ const HomeContainer = styled.section`
 `;
 
 const HomeButtonContainer = styled.div`
-  margin-top: ${({ theme }) => theme.spacing.large};
+  margin-top: ${({ theme }) => theme.spacing.xlarge};
   display: flex;
   gap: ${({ theme }) => theme.spacing.medium};
 `;

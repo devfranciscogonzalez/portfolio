@@ -23,8 +23,8 @@ const H3 = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.large};
   font-weight: 300;
   letter-spacing: ${({ theme }) => theme.letterSpacings.small};
+  text-transform: uppercase;
   color: ${({ theme }) => theme.colors.text.subPrimary};
-  /* color: ${({ theme }) => theme.colors.tertiary}; */
 `;
 
 const Paragraph = styled.p`

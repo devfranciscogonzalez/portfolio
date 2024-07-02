@@ -48,7 +48,7 @@ const NavItem = styled.li`
   a {
     position: relative;
     font-family: ${({ theme }) => theme.fonts.secondary};
-    font-size: ${({ theme }) => theme.fontSizes.small};
+    font-size: ${({ theme }) => theme.fontSizes.medium};
     letter-spacing: ${({ theme }) => theme.letterSpacings.small};
     color: ${({ theme }) => theme.colors.text.primary};
     text-transform: uppercase;
