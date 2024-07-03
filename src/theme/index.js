@@ -14,7 +14,7 @@ export const theme = {
     // pruebaDos: "#FFFF00",
     text: {
       primary: "hsl(0, 0%, 15%)",
-      subPrimary: "hsl(0, 0%, 54%)",
+      subPrimary: "hsl(0, 0%, 44%)",
       secondary: "hsl(44, 100%, 93%)",
       subSecondary: "hsl(44, 100%, 100%)",
       // primary: "hsla(0, 0%, 14.50%, 1)",
@@ -49,7 +49,7 @@ export const theme = {
     small: ".5rem",
     medium: "1rem",
     large: "1.5rem",
-    // xlarge: "2rem",
+    xlarge: "2rem",
     // xxlarge: "3rem",
   },
   borderRadius: {
@@ -62,7 +62,7 @@ export const theme = {
     fixed: 1000,
   },
   breakpoints: {
-    // mobile: "36rem",
+    mobile: "36rem",
     // tablet: "48rem",
     laptop: "62rem",
     desktop: "70rem",
@@ -73,11 +73,11 @@ export const theme = {
     tertiary: "Playfair Display",
   },
   fontSizes: {
-    // xsmall: ".625rem",
-    // small: ".75rem",
+    xsmall: ".625rem",
+    small: ".75rem",
     medium: "1rem",
     large: "1.5rem",
-    // xlarge: "2rem",
+    xlarge: "2.25rem",
     xxlarge: "4rem",
   },
   lineHeights: {

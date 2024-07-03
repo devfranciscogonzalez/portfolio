@@ -4,6 +4,7 @@ const SOCIAL_LINKS = {
   instagram: "https://instagram.com/tu_usuario",
   github: "https://github.com/devfranciscog",
   email: "mailto:devfranciscogonzalez@gmail.com",
+  curriculum: "https://drive.google.com/file/d/1dljFzGEcUWXefv5wBWlOxHR4HNZXmvFN/view?usp=sharing",
 };
 
 export default SOCIAL_LINKS;

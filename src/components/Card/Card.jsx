@@ -1,35 +1,43 @@
-import { H2, Paragraph } from "../TextComponents/TextComponents";
+import profile from "../../assets/images/profile.jpg";
+import { PROFILE_TEXT } from "../../constants/portfolioText";
+import Badge from "../Badge/Badge";
+import { H3, Paragraph } from "../TextComponents/TextComponents";
 import {
   CardContainer,
+  CardContainerImage,
+  CardContainerSkills,
   CardContent,
-  CardFooter,
-  CardHeader,
   CardContentLeft,
   CardContentRight,
+  // CardFooter,
+  CardHeader,
 } from "./Card.styles";
-import lorem from "../../assets/images/lorem.jpg";
+
 const Card = () => {
   return (
     <CardContainer>
       <CardHeader>
-        <H2>Perfil</H2>
+        <H3>{PROFILE_TEXT.title}</H3>
       </CardHeader>
       <CardContent>
         <CardContentLeft>
-          <Paragraph>
-            Conocimientos sólidos en HTML, CSS, JavaScript y React. Manejo de
-            sistema de control de versiones Git y de alojamiento de repositorios
-            Github . Proactivo, trabajo en equipo, liderazgo, búsqueda de
-            soluciones de alta calidad.
-          </Paragraph>
+          <Paragraph>{PROFILE_TEXT.description}</Paragraph>
+          <CardContainerSkills>
+            {PROFILE_TEXT.skills.map((skill) => (
+              <Badge key={skill} text={skill} />
+            ))}
+          </CardContainerSkills>
         </CardContentLeft>
         <CardContentRight>
-          <img src={lorem} alt="lorem" />
+          <CardContainerImage>
+            <img src={profile} alt="lorem" />
+          </CardContainerImage>
         </CardContentRight>
       </CardContent>
-      <CardFooter>
+
+      {/* <CardFooter>
         <Paragraph>Soy el Footer</Paragraph>
-      </CardFooter>
+      </CardFooter> */}
     </CardContainer>
   );
 };

@@ -5,26 +5,22 @@ const H1 = styled.h1`
   font-size: ${({ theme }) => theme.fontSizes.xxlarge};
   line-height: ${({ theme }) => theme.lineHeights.medium};
   font-weight: 600;
-  /* letter-spacing: ${({ theme }) => theme.letterSpacings.large}; */
-  /* text-decoration: underline; */
-  /* color: ${({ theme }) => theme.colors.text.primary}; */
 `;
 
-const H2 = styled.h2`
-  font-family: ${({ theme }) => theme.fonts.primary};
-  font-size: ${({ theme }) => theme.fontSizes.xlarge};
-  line-height: 1.3;
-  font-weight: 600;
-  /* color: ${({ theme }) => theme.colors.secondary}; */
-`;
-
-const H3 = styled.h3`
+const H2 = styled.h3`
   font-family: ${({ theme }) => theme.fonts.secondary};
   font-size: ${({ theme }) => theme.fontSizes.large};
   font-weight: 300;
   letter-spacing: ${({ theme }) => theme.letterSpacings.small};
   text-transform: uppercase;
   color: ${({ theme }) => theme.colors.text.subPrimary};
+`;
+
+const H3 = styled.h2`
+  font-family: ${({ theme }) => theme.fonts.primary};
+  font-size: ${({ theme }) => theme.fontSizes.xlarge};
+  /* line-height: 1.3; */
+  font-weight: 500;
 `;
 
 const Paragraph = styled.p`
@@ -50,5 +46,6 @@ const MediumText = styled.p`
   margin: 0.5em 0;
   /* color: ${({ theme }) => theme.colors.text}; */
 `;
+
 
 export { H1, H2, H3, Paragraph, SmallText, MediumText };

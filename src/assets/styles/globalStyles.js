@@ -46,8 +46,8 @@ const GlobalStyles = createGlobalStyle`
   }
   
   img, svg {
-    height: auto;
     max-width: 100%;
+    height: auto;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -68,21 +68,21 @@ const GlobalStyles = createGlobalStyle`
     font-display: fallback;
   }
 
-  @font-face {
+  /* @font-face {
     font-family: "Apercu Mono";
     src: url(${ApercuMonoRegular}) format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: fallback;
-  }
+  } */
 
-  @font-face {
+  /* @font-face {
     font-family: "Apercu Mono";
     src: url(${ApercuMonoMedium}) format("truetype");
     font-weight: 500;
     font-style: normal;
     font-display: fallback;
-  }
+  } */
 
   @font-face {
     font-family: "Apercu Mono";
@@ -99,7 +99,7 @@ const GlobalStyles = createGlobalStyle`
     font-style: normal;
     font-display: fallback;
   }
-
+  /* button */
   @font-face {
     font-family: "Whyte";
     src: url(${WhyteRegular}) format("truetype");
@@ -116,13 +116,13 @@ const GlobalStyles = createGlobalStyle`
     font-display: fallback;
   }
 
-  @font-face {
+  /* @font-face {
     font-family: "Whyte";
     src: url(${WhyteBold}) format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: fallback;
-  }
+  } */
 
   @font-face {
     font-family: "Playfair Display";

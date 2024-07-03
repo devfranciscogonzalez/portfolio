@@ -11,6 +11,8 @@ const AnchorButton = styled.a`
   text-decoration: none;
   text-align: center;
   height: ${({ theme }) => theme.spacing.xxlarge};
+  font-weight:400;
+
   padding: ${({ theme }) => theme.spacing.medium};
   border-radius: ${({ theme }) => theme.borderRadius.medium};
   cursor: pointer;
@@ -22,7 +24,6 @@ const AnchorButton = styled.a`
 
 const PrimaryButton = styled(AnchorButton)`
   color: ${({ theme }) => theme.colors.text.secondary};
-  border: 1px solid ${({ theme }) => theme.colors.secondary};
   background-color: ${({ theme }) => theme.colors.primary};
 
   &:hover {
@@ -32,9 +33,9 @@ const PrimaryButton = styled(AnchorButton)`
 
 const SecondaryButton = styled(AnchorButton)`
   color: ${({ theme }) => theme.colors.primary};
-  border: 1px solid ${({ theme }) => theme.colors.primary};
   background-color: transparent;
-
+  outline: 1px solid ${({ theme }) => theme.colors.primary};
+  
   &:hover {
     background-color: ${({ theme }) => theme.colors.secondaryHover};
   }
