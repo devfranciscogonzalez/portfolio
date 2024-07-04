@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
 const Svg = styled.svg`
-  width: 20px;
-  height: 100%;
+  width: 16px;
+  height: 16px;
   fill: ${({ theme }) => theme.colors.primary};
-  cursor: pointer;
 `;
 
-export { Svg };
+const SvgMedium = styled.svg`
+  width: 24px;
+  height: 24px;
+  fill: ${({ theme }) => theme.colors.tertiary};
+`;
+
+  export { Svg, SvgMedium};

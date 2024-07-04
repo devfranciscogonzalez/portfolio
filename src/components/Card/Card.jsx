@@ -1,10 +1,7 @@
-import profile from "../../assets/images/profile.jpg";
 import { PROFILE_TEXT } from "../../constants/portfolioText";
-import Badge from "../Badge/Badge";
 import { H3, Paragraph } from "../TextComponents/TextComponents";
 import {
   CardContainer,
-  CardContainerImage,
   CardContainerSkills,
   CardContent,
   CardContentLeft,
@@ -12,6 +9,7 @@ import {
   // CardFooter,
   CardHeader,
 } from "./Card.styles";
+import { ProfileCard } from "./ProfileCard";
 
 const Card = () => {
   return (
@@ -21,17 +19,11 @@ const Card = () => {
       </CardHeader>
       <CardContent>
         <CardContentLeft>
-          <Paragraph>{PROFILE_TEXT.description}</Paragraph>
-          <CardContainerSkills>
-            {PROFILE_TEXT.skills.map((skill) => (
-              <Badge key={skill} text={skill} />
-            ))}
-          </CardContainerSkills>
+          <ProfileCard />
         </CardContentLeft>
         <CardContentRight>
-          <CardContainerImage>
-            <img src={profile} alt="lorem" />
-          </CardContainerImage>
+          <Paragraph>{PROFILE_TEXT.description}</Paragraph>
+          <CardContainerSkills></CardContainerSkills>
         </CardContentRight>
       </CardContent>
 

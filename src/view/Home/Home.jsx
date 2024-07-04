@@ -8,7 +8,6 @@ const Home = () => {
     <HomeContainer>
       <H1>Francisco Miguel González Placencia</H1>
       <H2>Ingeniero Civil Informático</H2>
-
       <HomeButtonContainer>
         <PrimaryButton
           href={SOCIAL_LINKS.curriculum}

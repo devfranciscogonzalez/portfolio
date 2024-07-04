@@ -1,9 +1,10 @@
 export const theme = {
   colors: {
     primary: "#262626",
-    primaryHover: "hsla(0, 0%, 15%, 0.8)",
+    primaryHover: "hsla(0, 0%, 15%, 0.8)", // primary button
     secondary: "#FFF5DB",
-    secondaryHover: "hsla(0, 0%, 15%, 0.1)",
+    secondaryHover: "hsla(0, 0%, 15%, 0.1)", // button
+    tertiary: "hsl(0, 0%, 54%)",
     // success: "#4caf50",
     // danger: "#ff5722",
     // warning: "#ffeb3b",
@@ -17,6 +18,7 @@ export const theme = {
       subPrimary: "hsl(0, 0%, 44%)",
       secondary: "hsl(44, 100%, 93%)",
       subSecondary: "hsl(44, 100%, 100%)",
+      tertiary: "hsl(0, 0%, 54%)",
       // primary: "hsla(0, 0%, 14.50%, 1)",
       // secondary: "hsla(44, 100%, 92.70%, 1)",
       // subPrimary: "hsla(0, 0%, 14.50%, 0.7)",
@@ -33,7 +35,11 @@ export const theme = {
     boxShadow: {
       primary: "hsla(0, 0%, 0%, 0.08)",
     },
-    // border: "#262626",
+    border: {
+      primary: "#262626",
+      secondary: "hsla(0, 0%, 15%, 0.1)",
+      tertiary: "hsl(0, 0%, 54%)",
+    },
   },
   spacing: {
     // xsmall: ".25rem",
@@ -47,6 +53,7 @@ export const theme = {
   padding: {
     xsmall: ".25rem",
     small: ".5rem",
+    smallMedium: ".75rem", //responsive button
     medium: "1rem",
     large: "1.5rem",
     xlarge: "2rem",
@@ -63,7 +70,7 @@ export const theme = {
   },
   breakpoints: {
     mobile: "36rem",
-    // tablet: "48rem",
+    tablet: "48rem",
     laptop: "62rem",
     desktop: "70rem",
   },
@@ -77,7 +84,7 @@ export const theme = {
     small: ".75rem",
     medium: "1rem",
     large: "1.5rem",
-    xlarge: "2.25rem",
+    xlarge: "2.5rem",
     xxlarge: "4rem",
   },
   lineHeights: {

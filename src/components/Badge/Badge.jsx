@@ -1,13 +1,12 @@
+import PropTypes from "prop-types";
 import { BadgeContainer } from "./Badge.styles";
 
-import PropTypes from "prop-types";
-
-const Badge = ({ text }) => {
-  return <BadgeContainer>{text}</BadgeContainer>;
+const Badge = ({ children }) => {
+  return <BadgeContainer>{children}</BadgeContainer>;
 };
 
 Badge.propTypes = {
-  text: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default Badge;

@@ -4,6 +4,7 @@ const HeaderContainer = styled.header`
   position: fixed;
   inset: 0 0 auto 0;
   z-index: ${({ theme }) => theme.zIndex.fixed};
+  
   &::before {
     content: "";
     position: absolute;

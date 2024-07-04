@@ -2,24 +2,26 @@ import styled from "styled-components";
 
 const AnchorButton = styled.a`
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: ${({ theme }) => theme.spacing.small};
+  padding: ${({ theme }) => theme.spacing.medium};
 
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.medium};
-  text-decoration: none;
+  font-weight: 400;
   text-align: center;
-  height: ${({ theme }) => theme.spacing.xxlarge};
-  font-weight:400;
+  text-decoration: none;
 
-  padding: ${({ theme }) => theme.spacing.medium};
   border-radius: ${({ theme }) => theme.borderRadius.medium};
   cursor: pointer;
 
   transition: background-color 0.3s ease;
 
-
+  @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: ${({ theme }) => theme.fontSizes.small};
+    padding: ${({ theme }) => theme.spacing.smallMedium};
+  }
 `;
 
 const PrimaryButton = styled(AnchorButton)`
@@ -34,8 +36,8 @@ const PrimaryButton = styled(AnchorButton)`
 const SecondaryButton = styled(AnchorButton)`
   color: ${({ theme }) => theme.colors.primary};
   background-color: transparent;
-  outline: 1px solid ${({ theme }) => theme.colors.primary};
-  
+  outline: 1px solid ${({ theme }) => theme.colors.border.primary};
+
   &:hover {
     background-color: ${({ theme }) => theme.colors.secondaryHover};
   }

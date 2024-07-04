@@ -3,11 +3,12 @@ export const PROFILE_TEXT = {
   description:
     "Profesional con conocimientos en ciencias de la computación, ingeniería y gestión de proyectos de software. Interiorizado en diversas tecnologías vinculadas con el desarrollo web.",
   skills: [
-    "Trabajo en equipo",
-    "Comunicación",
-    "Liderazgo",
-    "Resolución de problemas",
+    "Pensamiento",
+    "lógico",
+    "Trabajo",
+    "en equipo",
     "Creatividad",
-    "Adaptabilidad",
+    "Resolución",
+    "de problemas",
   ],
 };
