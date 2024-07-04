@@ -4,21 +4,19 @@ const CardContainer = styled.article`
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.colors.primary};
+  padding: ${({ theme }) => theme.padding.large};
   border-radius: ${({ theme }) => theme.borderRadius.medium};
   color: ${({ theme }) => theme.colors.text.secondary};
 `;
 
 const CardHeader = styled.header`
-  padding: ${({ theme }) => theme.padding.large}
-    ${({ theme }) => theme.padding.xlarge};
+  padding-bottom: ${({ theme }) => theme.padding.large};
 `;
 
 const CardContent = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: ${({ theme }) => theme.padding.medium};
+  align-items: flex-start;
+  gap: ${({ theme }) => theme.spacing.large};
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -36,7 +34,6 @@ const CardContentLeft = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: ${({ theme }) => theme.padding.small};
   width: 45%;
 
   @media (max-width: 768px) {
@@ -62,10 +59,9 @@ const CardContentLeft = styled.div`
 // `;
 
 const CardContentRight = styled.div`
-  padding: ${({ theme }) => theme.padding.small};
   width: 55%;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}){
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     width: 100%;
     text-align: center;
   }

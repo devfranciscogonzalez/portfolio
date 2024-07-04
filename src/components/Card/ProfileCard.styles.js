@@ -1,27 +1,37 @@
 import styled from "styled-components";
 
-const CardContainer = styled.div`
+const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   width: 100%;
   height: 210px;
-  
 `;
 
-const CardCover = styled.div`
+const ProfileCover = styled.div`
   width: 100%;
   height: 130px;
+  position: relative;
 `;
 
-const CardCoverImage = styled.img`
+const ProfileCoverImage = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 20px 20px 0 0;
+  object-fit: cover;
 `;
 
-const CardAvatarContainer = styled.div`
+const ProfileCoverText = styled.p`
+  position: absolute;
+  font-size: ${({ theme }) => theme.fontSizes.xsmall};
+  font-family: ${({ theme }) => theme.fonts.tertiary};
+  opacity: 0.7;
+  top: 89%;
+  right: 2%;
+`;
+
+const ProfileAvatar = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +43,7 @@ const CardAvatarContainer = styled.div`
   border-radius: 100%;
 `;
 
-const CardAvatar = styled.img`
+const ProfileAvatarImage = styled.img`
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -43,9 +53,7 @@ const CardAvatar = styled.img`
 `;
 
 export {
-  CardContainer,
-  CardCover,
-  CardCoverImage,
-  CardAvatarContainer,
-  CardAvatar,
+  ProfileAvatar, ProfileAvatarImage, ProfileContainer, ProfileCover, ProfileCoverImage,
+  ProfileCoverText
 };
+

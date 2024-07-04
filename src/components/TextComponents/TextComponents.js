@@ -27,9 +27,9 @@ const H2 = styled.h3`
 const H3 = styled.h2`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.xlarge};
+  font-weight: 500;
   /* line-height: 1.3; */
   text-decoration: underline;
-  font-weight: 500;
 `;
 
 const Paragraph = styled.p`

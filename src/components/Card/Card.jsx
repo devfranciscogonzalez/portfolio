@@ -1,4 +1,5 @@
 import { PROFILE_TEXT } from "../../constants/portfolioText";
+import { BadgeSkills } from "../Badge/BadgeSkills";
 import { H3, Paragraph } from "../TextComponents/TextComponents";
 import {
   CardContainer,
@@ -20,6 +21,7 @@ const Card = () => {
       <CardContent>
         <CardContentLeft>
           <ProfileCard />
+          <BadgeSkills />
         </CardContentLeft>
         <CardContentRight>
           <Paragraph>{PROFILE_TEXT.description}</Paragraph>

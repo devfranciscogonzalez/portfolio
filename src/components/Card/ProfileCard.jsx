@@ -1,27 +1,25 @@
+import pc from "../../assets/images/pc.jpg";
 import profile from "../../assets/images/profile.jpg";
-import cover from "../../assets/images/cover.png";
-import { BadgeSkills } from "../Badge/BadgeSkills";
 import {
-  CardContainer,
-  CardCover,
-  CardCoverImage,
-  CardAvatarContainer,
-  CardAvatar,
-} from "./CardAvatar.styles";
+  ProfileAvatar,
+  ProfileAvatarImage,
+  ProfileContainer,
+  ProfileCover,
+  ProfileCoverImage,
+  ProfileCoverText,
+} from "./ProfileCard.styles";
 
 export const ProfileCard = () => {
   return (
-    <>
-      <CardContainer>
-        <CardCover>
-          <CardCoverImage src={cover} alt="cover" />
-        </CardCover>
-        <CardAvatarContainer>
-          <CardAvatar src={profile} alt="avatar" />
-        </CardAvatarContainer>
-      </CardContainer>
-      <BadgeSkills />
-    </>
+    <ProfileContainer>
+      <ProfileCover>
+        <ProfileCoverImage src={pc} alt="cover" />
+        <ProfileCoverText>Setup - 4 de julio de 2024</ProfileCoverText>
+      </ProfileCover>
+      <ProfileAvatar>
+        <ProfileAvatarImage src={profile} alt="avatar" />
+      </ProfileAvatar>
+    </ProfileContainer>
   );
 };
 
