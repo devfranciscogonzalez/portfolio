@@ -6,7 +6,7 @@ const ProfileContainer = styled.div`
   align-items: center;
   position: relative;
   width: 100%;
-  height: 210px;
+  height: 215px;
 `;
 
 const ProfileCover = styled.div`

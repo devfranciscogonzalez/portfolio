@@ -31,7 +31,7 @@ const CardHeader = styled.header`
   padding-bottom: ${({ theme }) => theme.padding.large};
 `;
 
-const CardContent = styled.div`
+const CardContent = styled.article`
   display: flex;
   align-items: flex-start;
   gap: ${({ theme }) => theme.spacing.large};
@@ -59,22 +59,6 @@ const CardContentLeft = styled.div`
   }
 `;
 
-// const CardContainerImage = styled.div`
-//   padding: ${({ theme }) => theme.padding.xsmall};
-//   background-color: white;
-//   filter: grayscale(100%);
-//   transition: filter 0.5s ease;
-//   border-radius: 50%;
-
-//   img {
-//     height: 150px;
-//     border-radius: 50%;
-//   }
-
-//   &:hover {
-//     filter: grayscale(0%);
-//   }
-// `;
 
 const CardContentRight = styled.div`
   width: 55%;
@@ -99,6 +83,5 @@ export {
   // CardFooter,
   CardContentLeft,
   CardContentRight,
-  // CardContainerImage,
   CardContainerSkills,
 };

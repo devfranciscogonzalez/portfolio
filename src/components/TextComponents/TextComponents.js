@@ -11,7 +11,7 @@ const H1 = styled.h1`
   }
 `;
 
-const H2 = styled.h3`
+const H2 = styled.h2`
   font-family: ${({ theme }) => theme.fonts.secondary};
   font-size: ${({ theme }) => theme.fontSizes.large};
   font-weight: 300;
@@ -24,12 +24,21 @@ const H2 = styled.h3`
   }
 `;
 
-const H3 = styled.h2`
+const H3 = styled.h3`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.xlarge};
   font-weight: 500;
   /* line-height: 1.3; */
   text-decoration: underline;
+`;
+
+const H4 = styled.h4`
+  font-family: ${({ theme }) => theme.fonts.secondary};
+  font-size: ${({ theme }) => theme.fontSizes.medium};
+  /* letter-spacing: ${({ theme }) => theme.letterSpacings.small}; */
+  /* text-transform: uppercase; */
+  font-weight: 500;
+  padding-bottom: ${({ theme }) => theme.spacing.medium};
 `;
 
 const Paragraph = styled.p`
@@ -56,4 +65,4 @@ const MediumText = styled.p`
   /* color: ${({ theme }) => theme.colors.text}; */
 `;
 
-export { H1, H2, H3, Paragraph, SmallText, MediumText };
+export { H1, H2, H3, H4, Paragraph, SmallText, MediumText };
