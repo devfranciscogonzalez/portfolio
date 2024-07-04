@@ -4,7 +4,7 @@ export const theme = {
     primaryHover: "hsla(0, 0%, 15%, 0.8)", // primary button
     secondary: "#FFF5DB",
     secondaryHover: "hsla(0, 0%, 15%, 0.1)", // button
-    tertiary: "hsl(0, 0%, 54%)",
+    tertiary: "hsl(0, 0%, 64%)",
     // success: "#4caf50",
     // danger: "#ff5722",
     // warning: "#ffeb3b",
@@ -18,7 +18,7 @@ export const theme = {
       subPrimary: "hsl(0, 0%, 44%)",
       secondary: "hsl(44, 100%, 93%)",
       subSecondary: "hsl(44, 100%, 100%)",
-      tertiary: "hsl(0, 0%, 54%)",
+      tertiary: "hsl(0, 0%, 64%)",
       // primary: "hsla(0, 0%, 14.50%, 1)",
       // secondary: "hsla(44, 100%, 92.70%, 1)",
       // subPrimary: "hsla(0, 0%, 14.50%, 0.7)",
@@ -69,6 +69,7 @@ export const theme = {
     fixed: 1000,
   },
   breakpoints: {
+    smallMobile: "30rem",
     mobile: "36rem",
     tablet: "48rem",
     laptop: "62rem",
