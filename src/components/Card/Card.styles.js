@@ -16,6 +16,15 @@ const CardContainer = styled.article`
   &:hover img {
     filter: grayscale(0%);
   }
+
+  & svg path {
+    fill: ${({ theme }) => theme.colors.tertiary};
+    transition: fill 0.3s ease;
+  }
+
+  &:hover svg path {
+    fill: inherit;
+  }
 `;
 
 const CardHeader = styled.header`

@@ -20,9 +20,6 @@ const ProfileCoverImage = styled.img`
   height: 100%;
   border-radius: ${({ theme }) => theme.borderRadius.xlarge}
     ${({ theme }) => theme.borderRadius.xlarge} 0 0;
-  
-    /* filter: grayscale(100%); */
-   
 `;
 
 const ProfileCoverText = styled.p`

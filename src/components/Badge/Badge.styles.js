@@ -5,7 +5,7 @@ const BadgeContainer = styled.span`
   flex-direction: column;
   align-items: center;
   min-width: 96px;
-  
+
   gap: ${({ theme }) => theme.spacing.small};
 
   font-family: ${({ theme }) => theme.fonts.secondary};
@@ -16,7 +16,7 @@ const BadgeContainer = styled.span`
   letter-spacing: ${({ theme }) => theme.letterSpacings.small};
   text-align: center;
 
-  @media (width <= ${({ theme }) => theme.breakpoints.smallMobile}){
+  @media (width <= ${({ theme }) => theme.breakpoints.smallMobile}) {
     min-width: 50%;
   }
 `;
