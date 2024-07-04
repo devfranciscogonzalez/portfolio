@@ -7,6 +7,15 @@ const CardContainer = styled.article`
   padding: ${({ theme }) => theme.padding.large};
   border-radius: ${({ theme }) => theme.borderRadius.medium};
   color: ${({ theme }) => theme.colors.text.secondary};
+
+  & img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+
+  &:hover img {
+    filter: grayscale(0%);
+  }
 `;
 
 const CardHeader = styled.header`

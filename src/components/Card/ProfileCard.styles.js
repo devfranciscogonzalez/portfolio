@@ -18,17 +18,20 @@ const ProfileCover = styled.div`
 const ProfileCoverImage = styled.img`
   width: 100%;
   height: 100%;
-  border-radius: 20px 20px 0 0;
-  object-fit: cover;
+  border-radius: ${({ theme }) => theme.borderRadius.xlarge}
+    ${({ theme }) => theme.borderRadius.xlarge} 0 0;
+  
+    /* filter: grayscale(100%); */
+   
 `;
 
 const ProfileCoverText = styled.p`
   position: absolute;
+  top: 89%;
+  right: 2%;
   font-size: ${({ theme }) => theme.fontSizes.xsmall};
   font-family: ${({ theme }) => theme.fonts.tertiary};
   opacity: 0.7;
-  top: 89%;
-  right: 2%;
 `;
 
 const ProfileAvatar = styled.div`
@@ -49,11 +52,14 @@ const ProfileAvatarImage = styled.img`
   border-radius: 50%;
   top: 50%;
   margin: ${({ theme }) => theme.spacing.medium};
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 `;
 
 export {
-  ProfileAvatar, ProfileAvatarImage, ProfileContainer, ProfileCover, ProfileCoverImage,
-  ProfileCoverText
+  ProfileAvatar,
+  ProfileAvatarImage,
+  ProfileContainer,
+  ProfileCover,
+  ProfileCoverImage,
+  ProfileCoverText,
 };
-
