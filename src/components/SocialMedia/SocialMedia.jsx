@@ -1,6 +1,6 @@
 import { SecondaryButton } from "../Button/Button";
 import { GitHubSvg, EmailSvg } from "../../assets/icon";
-import { SOCIAL_LINKS } from "../../constants";
+import { SOCIAL_LINKS } from "../../constants/socialLinks";
 
 const SocialMedia = () => {
   return (

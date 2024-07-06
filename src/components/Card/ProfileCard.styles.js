@@ -17,14 +17,14 @@ const ProfileCover = styled.div`
 
 const ProfileCoverImage = styled.img`
   width: 100%;
-  height: 100%;
+  aspect-ratio: 4096 / 1302;
   border-radius: ${({ theme }) => theme.borderRadius.xlarge}
     ${({ theme }) => theme.borderRadius.xlarge} 0 0;
 `;
 
 const ProfileCoverText = styled.p`
   position: absolute;
-  top: 89%;
+  top: 85%;
   right: 2%;
   font-size: ${({ theme }) => theme.fontSizes.xsmall};
   font-family: ${({ theme }) => theme.fonts.tertiary};
@@ -45,11 +45,10 @@ const ProfileAvatar = styled.div`
 
 const ProfileAvatarImage = styled.img`
   width: 130px;
-  height: 130px;
+  aspect-ratio: 2160 / 2108;
+  margin: ${({ theme }) => theme.spacing.medium};
   border-radius: 50%;
   top: 50%;
-  margin: ${({ theme }) => theme.spacing.medium};
-  /* filter: grayscale(100%); */
 `;
 
 export {
