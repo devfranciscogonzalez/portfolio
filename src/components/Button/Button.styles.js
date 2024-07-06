@@ -43,4 +43,10 @@ const SecondaryButton = styled(AnchorButton)`
   }
 `;
 
-export { PrimaryButton, SecondaryButton };
+const SocialMediaButton = styled.a`
+  padding: ${({ theme }) => theme.spacing.small};
+  border-radius: 50%;
+  cursor: pointer;
+`;
+
+export { PrimaryButton, SecondaryButton, SocialMediaButton };

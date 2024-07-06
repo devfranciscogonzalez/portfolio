@@ -1,5 +1,5 @@
-import { theme } from "../../theme/theme";
-import { Svg } from "./icon.styles";
+import { theme } from "../../../theme/theme";
+import { Svg } from "../icon.styles";
 
 const DownloadSvg = () => {
   return (

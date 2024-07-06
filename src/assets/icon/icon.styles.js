@@ -9,4 +9,9 @@ const SvgMedium = styled.svg`
   width: 24px;
 `;
 
-  export { Svg, SvgMedium};
+const SvgSocialMedia = styled.svg`
+  width: 20px;
+  height: 20px;
+`;
+
+export { Svg, SvgMedium, SvgSocialMedia };

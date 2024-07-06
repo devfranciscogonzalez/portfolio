@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import SocialMedia from "../SocialMedia/SocialMedia";
 import {
   MenuButton,
   MobileNavList,
   Nav,
   NavItem,
   NavList,
+  SocialMediaWrapper,
 } from "./Navbar.styles";
 import NavbarSvg from "./NavbarSvg/NavbarSvg";
 
@@ -81,7 +83,9 @@ const Navbar = () => {
               </a>
             </NavItem>
           ))}
-          
+          <SocialMediaWrapper>
+            <SocialMedia />
+          </SocialMediaWrapper>
         </MobileNavList>
       )}
     </Nav>

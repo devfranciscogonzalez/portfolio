@@ -10,7 +10,6 @@ const Nav = styled.nav`
   backdrop-filter: blur(10px);
 
   @media (width <= 768px) {
-    
     height: ${({ theme }) => theme.spacing.xxlarge};
     max-height: ${({ theme }) => theme.spacing.xxlarge};
     transition: all 0.3s linear;
@@ -22,14 +21,13 @@ const Nav = styled.nav`
       height: calc(100dvh - ${theme.spacing.medium}); 
     `}
 
-    ${({ $menuOpen,theme }) =>
+    ${({ $menuOpen, theme }) =>
       !$menuOpen &&
       ` 
       height: ${theme.spacing.xxlarge}; 
       min-height: ${theme.spacing.xxlarge};
     `}
   }
-
 `;
 
 const NavList = styled.ul`
@@ -54,7 +52,7 @@ const NavItem = styled.li`
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
-    
+
     &:hover {
       font-weight: 700;
     }
@@ -83,7 +81,6 @@ const NavItem = styled.li`
       font-size: ${({ theme }) => theme.fontSizes.medium};
       letter-spacing: ${({ theme }) => theme.letterSpacings.medium};
     }
-  
   }
 `;
 
@@ -130,4 +127,21 @@ const Rect = styled.rect`
   transition: transform 0.3ms ease;
 `;
 
-export { Nav, NavItem, NavList, MenuButton, MobileNavList, Svg, Rect };
+const SocialMediaWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: ${({ theme }) => theme.spacing.small};
+  align-items: flex-end;
+`;
+
+export {
+  Nav,
+  NavItem,
+  NavList,
+  MenuButton,
+  MobileNavList,
+  Svg,
+  Rect,
+  SocialMediaWrapper,
+};
