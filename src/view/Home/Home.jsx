@@ -13,6 +13,7 @@ const Home = () => {
           href={SOCIAL_LINKS.curriculum}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Descargar CV"
         >
           <DownloadSvg />
           Descargar CV
@@ -21,6 +22,7 @@ const Home = () => {
           href={SOCIAL_LINKS.email}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Enviar Correo Electrónico"
         >
           <EmailSvg />
           Correo Electrónico

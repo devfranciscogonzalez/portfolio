@@ -1,5 +1,4 @@
 import {
-  // EmailSocialSvg,
   GitHubSvg,
   LinkedInSvg,
   TwitterSvg,
@@ -9,53 +8,28 @@ import {
 import SOCIAL_LINKS from "../../constants/socialLinks";
 import { SocialMediaButton } from "../Button/Button.styles";
 
-const SocialMedia = () => {
-  return (
-    <>
+const socialMediaLinks  = [
+  { href: SOCIAL_LINKS.github, Svg: GitHubSvg, label: "GitHub" },
+  { href: SOCIAL_LINKS.linkedin, Svg: LinkedInSvg, label: "LinkedIn" },
+  { href: SOCIAL_LINKS.twitter, Svg: TwitterSvg, label: "Twitter" },
+  { href: SOCIAL_LINKS.instagram, Svg: InstagramSvg, label: "Instagram" },
+  { href: SOCIAL_LINKS.discord, Svg: DiscordSvg, label: "Discord" },
+];
+
+const SocialMedia = () => (
+  <>
+    {socialMediaLinks .map(({ href, Svg, label }) => (
       <SocialMediaButton
-        href={SOCIAL_LINKS.github}
+        href={href}
         target="_blank"
         rel="noopener noreferrer"
+        key={href}
+        aria-label={label}
       >
-        <GitHubSvg />
+        <Svg />
       </SocialMediaButton>
-      {/* <SocialMediaButton
-        href={`mailto:${SOCIAL_LINKS.email}`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <EmailSocialSvg />
-      </SocialMediaButton> */}
-      <SocialMediaButton
-        href={SOCIAL_LINKS.linkedin}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <LinkedInSvg />
-      </SocialMediaButton>
-      <SocialMediaButton
-        href={SOCIAL_LINKS.twitter}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <TwitterSvg />
-      </SocialMediaButton>
-      <SocialMediaButton
-        href={SOCIAL_LINKS.instagram}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <InstagramSvg />
-      </SocialMediaButton>
-      <SocialMediaButton
-        href={SOCIAL_LINKS.discord}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <DiscordSvg />
-      </SocialMediaButton>
-    </>
-  );
-};
+    ))}
+  </>
+);
 
 export default SocialMedia;
