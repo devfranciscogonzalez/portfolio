@@ -9,7 +9,9 @@ import {
   CardContentRight,
   // CardFooter,
   CardHeader,
+  TagGroup,
 } from "./Card.styles";
+import Tag from "../Tag/Tag";
 
 const Card = ({ children }) => {
   return (
@@ -25,11 +27,11 @@ const Card = ({ children }) => {
             Soy un profesional con una sólida formación científica y práctica en
             computación, informática y gestión. Mi educación abarca:
           </Paragraph>
-          <ul style={{ marginLeft: "30px" }}>
+          <TagGroup>
             {PROFILE_TEXT.conocimiento.formacion.map((item, index) => (
-              <li key={index}>{item}</li>
+              <Tag key={index}>{item}</Tag>
             ))}
-          </ul>
+          </TagGroup>
           <br />
           <H4>Motivacion</H4>
           <Paragraph>Mi motivación se centra en:</Paragraph>

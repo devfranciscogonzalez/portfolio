@@ -60,7 +60,7 @@ export const theme = {
     // xxlarge: "3rem",
   },
   borderRadius: {
-    // small: "2px",
+    small: "2px",
     medium: "5px",
     // large: "8px",
     xlarge: "16px",

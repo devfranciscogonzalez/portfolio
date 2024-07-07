@@ -91,6 +91,13 @@ const CardContentRight = styled.div`
   }
 `;
 
+const TagGroup = styled.div`
+  display: flex;
+  gap: ${({ theme }) => theme.spacing.small};
+  margin-top: ${({ theme }) => theme.spacing.medium};
+  flex-wrap: wrap;
+`;
+
 const CardContainerSkills = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -103,6 +110,7 @@ export {
   CardHeader,
   CardContent,
   // CardFooter,
+  TagGroup,
   CardContentLeft,
   CardContentRight,
   CardContainerSkills,
