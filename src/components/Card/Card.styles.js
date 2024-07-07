@@ -36,7 +36,7 @@ const CardContent = styled.article`
   align-items: flex-start;
   gap: ${({ theme }) => theme.spacing.large};
 
-  @media (max-width: 768px) {
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     flex-direction: column;
   }
 `;
@@ -54,9 +54,10 @@ const CardContentLeft = styled.div`
   align-items: center;
   justify-content: center;
   width: 45%;
-
-  @media (max-width: 768px) {
+  min-width: 393px;
+  @media (width<= ${({ theme }) => theme.breakpoints.tablet}) {
     width: 100%;
+    min-width: auto;
   }
 `;
 
@@ -85,9 +86,8 @@ const CardContentRight = styled.div`
     background-color: ${({ theme }) => theme.colors.primaryHover};
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     width: 100%;
-    text-align: center;
   }
 `;
 
