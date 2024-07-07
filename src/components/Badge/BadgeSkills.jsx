@@ -8,7 +8,7 @@ import { PROFILE_TEXT } from "../../constants/portfolioText";
 import Badge from "./Badge";
 import { BadgeContainerSkills } from "./BadgeSkills.styles";
 
-export const BadgeSkills = () => {
+const BadgeSkills = () => {
   return (
     <BadgeContainerSkills>
       <Badge>
@@ -36,3 +36,5 @@ export const BadgeSkills = () => {
     </BadgeContainerSkills>
   );
 };
+
+export default BadgeSkills;

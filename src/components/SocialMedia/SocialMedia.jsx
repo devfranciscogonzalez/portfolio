@@ -8,7 +8,7 @@ import {
 import SOCIAL_LINKS from "../../constants/socialLinks";
 import { SocialMediaButton } from "../Button/Button.styles";
 
-const socialMediaLinks  = [
+const socialMediaLinks = [
   { href: SOCIAL_LINKS.github, Svg: GitHubSvg, label: "GitHub" },
   { href: SOCIAL_LINKS.linkedin, Svg: LinkedInSvg, label: "LinkedIn" },
   { href: SOCIAL_LINKS.twitter, Svg: TwitterSvg, label: "Twitter" },
@@ -18,7 +18,7 @@ const socialMediaLinks  = [
 
 const SocialMedia = () => (
   <>
-    {socialMediaLinks .map(({ href, Svg, label }) => (
+    {socialMediaLinks.map(({ href, Svg, label }) => (
       <SocialMediaButton
         href={href}
         target="_blank"

@@ -1,6 +1,11 @@
-import { Card } from "../../components";
+import { BadgeSkills, Card, UserProfile } from "../../components";
 
 const Profile = () => {
-  return <Card />;
+  return (
+    <Card>
+      <UserProfile />
+      <BadgeSkills />
+    </Card>
+  );
 };
 export default Profile;

@@ -7,6 +7,7 @@ const Svg = styled.svg`
 
 const SvgMedium = styled.svg`
   width: 24px;
+  height: 24px;
 `;
 
 const SvgSocialMedia = styled.svg`

@@ -1,10 +1,19 @@
-export { default as HomeSection } from "./Section/HomeSection";
-export { default as ProfileSection } from "./Section/ProfileSection";
-export { default as EducationSection } from "./Section/EducationSection";
-export { default as ProjectSection } from "./Section/ProjectSection";
-export { default as TechnologySection } from "./Section/TechnologySection";
-export { default as ContactSection } from "./Section/ContactSection";
+export { PrimaryButton, SecondaryButton } from "./Button/Button.styles";
 export { default as Card } from "./Card/Card";
 export { default as Layout } from "./Layout/Layout";
-export { H1, H2, H3, MediumText, Paragraph, SmallText } from "./TextComponents/TextComponents";
-export {PrimaryButton, SecondaryButton} from "./Button/Button.styles";
+export { default as ContactSection } from "./Section/ContactSection";
+export { default as EducationSection } from "./Section/EducationSection";
+export { default as HomeSection } from "./Section/HomeSection";
+export { default as ProfileSection } from "./Section/ProfileSection";
+export { default as ProjectSection } from "./Section/ProjectSection";
+export { default as TechnologySection } from "./Section/TechnologySection";
+export {
+  H1,
+  H2,
+  H3,
+  MediumText,
+  Paragraph,
+  SmallText
+} from "./TextComponents/TextComponents";
+export { default as UserProfile } from "./UserProfile/UserProfile";
+export {default as BadgeSkills} from "./Badge/BadgeSkills";

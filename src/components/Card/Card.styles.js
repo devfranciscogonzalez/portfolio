@@ -35,6 +35,7 @@ const CardContent = styled.article`
   display: flex;
   align-items: flex-start;
   gap: ${({ theme }) => theme.spacing.large};
+
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -59,9 +60,30 @@ const CardContentLeft = styled.div`
   }
 `;
 
-
 const CardContentRight = styled.div`
   width: 55%;
+  height: 300px;
+  overflow-y: auto;
+
+  /* Estilos personalizados para el scrollbar */
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: ${({ theme }) => theme.colors.secondary};
+    border-radius: ${({ theme }) => theme.borderRadius.medium};
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.colors.primary};
+    border-radius: 10px;
+    border: 2px solid ${({ theme }) => theme.colors.secondary};
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: ${({ theme }) => theme.colors.primaryHover};
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     width: 100%;

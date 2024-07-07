@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ProfileContainer = styled.div`
+const UserContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,20 +9,20 @@ const ProfileContainer = styled.div`
   height: 215px;
 `;
 
-const ProfileCover = styled.div`
+const UserCover = styled.div`
   width: 100%;
   height: 130px;
   position: relative;
 `;
 
-const ProfileCoverImage = styled.img`
+const UserCoverImage = styled.img`
   width: 100%;
   aspect-ratio: 4096 / 1302;
   border-radius: ${({ theme }) => theme.borderRadius.xlarge}
     ${({ theme }) => theme.borderRadius.xlarge} 0 0;
 `;
 
-const ProfileCoverText = styled.p`
+const UserCoverText = styled.p`
   position: absolute;
   top: 85%;
   right: 2%;
@@ -31,7 +31,7 @@ const ProfileCoverText = styled.p`
   opacity: 0.7;
 `;
 
-const ProfileAvatar = styled.div`
+const UserAvatar = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@ const ProfileAvatar = styled.div`
   border-radius: 100%;
 `;
 
-const ProfileAvatarImage = styled.img`
+const UserAvatarImage = styled.img`
   width: 130px;
   aspect-ratio: 2160 / 2108;
   margin: ${({ theme }) => theme.spacing.medium};
@@ -52,10 +52,10 @@ const ProfileAvatarImage = styled.img`
 `;
 
 export {
-  ProfileAvatar,
-  ProfileAvatarImage,
-  ProfileContainer,
-  ProfileCover,
-  ProfileCoverImage,
-  ProfileCoverText,
+  UserAvatar,
+  UserAvatarImage,
+  UserContainer,
+  UserCover,
+  UserCoverImage,
+  UserCoverText,
 };
