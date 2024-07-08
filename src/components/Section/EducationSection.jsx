@@ -1,10 +1,10 @@
 import { Education } from "../../view";
-import Section from "./Section.styles";
+import { CenterSection } from "./Section.styles";
 
 const EducationSection = () => (
-  <Section id="education">
+  <CenterSection id="education">
     <Education />
-  </Section>
+  </CenterSection>
 );
 
 export default EducationSection;

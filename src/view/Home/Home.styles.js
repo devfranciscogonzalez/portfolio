@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const HomeContainer = styled.article`
+const HomeContent = styled.article`
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -12,7 +12,7 @@ const HomeContainer = styled.article`
   }
 `;
 
-const HomeButtonContainer = styled.div`
+const HomeButtonWrapper = styled.div`
   display: flex;
   gap: ${({ theme }) => theme.spacing.medium};
 
@@ -23,4 +23,4 @@ const HomeButtonContainer = styled.div`
   }
 `;
 
-export { HomeContainer, HomeButtonContainer };
+export { HomeContent, HomeButtonWrapper };

@@ -1,10 +1,10 @@
 import { Project } from "../../view";
-import Section from "./Section.styles";
+import { CenterSection } from "./Section.styles";
 
 const ProjectSection = () => (
-  <Section id="project">
+  <CenterSection id="project">
     <Project />
-  </Section>
+  </CenterSection>
 );
 
 export default ProjectSection;

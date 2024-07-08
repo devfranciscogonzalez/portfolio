@@ -1,10 +1,11 @@
-import Section from "./Section.styles";
 import { Profile } from "../../view";
+import { CenterSection } from "./Section.styles";
+
 const ProfileSection = () => {
   return (
-    <Section id="profile">
+    <CenterSection id="profile">
       <Profile />
-    </Section>
+    </CenterSection>
   );
 };
 

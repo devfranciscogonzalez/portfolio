@@ -1,10 +1,10 @@
 import { Contact } from "../../view";
-import Section from "./Section.styles";
+import { CenterSection } from "./Section.styles";
 
 const ContactSection = () => (
-  <Section id="contact">
+  <CenterSection id="contact">
     <Contact />
-  </Section>
+  </CenterSection>
 );
 
 export default ContactSection;

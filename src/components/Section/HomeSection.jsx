@@ -1,10 +1,10 @@
 import { Home } from "../../view";
-import Section from "./Section.styles";
+import { CenterSection } from "./Section.styles";
 
 const HomeSection = () => (
-  <Section id="home">
+  <CenterSection id="home">
     <Home />
-  </Section>
+  </CenterSection>
 );
 
 export default HomeSection;

@@ -1,10 +1,10 @@
 import { Technology } from "../../view";
-import Section from "./Section.styles";
+import { StartSection } from "./Section.styles";
 
 const TechnologySection = () => (
-  <Section id="technology">
+  <StartSection id="technology">
     <Technology />
-  </Section>
+  </StartSection>
 );
 
 export default TechnologySection;

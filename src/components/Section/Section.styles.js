@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Section = styled.section`
+const CenterSection = styled.section`
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -9,4 +9,13 @@ const Section = styled.section`
   border-bottom: 1px solid ${({ theme }) => theme.colors.border.secondary};
 `;
 
-export default Section;
+const StartSection = styled.section`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.border.secondary};
+`;
+
+export { CenterSection, StartSection };
