@@ -1,11 +1,11 @@
 import { DownloadSvg, EmailSvg } from "../../assets/icon";
 import { H1, H2, PrimaryButton, SecondaryButton } from "../../components";
 import SOCIAL_LINKS from "../../constants/socialLinks";
-import { HomeButtonWrapper, HomeContent } from "./Home.styles";
+import { HomeButtonWrapper, HomeContainer } from "./Home.styles";
 
 const Home = () => {
   return (
-    <HomeContent>
+    <HomeContainer>
       <H1>Francisco Miguel González Placencia</H1>
       <H2>Ingeniero Civil Informático</H2>
       <HomeButtonWrapper>
@@ -28,7 +28,7 @@ const Home = () => {
           Correo Electrónico
         </SecondaryButton>
       </HomeButtonWrapper>
-    </HomeContent>
+    </HomeContainer>
   );
 };
 

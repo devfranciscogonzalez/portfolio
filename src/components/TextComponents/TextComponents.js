@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// TITULO PRINCIPAL MI NOMBRE
 const H1 = styled.h1`
   font-family: ${({ theme }) => theme.fonts.tertiary};
   font-size: ${({ theme }) => theme.fontSizes.xxlarge};
@@ -10,7 +11,7 @@ const H1 = styled.h1`
     font-size: ${({ theme }) => theme.fontSizes.xlarge};
   }
 `;
-
+// TITULO SECUNDARIO CARRERA
 const H2 = styled.h2`
   font-family: ${({ theme }) => theme.fonts.secondary};
   font-size: ${({ theme }) => theme.fontSizes.large};
@@ -24,6 +25,7 @@ const H2 = styled.h2`
   }
 `;
 
+// TITULO SECTIONS Y CARDS
 const H3 = styled.h3`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.xlarge};
@@ -32,6 +34,7 @@ const H3 = styled.h3`
   text-decoration: underline;
 `;
 
+// TITULO SECIONES DE LAS CARDS
 const H4 = styled.h4`
   font-family: ${({ theme }) => theme.fonts.secondary};
   font-size: ${({ theme }) => theme.fontSizes.medium};

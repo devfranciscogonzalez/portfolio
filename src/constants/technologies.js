@@ -1,10 +1,13 @@
 const TECHNOLOGIES = {
-  // REACT: "React",
-  // ANGULAR: "Angular",
-  // VUE: "Vue",
-  // EMBER: "Ember",
-  // BACKBONE: "Backbone",
+  HTML: "HTML",
+  CSS: "CSS",
+  JAVASCRIPT: "JavaScript",
+  TYPESCRIPT: "TypeScript",
+  REACT: "React",
   LARAVEL: "Laravel",
+  SQL: "SQL",
+  GIT: "Git",
+  FIGMA: "Figma",
 };
 
 export { TECHNOLOGIES };

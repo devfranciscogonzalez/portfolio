@@ -1,4 +1,5 @@
 import styled from "styled-components";
+// TODO: utilizar la opcion de variant;
 
 const CenterSection = styled.section`
   height: 100vh;
@@ -16,6 +17,7 @@ const StartSection = styled.section`
   justify-content: center;
   align-items: flex-start;
   border-bottom: 1px solid ${({ theme }) => theme.colors.border.secondary};
+  width: 100%;
 `;
 
 export { CenterSection, StartSection };
