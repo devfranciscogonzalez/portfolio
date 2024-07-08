@@ -30,7 +30,7 @@ const Nav = styled.nav`
   }
 `;
 
-const NavList = styled.ul`
+const NavList = styled.ol`
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -84,7 +84,7 @@ const NavItem = styled.li`
   }
 `;
 
-const MobileNavList = styled.ul`
+const MobileNavList = styled.ol`
   display: none;
   flex-direction: column;
   justify-content: center;

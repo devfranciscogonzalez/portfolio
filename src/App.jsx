@@ -11,6 +11,11 @@ import {
   ContactSection,
 } from "./components";
 
+// TODO: Update section delete section component
+// TODO: rename svg component
+// TODO: section constants 
+
+
 function App() {
   return (
     <>

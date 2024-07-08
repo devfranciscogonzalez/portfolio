@@ -10,4 +10,5 @@ export { default as GitHubSvg } from "./socialMedia/GitHubSvg";
 export { default as InstagramSvg } from "./socialMedia/InstagramSvg";
 export { default as LinkedInSvg } from "./socialMedia/LinkedInSvg";
 export { default as TwitterSvg } from "./socialMedia/TwitterSvg";
+export { default as Laravel } from "./technologies/Laravel";
 

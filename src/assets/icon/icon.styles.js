@@ -15,4 +15,9 @@ const SvgSocialMedia = styled.svg`
   height: 20px;
 `;
 
-export { Svg, SvgMedium, SvgSocialMedia };
+const SvgTechnology = styled.svg`
+  width: 55px;
+  height: 55px;
+`;
+
+export { Svg, SvgMedium, SvgSocialMedia, SvgTechnology };

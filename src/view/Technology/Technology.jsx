@@ -1,9 +1,21 @@
+import { H3, TechnologiesList, TechnologyItem } from "../../components";
+import { TECHNOLOGIES } from "../../constants/technologies";
+import { Laravel } from "../../assets/icon";
+
 const Technology = () => {
   return (
-    <section>
-      <h1>Tecnologías</h1>
-      <p>Información sobre las tecnologías.</p>
-    </section>
+    <>
+      <H3>Tecnología </H3>
+      <TechnologiesList>
+        {Object.values(TECHNOLOGIES).map((technology) => (
+          <TechnologyItem key={technology}>
+            <Laravel />
+            <Laravel />
+            <p>Laravel</p>
+          </TechnologyItem>
+        ))}
+      </TechnologiesList>
+    </>
   );
 };
 

@@ -13,7 +13,8 @@ export {
   H3,
   MediumText,
   Paragraph,
-  SmallText
+  SmallText,
 } from "./TextComponents/TextComponents";
 export { default as UserProfile } from "./UserProfile/UserProfile";
-export {default as BadgeSkills} from "./Badge/BadgeSkills";
+export { default as BadgeSkills } from "./Badge/BadgeSkills";
+export { TechnologiesList, TechnologyItem } from "./List/List.styles";
