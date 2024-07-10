@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import { H3, MediumText } from "../../components";
-import { EducationGrid, EducationHeader } from "./Education.styles";
-
-
+import {
+  BorderFirstRow,
+  EducationGrid,
+  EducationHeader,
+} from "./Education.styles";
 
 const Card = styled.div`
   background: ${({ theme }) => theme.colors.primary};
@@ -17,10 +19,9 @@ const Education = () => {
         <H3>Educación</H3>
       </EducationHeader>
       <EducationGrid>
-        {/* <GridTitle> */}
+        <BorderFirstRow />
         <MediumText>Años</MediumText>
         <MediumText>Títulos</MediumText>
-        {/* </GridTitle> */}
         <MediumText>2024</MediumText>
         <Card>Card Content for 2024</Card>
         <MediumText>2023</MediumText>
