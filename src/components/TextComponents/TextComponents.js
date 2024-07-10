@@ -59,13 +59,12 @@ const SmallText = styled.p`
   margin: 0.5em 0;
   /* color: ${({ theme }) => theme.colors.text}; */
 `;
-
+// EDUCACION GRID 
 const MediumText = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.medium};
-  font-family: ${({ theme }) => theme.fonts.primary};
-  line-height: 1.4;
-  margin: 0.5em 0;
-  /* color: ${({ theme }) => theme.colors.text}; */
+  font-family: ${({ theme }) => theme.fonts.secondary};
+  font-weight: 300;
+  text-transform: uppercase;
 `;
 
 export { H1, H2, H3, H4, Paragraph, SmallText, MediumText };
