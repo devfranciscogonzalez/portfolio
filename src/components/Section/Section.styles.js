@@ -11,13 +11,12 @@ const CenterSection = styled.section`
 `;
 
 const StartSection = styled.section`
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  height: 100vh;
   border-bottom: 1px solid ${({ theme }) => theme.colors.border.secondary};
-  width: 100%;
 `;
 
 export { CenterSection, StartSection };
