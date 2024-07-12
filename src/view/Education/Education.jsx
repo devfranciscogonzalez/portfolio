@@ -1,16 +1,23 @@
-import styled from "styled-components";
-import { H3, MediumText } from "../../components";
+import logoUbb from "../../assets/images/ubb-logo-white.webp";
+import { H3, MediumText, Paragraph } from "../../components";
 import {
   BorderFirstRow,
+  CardContent,
+  CardHeader,
+  CardLogoAnchor,
+  CardLogoImg,
+  EducationCard,
   EducationGrid,
   EducationHeader,
 } from "./Education.styles";
 
-const Card = styled.div`
-  background: ${({ theme }) => theme.colors.primary};
-  padding: ${({ theme }) => theme.spacing.medium};
-  border-radius: ${({ theme }) => theme.borderRadius.medium};
-`;
+const UNIVERSITY_URL = "https://www.ubiobio.cl/";
+const TEXT_CARD = {
+  TEXT_ONE:
+    "El ingeniero civil informático de la Universidad del Bío-Bío, es un profesional capacitado para comprender la problemática organizacional en el ámbito de la informática y, a partir de ello, plantear y desarrollar soluciones pertinentes. Lo anterior se traduce en la formulación, evaluación, e implementación de proyectos de tecnologías de información y comunicación.",
+  TEXT_TWO:
+    "El grado académico de licenciado en Ciencias de la Ingeniería permite la continuación de estudios de postgrado en instituciones nacionales o internacionales, con posibilidad de integrarse a equipos de investigación académica para aportar al desarrollo del conocimiento.",
+};
 
 const Education = () => {
   return (
@@ -23,9 +30,39 @@ const Education = () => {
         <MediumText>Años</MediumText>
         <MediumText>Títulos</MediumText>
         <MediumText>2024</MediumText>
-        <Card>Card Content for 2024</Card>
+        <EducationCard>
+          <CardHeader>
+            <MediumText>Titulo de Ingeniero Civil en Informática</MediumText>
+          </CardHeader>
+          <CardContent>
+            <CardLogoAnchor
+              href={UNIVERSITY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CardLogoImg src={logoUbb} alt="Universidad del Bío-Bío" />
+            </CardLogoAnchor>
+            <Paragraph>{TEXT_CARD.TEXT_ONE}</Paragraph>
+          </CardContent>
+        </EducationCard>
         <MediumText>2023</MediumText>
-        <Card>Card Content for 2023</Card>
+        <EducationCard>
+          <CardHeader>
+            <MediumText>
+              Grado de Licenciado en ciencias de la ingenieria
+            </MediumText>
+          </CardHeader>
+          <CardContent>
+            <CardLogoAnchor
+              href={UNIVERSITY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CardLogoImg src={logoUbb} alt="Universidad del Bío-Bío" />
+            </CardLogoAnchor>
+            <Paragraph>{TEXT_CARD.TEXT_TWO}</Paragraph>
+          </CardContent>
+        </EducationCard>
       </EducationGrid>
     </>
   );

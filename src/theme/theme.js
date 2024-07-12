@@ -39,6 +39,7 @@ export const theme = {
       primary: "#262626",
       secondary: "hsla(0, 0%, 15%, 0.1)",
       tertiary: "hsl(0, 0%, 54%)",
+      other: "hsl(44, 100%, 93%)", //card education
     },
   },
   spacing: {
