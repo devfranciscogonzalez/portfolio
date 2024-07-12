@@ -1,13 +1,15 @@
-import { H3 } from "../../components";
-import { ConctactHeader } from "./Contact.styles";
+import { ContactForm, H3 } from "../../components";
+import { ContactFormWrapper, ContactHeader } from "./Contact.styles";
 
 const Contact = () => {
   return (
     <>
-      <ConctactHeader>
+      <ContactHeader>
         <H3>Contaco</H3>
-      </ConctactHeader>
-      
+      </ContactHeader>
+      <ContactFormWrapper>
+        <ContactForm />
+      </ContactFormWrapper>
     </>
   );
 };
