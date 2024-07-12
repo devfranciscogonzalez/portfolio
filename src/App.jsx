@@ -1,20 +1,19 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./assets/styles/globalStyles";
-import { theme } from "./theme/theme";
 import {
-  Layout,
-  HomeSection,
-  ProfileSection,
-  EducationSection,
-  TechnologySection,
-  ProjectSection,
   ContactSection,
+  EducationSection,
+  HomeSection,
+  Layout,
+  ProfileSection,
+  ProjectSection,
+  TechnologySection,
 } from "./components";
+import { theme } from "./theme/theme";
 
 // TODO: Update section delete section component
 // TODO: rename svg component
-// TODO: section constants 
-
+// TODO: section constants
 
 function App() {
   return (

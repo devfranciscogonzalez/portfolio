@@ -1,9 +1,14 @@
+import { H3 } from "../../components";
+import { ConctactHeader } from "./Contact.styles";
+
 const Contact = () => {
   return (
-    <section>
-      <h1>Contacto</h1>
-      <p>Información de contacto.</p>
-    </section>
+    <>
+      <ConctactHeader>
+        <H3>Contaco</H3>
+      </ConctactHeader>
+      
+    </>
   );
 };
 

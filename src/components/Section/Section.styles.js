@@ -8,7 +8,7 @@ const CenterSection = styled.section`
   align-items: center;
   /* padding-top: ${({ theme }) => theme.padding.header}; */
   border-bottom: 1px solid ${({ theme }) => theme.colors.border.secondary};
-`;
+`;3
 
 const StartSection = styled.section`
   display: flex;
@@ -19,4 +19,13 @@ const StartSection = styled.section`
   border-bottom: 1px solid ${({ theme }) => theme.colors.border.secondary};
 `;
 
-export { CenterSection, StartSection };
+const FullWidthSection = styled.section`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ theme }) => theme.colors.primary};
+`;
+
+export { CenterSection, StartSection, FullWidthSection };
