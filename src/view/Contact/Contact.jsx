@@ -1,4 +1,4 @@
-import { ContactForm, H3 } from "../../components";
+import { ContactForm, EmailCopy, H3 } from "../../components";
 import { ContactFormWrapper, ContactHeader } from "./Contact.styles";
 
 const Contact = () => {
@@ -10,6 +10,7 @@ const Contact = () => {
       <ContactFormWrapper>
         <ContactForm />
       </ContactFormWrapper>
+      <EmailCopy />
     </>
   );
 };

@@ -20,3 +20,4 @@ export { default as UserProfile } from "./UserProfile/UserProfile";
 export { default as BadgeSkills } from "./Badge/BadgeSkills";
 export { TechnologiesList, TechnologyItem } from "./List/List.styles";
 export {default as ContactForm} from "./ContactForm/ContactForm"; 
+export {default as EmailCopy} from "./EmailCopy/EmailCopy";
