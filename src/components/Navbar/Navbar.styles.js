@@ -132,7 +132,6 @@ const SocialMediaWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: ${({ theme }) => theme.spacing.small};
-  align-items: flex-end;
 `;
 
 export {

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Svg, Rect } from "../Navbar.styles";
+import { Svg, Rect } from "../../../components/Navbar/Navbar.styles";
 
 
 const NavbarSvg = ({ isOpen }) => {

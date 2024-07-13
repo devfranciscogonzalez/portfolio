@@ -1,9 +1,9 @@
 import {
-  Creative,
-  LogicalThinking,
-  Problem,
-  WorkTeam,
-} from "../../assets/icon";
+  CreativeSvg,
+  LogicalThinkingSvg,
+  ProblemSvg,
+  WorkTeamSvg,
+} from "../../assets/icon/skills";
 import { PROFILE_TEXT } from "../../constants/portfolioText";
 import Badge from "./Badge";
 import { BadgeContainerSkills } from "./BadgeSkills.styles";
@@ -12,23 +12,23 @@ const BadgeSkills = () => {
   return (
     <BadgeContainerSkills>
       <Badge>
-        <LogicalThinking />
+        <LogicalThinkingSvg />
         {PROFILE_TEXT.skills[0]}
         <br />
         {PROFILE_TEXT.skills[1]}
       </Badge>
       <Badge>
-        <WorkTeam />
+        <WorkTeamSvg />
         {PROFILE_TEXT.skills[2]}
         <br />
         {PROFILE_TEXT.skills[3]}
       </Badge>
       <Badge>
-        <Creative />
+        <CreativeSvg />
         {PROFILE_TEXT.skills[4]}
       </Badge>
       <Badge>
-        <Problem />
+        <ProblemSvg />
         {PROFILE_TEXT.skills[5]}
         <br />
         {PROFILE_TEXT.skills[6]}

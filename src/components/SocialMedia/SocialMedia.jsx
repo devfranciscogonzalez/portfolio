@@ -1,24 +1,18 @@
-import {
-  DiscordSvg,
-  GitHubSvg,
-  InstagramSvg,
-  LinkedInSvg,
-  TwitterSvg,
-} from "../../assets/icon";
+import * as Svg from "../../assets/icon/socialMedia";
 import { SOCIAL_LINKS } from "../../constants/socialLinks";
 import { SocialMediaButton } from "../Button/Button.styles";
 
 const socialMediaLinks = [
-  { href: SOCIAL_LINKS.github, Svg: GitHubSvg, label: "GitHub" },
-  { href: SOCIAL_LINKS.linkedin, Svg: LinkedInSvg, label: "LinkedIn" },
-  { href: SOCIAL_LINKS.twitter, Svg: TwitterSvg, label: "Twitter" },
-  { href: SOCIAL_LINKS.instagram, Svg: InstagramSvg, label: "Instagram" },
-  { href: SOCIAL_LINKS.discord, Svg: DiscordSvg, label: "Discord" },
+  { href: SOCIAL_LINKS.github, svg: Svg.GitHubSvg, label: "GitHub" },
+  { href: SOCIAL_LINKS.linkedin, svg: Svg.LinkedInSvg, label: "LinkedIn" },
+  { href: SOCIAL_LINKS.twitter, svg: Svg.TwitterSvg, label: "Twitter" },
+  { href: SOCIAL_LINKS.instagram, svg: Svg.InstagramSvg, label: "Instagram" },
+  { href: SOCIAL_LINKS.discord, svg: Svg.DiscordSvg, label: "Discord" },
 ];
 
 const SocialMedia = () => (
   <>
-    {socialMediaLinks.map(({ href, Svg, label }) => (
+    {socialMediaLinks.map(({ href, svg: Svg, label }) => (
       <SocialMediaButton
         href={href}
         target="_blank"

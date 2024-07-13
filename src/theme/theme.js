@@ -1,45 +1,29 @@
 export const theme = {
   colors: {
-    primary: "#262626",
-    primaryHover: "hsla(0, 0%, 15%, 0.8)", // primary button
-    secondary: "#FFF5DB",
-    secondaryHover: "hsla(0, 0%, 15%, 0.1)", // button
-    tertiary: "hsl(0, 0%, 64%)",
-    // success: "#4caf50",
-    // danger: "#ff5722",
-    // warning: "#ffeb3b",
-    // info: "#00bcd4",
-    // light: "#f0f0f0",
-    // dark: "#333333",
-    // prueba: "#F7E018",
-    // pruebaDos: "#FFFF00",
+    primary: "hsl(0, 0%, 15%)", 
+    secondary: "hsl(44, 100%, 93%)", 
+    primaryHover: "hsla(0, 0%, 15%, 0.8)",
+    secondaryHover: "hsla(0, 0%, 15%, 0.1)",
+    tertiary: "hsl(0, 0%, 64%)", 
+
     text: {
       primary: "hsl(0, 0%, 15%)",
       subPrimary: "hsl(0, 0%, 44%)",
       secondary: "hsl(44, 100%, 93%)",
       subSecondary: "hsl(44, 100%, 100%)",
       tertiary: "hsl(0, 0%, 64%)",
-      // primary: "hsla(0, 0%, 14.50%, 1)",
-      // secondary: "hsla(44, 100%, 92.70%, 1)",
-      // subPrimary: "hsla(0, 0%, 14.50%, 0.7)",
-      // subSecondary: "hsla(44, 100%, 92.70%, 0.7)",
     },
     background: {
-      light: "#FFF5DB",
-      // dark: "#262626",
-      // default: "#f0f0f0",
-      // paper: "#ffffff",
-      // primary: "#4caf50",
-      // secondary: "#ff5722",
+      light: "hsl(44, 100%, 93%)",
     },
     boxShadow: {
       primary: "hsla(0, 0%, 0%, 0.08)",
     },
     border: {
-      primary: "#262626",
+      primary: "hsl(0, 0%, 15%)",
       secondary: "hsla(0, 0%, 15%, 0.1)",
       tertiary: "hsl(0, 0%, 54%)",
-      other: "hsl(44, 100%, 93%)", //card education
+      other: "hsl(44, 100%, 93%)",
     },
   },
   spacing: {

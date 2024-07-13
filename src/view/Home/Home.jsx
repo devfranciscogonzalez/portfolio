@@ -1,4 +1,4 @@
-import { DownloadSvg, EmailSvg } from "../../assets/icon";
+import { DownloadSvg, EmailSvg } from "../../assets/icon/button";
 import { ActionButton, H1, H2 } from "../../components";
 import { SOCIAL_LINKS } from "../../constants/socialLinks";
 import { USER } from "../../constants/userInfo";

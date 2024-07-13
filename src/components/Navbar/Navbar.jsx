@@ -8,16 +8,8 @@ import {
   NavList,
   SocialMediaWrapper,
 } from "./Navbar.styles";
-import NavbarSvg from "./NavbarSvg/NavbarSvg";
-
-const sections = [
-  { id: "home", label: "Home" },
-  { id: "profile", label: "Perfil" },
-  { id: "education", label: "Educación" },
-  { id: "technology", label: "Tecnologías" },
-  { id: "project", label: "Proyectos" },
-  { id: "contact", label: "Contacto" },
-];
+import NavbarSvg from "../../assets/icon/navBar/NavbarSvg";
+import { SECTIONS } from "../../constants/sections";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
@@ -26,7 +18,7 @@ const Navbar = () => {
   const handleScroll = () => {
     const scrollPosition = window.scrollY + window.innerHeight / 2;
     let currentSection = "";
-    sections.forEach(({ id }) => {
+    SECTIONS.forEach(({ id }) => {
       const element = document.getElementById(id);
       if (
         element &&
@@ -57,7 +49,7 @@ const Navbar = () => {
         <NavbarSvg isOpen={menuOpen} />
       </MenuButton>
       <NavList>
-        {sections.map(({ id, label }) => (
+        {SECTIONS.map(({ id, label }) => (
           <NavItem key={id}>
             <a
               href={`#${id}`}
@@ -71,7 +63,7 @@ const Navbar = () => {
       </NavList>
       {menuOpen && (
         <MobileNavList>
-          {sections.map(({ id, label }) => (
+          {SECTIONS.map(({ id, label }) => (
             <NavItem key={id}>
               <a
                 href={`#${id}`}

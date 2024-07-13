@@ -44,9 +44,22 @@ const SecondaryButton = styled(AnchorButton)`
 `;
 
 const SocialMediaButton = styled.a`
-  padding: ${({ theme }) => theme.spacing.small};
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  padding: ${({ theme }) => theme.spacing.small};
+  border-radius: ${({ theme }) => theme.borderRadius.medium};
+  transform: scale(1);
+  transition: transform 0.3s ease, background-color 0.3s ease, fill 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: ${({ theme }) => theme.colors.secondaryHover};
+  }
+  & svg:hover {
+    fill: ${({ theme }) => theme.colors.text.secondaryHover};
+  }
 `;
 
 export { PrimaryButton, SecondaryButton, SocialMediaButton };
