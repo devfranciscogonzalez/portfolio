@@ -1,11 +1,11 @@
 import {
+  DiscordSvg,
   GitHubSvg,
+  InstagramSvg,
   LinkedInSvg,
   TwitterSvg,
-  InstagramSvg,
-  DiscordSvg,
 } from "../../assets/icon";
-import SOCIAL_LINKS from "../../constants/socialLinks";
+import { SOCIAL_LINKS } from "../../constants/socialLinks";
 import { SocialMediaButton } from "../Button/Button.styles";
 
 const socialMediaLinks = [

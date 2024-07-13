@@ -1,5 +1,4 @@
-import setup from "../../assets/images/setup.webp";
-import user from "../../assets/images/user.webp";
+import { userPhoto, setup } from "../../assets/images";
 import {
   UserAvatar,
   UserAvatarImage,
@@ -17,7 +16,7 @@ export const UserProfile = () => {
         <UserCoverText>Setup - 4 de julio de 2024</UserCoverText>
       </UserCover>
       <UserAvatar>
-        <UserAvatarImage src={user} alt="avatar" />
+        <UserAvatarImage src={userPhoto} alt="avatar" />
       </UserAvatar>
     </UserContainer>
   );

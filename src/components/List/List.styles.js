@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const TechnologiesList = styled.ol`
+const TechnologyList = styled.ol`
   display: grid;
-  grid-template-columns: repeat(3, minmax(0px, 1fr));;
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
   gap: ${({ theme }) => theme.spacing.medium};
   padding: 0;
   list-style: none;
@@ -29,4 +29,4 @@ const TechnologyItem = styled.li`
   }
 `;
 
-export { TechnologiesList, TechnologyItem };
+export { TechnologyList, TechnologyItem };

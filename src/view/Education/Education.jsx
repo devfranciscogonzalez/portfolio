@@ -1,4 +1,4 @@
-import logoUbb from "../../assets/images/ubb-logo-white.webp";
+import { logoUbbWhite } from "../../assets/images";
 import { H3, MediumText, Paragraph } from "../../components";
 import {
   BorderFirstRow,
@@ -40,7 +40,7 @@ const Education = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <CardLogoImg src={logoUbb} alt="Universidad del Bío-Bío" />
+              <CardLogoImg src={logoUbbWhite} alt="Universidad del Bío-Bío" />
             </CardLogoAnchor>
             <Paragraph>{TEXT_CARD.TEXT_ONE}</Paragraph>
           </CardContent>
@@ -58,7 +58,7 @@ const Education = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <CardLogoImg src={logoUbb} alt="Universidad del Bío-Bío" />
+              <CardLogoImg src={logoUbbWhite} alt="Universidad del Bío-Bío" />
             </CardLogoAnchor>
             <Paragraph>{TEXT_CARD.TEXT_TWO}</Paragraph>
           </CardContent>

@@ -1,10 +1,10 @@
 import { Technology } from "../../view";
-import { StartSection } from "./Section.styles";
+import { Section } from "./Section.styles";
 
 const TechnologySection = () => (
-  <StartSection id="technology">
+  <Section $variant="start" id="technology">
     <Technology />
-  </StartSection>
+  </Section>
 );
 
 export default TechnologySection;

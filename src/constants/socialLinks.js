@@ -9,4 +9,4 @@ const SOCIAL_LINKS = {
     "https://drive.google.com/file/d/1dljFzGEcUWXefv5wBWlOxHR4HNZXmvFN/view?usp=sharing",
 };
 
-export default SOCIAL_LINKS;
+export { SOCIAL_LINKS };

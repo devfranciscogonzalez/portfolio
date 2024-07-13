@@ -1,11 +1,11 @@
 import { Profile } from "../../view";
-import { CenterSection } from "./Section.styles";
+import { Section } from "./Section.styles";
 
 const ProfileSection = () => {
   return (
-    <CenterSection id="profile">
+    <Section $variant="center" id="profile" >
       <Profile />
-    </CenterSection>
+    </Section>
   );
 };
 

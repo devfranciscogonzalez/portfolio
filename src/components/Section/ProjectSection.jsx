@@ -1,10 +1,10 @@
 import { Project } from "../../view";
-import { CenterSection } from "./Section.styles";
+import { Section } from "./Section.styles";
 
 const ProjectSection = () => (
-  <CenterSection id="project">
+  <Section $variant="center" id="project">
     <Project />
-  </CenterSection>
+  </Section>
 );
 
 export default ProjectSection;

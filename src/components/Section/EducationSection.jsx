@@ -1,12 +1,10 @@
 import { Education } from "../../view";
-import { StartSection } from "./Section.styles";
-
-
+import { Section } from "./Section.styles";
 
 const EducationSection = () => (
-  <StartSection id="education">
+  <Section $variant="start" id="education" >
     <Education />
-  </StartSection>
+  </Section>
 );
 
 export default EducationSection;

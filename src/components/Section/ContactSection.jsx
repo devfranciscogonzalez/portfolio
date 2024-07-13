@@ -1,10 +1,10 @@
 import { Contact } from "../../view";
-import { StartSection } from "./Section.styles";
+import { Section } from "./Section.styles";
 
 const ContactSection = () => (
-  <StartSection id="contact" style={{ backgroundColor: "#262626" }}>
+  <Section $variant="center" id="contact">
     <Contact />
-  </StartSection>
+  </Section>
 );
 
 export default ContactSection;

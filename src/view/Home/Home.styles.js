@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const HomeContainer = styled.article`
+const HomeHero = styled.article`
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -23,4 +23,4 @@ const HomeButtonWrapper = styled.div`
   }
 `;
 
-export { HomeContainer, HomeButtonWrapper };
+export { HomeHero, HomeButtonWrapper };
