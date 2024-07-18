@@ -57,9 +57,6 @@ const SocialMediaButton = styled.a`
     transform: scale(1.1);
     background-color: ${({ theme }) => theme.colors.secondaryHover};
   }
-  & svg:hover {
-    fill: ${({ theme }) => theme.colors.text.secondaryHover};
-  }
 `;
 
 export { PrimaryButton, SecondaryButton, SocialMediaButton };

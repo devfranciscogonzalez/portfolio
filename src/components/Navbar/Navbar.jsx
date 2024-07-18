@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import NavbarSvg from "../../assets/icon/navBar/NavbarSvg";
+import { SECTIONS } from "../../constants/sections";
 import SocialMedia from "../SocialMedia/SocialMedia";
 import {
   MenuButton,
@@ -8,8 +10,6 @@ import {
   NavList,
   SocialMediaWrapper,
 } from "./Navbar.styles";
-import NavbarSvg from "../../assets/icon/navBar/NavbarSvg";
-import { SECTIONS } from "../../constants/sections";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
@@ -18,6 +18,7 @@ const Navbar = () => {
   const handleScroll = () => {
     const scrollPosition = window.scrollY + window.innerHeight / 2;
     let currentSection = "";
+
     SECTIONS.forEach(({ id }) => {
       const element = document.getElementById(id);
       if (

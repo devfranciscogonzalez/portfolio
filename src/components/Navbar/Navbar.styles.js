@@ -30,7 +30,7 @@ const Nav = styled.nav`
   }
 `;
 
-const NavList = styled.ol`
+const NavList = styled.ul`
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -84,7 +84,7 @@ const NavItem = styled.li`
   }
 `;
 
-const MobileNavList = styled.ol`
+const MobileNavList = styled.ul`
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -92,7 +92,8 @@ const MobileNavList = styled.ol`
   gap: ${({ theme }) => theme.spacing.medium};
   height: 100%;
   max-height: calc(100dvh - ${({ theme }) => theme.spacing.header});
-  padding: ${({ theme }) => theme.padding.medium} ${({ theme }) => theme.padding.large};
+  padding: ${({ theme }) => theme.padding.medium}
+    ${({ theme }) => theme.padding.large};
   list-style: none;
 
   @media (width <= 768px) {
