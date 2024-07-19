@@ -29,17 +29,17 @@ const PrimaryButton = styled(AnchorButton)`
   background-color: ${({ theme }) => theme.colors.primary};
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.primaryHover};
+    background-color: ${({ theme }) => theme.colors.hover.primary};
   }
 `;
 
 const SecondaryButton = styled(AnchorButton)`
   color: ${({ theme }) => theme.colors.primary};
   background-color: transparent;
-  outline: 1px solid ${({ theme }) => theme.colors.border.primary};
+  outline: 1px solid ${({ theme }) => theme.colors.utility.border};
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.secondaryHover};
+    background-color: ${({ theme }) => theme.colors.hover.secondary};
   }
 `;
 
@@ -55,7 +55,7 @@ const SocialMediaButton = styled.a`
 
   &:hover {
     transform: scale(1.1);
-    background-color: ${({ theme }) => theme.colors.secondaryHover};
+    background-color: ${({ theme }) => theme.colors.hover.secondary};
   }
 `;
 

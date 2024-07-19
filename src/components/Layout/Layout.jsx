@@ -1,15 +1,14 @@
 import PropTypes from "prop-types";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import MainContent from "../MainContent/MainContent";
-import { CenteredLayout } from "./Layout.styles";
+import { CenteredLayout, MainContainer } from "./Layout.styles";
 
 const Layout = ({ children }) => {
   return (
     <CenteredLayout>
       <Header />
-      <MainContent>{children}</MainContent>
-      <Footer />
+      <MainContainer>{children}</MainContainer>
+      {/* <Footer /> */}
     </CenteredLayout>
   );
 };

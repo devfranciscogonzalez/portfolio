@@ -1,29 +1,42 @@
 export const theme = {
   colors: {
-    primary: "hsl(0, 0%, 15%)", 
-    secondary: "hsl(44, 100%, 93%)", 
-    primaryHover: "hsla(0, 0%, 15%, 0.8)",
-    secondaryHover: "hsla(0, 0%, 15%, 0.1)",
-    tertiary: "hsl(0, 0%, 64%)", 
+    // Colores base
+    black: "hsl(0, 0%, 15%)",
+    white: "hsl(0, 0%, 100%)",
+    cream: "hsl(44, 100%, 93%)",
+    gray: {
+      light: "hsl(0, 0%, 64%)",
+      medium: "hsl(0, 0%, 54%)",
+      dark: "hsl(0, 0%, 44%)",
+    },
 
+    // Colores semánticos
+    primary: "hsl(0, 0%, 15%)",
+    secondary: "hsl(44, 100%, 93%)",
+    tertiary: "hsl(0, 0%, 64%)",
+
+    // Estados de hover
+    hover: {
+      primary: "hsla(0, 0%, 15%, 0.8)",
+      secondary: "hsla(0, 0%, 15%, 0.1)",
+    },
+
+    // Texto
     text: {
       primary: "hsl(0, 0%, 15%)",
-      subPrimary: "hsl(0, 0%, 44%)",
       secondary: "hsl(44, 100%, 93%)",
-      subSecondary: "hsl(44, 100%, 100%)",
       tertiary: "hsl(0, 0%, 64%)",
     },
+
+    // Fondos
     background: {
       light: "hsl(44, 100%, 93%)",
     },
-    boxShadow: {
-      primary: "hsla(0, 0%, 0%, 0.08)",
-    },
-    border: {
-      primary: "hsl(0, 0%, 15%)",
-      secondary: "hsla(0, 0%, 15%, 0.1)",
-      tertiary: "hsl(0, 0%, 54%)",
-      other: "hsl(44, 100%, 93%)",
+
+    // Sombras y bordes
+    utility: {
+      shadow: "hsla(0, 0%, 0%, 0.08)",
+      border: "hsla(0, 0%, 15%, 0.1)",
     },
   },
   spacing: {

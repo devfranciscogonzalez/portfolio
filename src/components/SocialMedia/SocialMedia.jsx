@@ -1,4 +1,4 @@
-import * as Svg from "../../assets/icon/socialMedia";
+import * as Svg from "../../assets/icons/socialMedia";
 import { SOCIAL_LINKS } from "../../constants/socialLinks";
 import { SocialMediaButton } from "../Button/Button.styles";
 

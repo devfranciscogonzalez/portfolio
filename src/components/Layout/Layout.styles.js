@@ -7,4 +7,13 @@ const CenteredLayout = styled.div`
   align-items: center;
 `;
 
-export { CenteredLayout };
+const MainContainer = styled.main`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: ${({ theme }) => theme.breakpoints.laptop};
+  padding: 0 ${({ theme }) => theme.padding.large};
+`;
+
+export { CenteredLayout, MainContainer };
