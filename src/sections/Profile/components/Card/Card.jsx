@@ -7,7 +7,6 @@ import {
   CardContent,
   CardContentLeft,
   CardContentRight,
-  // CardFooter,
   CardHeader,
   TagGroup,
 } from "./Card.styles";
@@ -69,10 +68,6 @@ const Card = ({ children }) => {
           <CardContainerSkills></CardContainerSkills>
         </CardContentRight>
       </CardContent>
-
-      {/* <CardFooter>
-        <Paragraph>Soy el Footer</Paragraph>
-      </CardFooter> */}
     </CardContainer>
   );
 };

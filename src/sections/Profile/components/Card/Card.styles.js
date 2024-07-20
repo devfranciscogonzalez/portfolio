@@ -41,13 +41,6 @@ const CardContent = styled.article`
   }
 `;
 
-// const CardFooter = styled.footer`
-//   display: flex;
-//   justify-content: space-between;
-//   margin-top: 10px;
-//   padding: ${({ theme }) => theme.padding.medium};
-// `;
-
 const CardContentLeft = styled.div`
   display: flex;
   flex-direction: column;
@@ -55,6 +48,8 @@ const CardContentLeft = styled.div`
   justify-content: center;
   width: 45%;
   min-width: 393px;
+  gap: ${({ theme }) => theme.spacing.medium};
+
   @media (width<= ${({ theme }) => theme.breakpoints.tablet}) {
     width: 100%;
     min-width: auto;
@@ -109,7 +104,6 @@ export {
   CardContainer,
   CardHeader,
   CardContent,
-  // CardFooter,
   TagGroup,
   CardContentLeft,
   CardContentRight,
