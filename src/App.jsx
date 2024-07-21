@@ -3,7 +3,7 @@ import GlobalStyle from "./assets/styles/globalStyles";
 import {
   Home,
   Profile,
-  // Education,
+  Education,
   // Contact,
   //  Technology
 } from "./sections";
@@ -18,9 +18,9 @@ function App() {
         <Layout>
           <Home />
           <Profile />
-          {/* <Education />
-          <Technology />
-          <Contact /> */}
+          <Education />
+          {/* <Technology /> */}
+          {/* <Contact /> */}
         </Layout>
       </ThemeProvider>
     </>
