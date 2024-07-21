@@ -25,31 +25,27 @@ const H2 = styled.h2`
   }
 `;
 
-// TITULO SECTIONS Y CARDS
+// TODOS LOS DE LAS SECTIONS Y CARDS
 const H3 = styled.h3`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.xlarge};
-  font-weight: 500;
-  /* line-height: 1.3; */
+  font-weight: 700;
   text-decoration: underline;
 `;
 
-// TITULO SECIONES DE LAS CARDS
+// TITULO SECIONES DE LAS CARDS DE PROFILE
 const H4 = styled.h4`
-  font-family: ${({ theme }) => theme.fonts.secondary};
+  font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.medium};
-  /* letter-spacing: ${({ theme }) => theme.letterSpacings.small}; */
-  /* text-transform: uppercase; */
+  letter-spacing: ${({ theme }) => theme.letterSpacings.small};
   font-weight: 500;
-  padding-bottom: ${({ theme }) => theme.spacing.medium};
+  text-transform: uppercase;
 `;
 
 const SmallText = styled.p`
+  font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.small};
-  font-family: ${({ theme }) => theme.fonts.secondary};
-  line-height: 1.4;
-  margin: 0.5em 0;
-  /* color: ${({ theme }) => theme.colors.text}; */
+  font-weight: 300;
 `;
 // EDUCACION GRID
 const MediumText = styled.p`
@@ -63,9 +59,7 @@ const Paragraph = styled.p`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.medium};
   font-weight: 300;
-  line-height: 1.6;
   /* color: ${({ theme }) => theme.colors.text}; */
 `;
 
 export { H1, H2, H3, H4, MediumText, Paragraph, SmallText };
-

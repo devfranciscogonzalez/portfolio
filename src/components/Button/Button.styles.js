@@ -8,7 +8,7 @@ const AnchorButton = styled.a`
   padding: ${({ theme }) => theme.spacing.medium};
 
   font-family: ${({ theme }) => theme.fonts.primary};
-  font-size: ${({ theme }) => theme.fontSizes.medium};
+  font-size: ${({ theme }) => theme.fontSizes.small};
   font-weight: 400;
   text-align: center;
   text-decoration: none;

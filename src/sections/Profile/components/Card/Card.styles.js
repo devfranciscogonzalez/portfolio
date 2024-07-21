@@ -28,27 +28,27 @@ const CardContainer = styled.article`
 `;
 
 const CardHeader = styled.header`
-  padding-bottom: ${({ theme }) => theme.padding.large};
+  margin-bottom: ${({ theme }) => theme.spacing.large};
 `;
 
 const CardContent = styled.article`
   display: flex;
   align-items: flex-start;
-  gap: ${({ theme }) => theme.spacing.large};
+  gap: ${({ theme }) => theme.spacing.xlarge};
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     flex-direction: column;
   }
 `;
 
-const CardContentLeft = styled.div`
+const CardContentLeft = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 45%;
   min-width: 393px;
-  gap: ${({ theme }) => theme.spacing.medium};
+  gap: ${({ theme }) => theme.spacing.xxlarge};
 
   @media (width<= ${({ theme }) => theme.breakpoints.tablet}) {
     width: 100%;
@@ -56,9 +56,12 @@ const CardContentLeft = styled.div`
   }
 `;
 
-const CardContentRight = styled.div`
+const CardContentRight = styled.section`
   width: 55%;
-  height: 300px;
+  height: 344px;
+  display: flex;
+  flex-direction: column;
+  gap: ${({ theme }) => theme.spacing.xlarge};
   overflow-y: auto;
 
   /* Estilos personalizados para el scrollbar */
@@ -89,15 +92,7 @@ const CardContentRight = styled.div`
 const TagGroup = styled.div`
   display: flex;
   gap: ${({ theme }) => theme.spacing.small};
-  margin-top: ${({ theme }) => theme.spacing.medium};
   flex-wrap: wrap;
-`;
-
-const CardContainerSkills = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: ${({ theme }) => theme.spacing.small};
-  margin-top: ${({ theme }) => theme.spacing.medium};
 `;
 
 export {
@@ -107,5 +102,4 @@ export {
   TagGroup,
   CardContentLeft,
   CardContentRight,
-  CardContainerSkills,
 };

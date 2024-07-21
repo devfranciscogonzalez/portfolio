@@ -4,7 +4,7 @@ import {
   ProblemSvg,
   WorkTeamSvg,
 } from "../../../../assets/icons/skills";
-import { PROFILE_TEXT } from "../../../../constants/portfolioText";
+import { PROFILE_TEXT } from "../../../../constants/profileText";
 import Badge from "./Badge";
 import { BadgeContainerSkills } from "./BadgeSkills.styles";
 

@@ -47,7 +47,8 @@ const NavItem = styled.li`
   a {
     position: relative;
     font-family: ${({ theme }) => theme.fonts.secondary};
-    font-size: ${({ theme }) => theme.fontSizes.medium};
+    font-weight: 400;
+    font-size: ${({ theme }) => theme.fontSizes.small};
     letter-spacing: ${({ theme }) => theme.letterSpacings.small};
     color: ${({ theme }) => theme.colors.text.primary};
     text-transform: uppercase;
@@ -95,7 +96,8 @@ const MobileNavList = styled.ul`
   gap: ${({ theme }) => theme.spacing.medium};
   height: 100%;
   max-height: calc(100dvh - ${({ theme }) => theme.spacing.header});
-  padding: ${({ theme }) => theme.padding.medium} ${({ theme }) => theme.padding.large};
+  padding: ${({ theme }) => theme.padding.medium}
+    ${({ theme }) => theme.padding.large};
   list-style: none;
 
   @media (width <= 768px) {
