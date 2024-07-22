@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { logoUbbColor } from "../../../../assets/images";
 
 const Card = styled.article`
   display: flex;
@@ -21,11 +22,15 @@ const CardContent = styled.div`
   margin-top: ${({ theme }) => theme.spacing.large};
 `;
 const CardLogoAnchor = styled.a`
-  min-width: 140px;
+  min-width: 180px;
+
+  &:hover img {
+    content: url(${logoUbbColor});
+  }
 `;
 
 const CardLogoImg = styled.img`
-  aspect-ratio: 400 / 247;
+  width: 180px;
 `;
 
 export { CardContent, CardHeader, CardLogoAnchor, CardLogoImg, Card };
