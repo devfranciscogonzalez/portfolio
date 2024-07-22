@@ -6,11 +6,11 @@ import {
 } from "../../../../assets/icons/skills";
 import { PROFILE_TEXT } from "../../../../constants/profileText";
 import Badge from "./Badge";
-import { BadgeContainerSkills } from "./BadgeSkills.styles";
+import { BadgeSkillsContainer } from "./BadgeSkills.styles";
 
 const BadgeSkills = () => {
   return (
-    <BadgeContainerSkills>
+    <BadgeSkillsContainer>
       <Badge>
         <LogicalThinkingSvg />
         {PROFILE_TEXT.skills[0]}
@@ -33,7 +33,7 @@ const BadgeSkills = () => {
         <br />
         {PROFILE_TEXT.skills[6]}
       </Badge>
-    </BadgeContainerSkills>
+    </BadgeSkillsContainer>
   );
 };
 

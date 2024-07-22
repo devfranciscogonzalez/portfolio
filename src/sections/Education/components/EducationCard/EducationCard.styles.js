@@ -8,10 +8,18 @@ const CardContainer = styled.article`
   border-radius: ${({ theme }) => theme.borderRadius.medium};
   color: ${({ theme }) => theme.colors.text.secondary};
   background-color: ${({ theme }) => theme.colors.primary};
+
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+    flex-direction: column;
+  }
 `;
 
 const CardHeader = styled.header`
   border-bottom: 1px solid ${({ theme }) => theme.colors.text.secondary};
+
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+    text-align: center;
+  }
 `;
 
 const CardContentLeft = styled.section`
@@ -21,6 +29,9 @@ const CardContentLeft = styled.section`
   align-items: center;
   gap: ${({ theme }) => theme.spacing.medium};
   width: 100%;
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+    order: 2;
+  }
 `;
 
 const CardContentRight = styled.section`

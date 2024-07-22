@@ -18,6 +18,8 @@ const BadgeContainer = styled.span`
 
   @media (width <= ${({ theme }) => theme.breakpoints.smallMobile}) {
     min-width: 50%;
+    justify-content: center;
+    margin-top: ${({ theme }) => theme.spacing.small};
   }
 `;
 

@@ -52,7 +52,7 @@ const CardContentLeft = styled.section`
 
   @media (width<= ${({ theme }) => theme.breakpoints.tablet}) {
     width: 100%;
-    min-width: auto;
+    gap: ${({ theme }) => theme.spacing.medium};
   }
 `;
 

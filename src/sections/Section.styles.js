@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 const SectionBase = styled.section`
-  height: 100vh;
+  min-height: 100dvh;
   display: flex;
   border-bottom: 1px solid ${({ theme }) => theme.colors.utility.border};
 `;

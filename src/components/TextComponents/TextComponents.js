@@ -31,6 +31,10 @@ const H3 = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.xlarge};
   font-weight: 700;
   text-decoration: underline;
+
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: ${({ theme }) => theme.fontSizes.large};
+  }
 `;
 
 // TITULO SECIONES DE LAS CARDS DE PROFILE
@@ -40,6 +44,10 @@ const H4 = styled.h4`
   letter-spacing: ${({ theme }) => theme.letterSpacings.small};
   font-weight: 500;
   text-transform: uppercase;
+
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: ${({ theme }) => theme.fontSizes.small};
+  }
 `;
 
 const SmallText = styled.p`
@@ -53,6 +61,10 @@ const MediumText = styled.p`
   font-family: ${({ theme }) => theme.fonts.secondary};
   font-weight: 300;
   text-transform: uppercase;
+
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: ${({ theme }) => theme.fontSizes.small};
+  }
 `;
 
 const Paragraph = styled.p`
@@ -60,6 +72,10 @@ const Paragraph = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.medium};
   font-weight: 300;
   /* color: ${({ theme }) => theme.colors.text}; */
+
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: ${({ theme }) => theme.fontSizes.small};
+  }
 `;
 
 export { H1, H2, H3, H4, MediumText, Paragraph, SmallText };

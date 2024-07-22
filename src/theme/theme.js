@@ -67,7 +67,7 @@ export const theme = {
     fixed: 1000,
   },
   breakpoints: {
-    smallMobile: "30rem",
+    smallMobile: "33rem",
     mobile: "36rem",
     tablet: "48rem",
     laptop: "62rem",
