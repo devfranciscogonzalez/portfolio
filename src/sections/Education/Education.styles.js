@@ -10,7 +10,8 @@ const EducationGrid = styled.div`
   grid-template-columns: 2fr 11fr;
   grid-template-rows: auto auto auto;
   align-items: flex-start;
-  gap: ${({ theme }) => theme.spacing.medium};
+  column-gap: ${({ theme }) => theme.spacing.medium};
+  row-gap: ${({ theme }) => theme.spacing.large};
   width: 100%;
 
   & > :nth-child(1) {
@@ -36,4 +37,16 @@ const BorderFirstRow = styled.div`
   height: ${({ theme }) => theme.spacing.xlarge};
 `;
 
-export { BorderFirstRow, EducationGrid, EducationHeader };
+const EducationButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: ${({ theme }) => theme.spacing.small};
+`;
+
+export {
+  BorderFirstRow,
+  EducationGrid,
+  EducationHeader,
+  EducationButtonWrapper,
+};

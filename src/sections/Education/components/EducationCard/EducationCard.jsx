@@ -1,38 +1,55 @@
-import { H4, MediumText, Paragraph } from "../../../../components";
 import PropTypes from "prop-types";
+import { CurriculumSvg, SchoolSvg } from "../../../../assets/icons/button";
+import { logoUbbWhite } from "../../../../assets/images/index";
+import { H4, Paragraph } from "../../../../components";
+import { EDUCATION_TEXT } from "../../../../constants/educationText";
+import { EducationButtonWrapper } from "../../Education.styles";
+import ActionEducationButton from "../EducationButton/ActionEducationButton";
 import {
-  Card,
-  CardContent,
+  CardContainer,
+  CardContentLeft,
+  CardContentRight,
   CardHeader,
   CardLogoAnchor,
   CardLogoImg,
 } from "./EducationCard.styles";
-import { EDUCATION_TEXT } from "../../../../constants/educationText";
-import { logoUbbWhite } from "../../../../assets/images/index";
 
-const EducationCard = ({ date, title, description }) => (
-  <>
-    <MediumText>{date}</MediumText>
-    <Card>
-      <CardHeader>
-        <H4>{title}</H4>
-      </CardHeader>
-      <CardContent>
+const EducationCard = ({ title, description }) => {
+  const { universityUrl, curriculumUrl, readMoreUrl } = EDUCATION_TEXT;
+  return (
+    <CardContainer>
+      <CardContentLeft>
         <CardLogoAnchor
-          href={EDUCATION_TEXT.universityUrl}
+          href={universityUrl}
           target="_blank"
           rel="noopener noreferrer"
         >
           <CardLogoImg src={logoUbbWhite} alt="Universidad del Bío-Bío" />
         </CardLogoAnchor>
+        <EducationButtonWrapper>
+          <ActionEducationButton
+            href={curriculumUrl}
+            icon={CurriculumSvg}
+            value="Malla Curricular"
+          />
+          <ActionEducationButton
+            href={readMoreUrl}
+            icon={SchoolSvg}
+            value="Leer más"
+          />
+        </EducationButtonWrapper>
+      </CardContentLeft>
+      <CardContentRight>
+        <CardHeader>
+          <H4>{title}</H4>
+        </CardHeader>
         <Paragraph>{description}</Paragraph>
-      </CardContent>
-    </Card>
-  </>
-);
+      </CardContentRight>
+    </CardContainer>
+  );
+};
 
 EducationCard.propTypes = {
-  date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };

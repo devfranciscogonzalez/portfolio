@@ -1,28 +1,40 @@
 import styled from "styled-components";
 import { logoUbbColor } from "../../../../assets/images";
 
-const Card = styled.article`
+const CardContainer = styled.article`
   display: flex;
-  flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.primary};
-  padding: ${({ theme }) => theme.padding.large};
+  gap: ${({ theme }) => theme.spacing.medium};
+  padding: ${({ theme }) => theme.padding.large} ${({ theme }) => theme.padding.medium};
   border-radius: ${({ theme }) => theme.borderRadius.medium};
   color: ${({ theme }) => theme.colors.text.secondary};
+  background-color: ${({ theme }) => theme.colors.primary};
 `;
 
 const CardHeader = styled.header`
-  padding-bottom: ${({ theme }) => theme.padding.small};
-  border-bottom: 1px dashed ${({ theme }) => theme.colors.utility.border};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.text.secondary};
 `;
 
-const CardContent = styled.div`
+const CardContentLeft = styled.section`
   display: flex;
-  align-items: flex-start;
-  gap: ${({ theme }) => theme.spacing.large};
-  margin-top: ${({ theme }) => theme.spacing.large};
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: ${({ theme }) => theme.spacing.medium};
+  width: 100%;
 `;
+
+const CardContentRight = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: ${({ theme }) => theme.spacing.medium};
+`;
+
 const CardLogoAnchor = styled.a`
-  min-width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 119px;
 
   &:hover img {
     content: url(${logoUbbColor});
@@ -31,6 +43,14 @@ const CardLogoAnchor = styled.a`
 
 const CardLogoImg = styled.img`
   width: 180px;
+  height: 119px;
 `;
 
-export { CardContent, CardHeader, CardLogoAnchor, CardLogoImg, Card };
+export {
+  CardContainer,
+  CardContentLeft,
+  CardContentRight,
+  CardHeader,
+  CardLogoAnchor,
+  CardLogoImg,
+};
