@@ -41,6 +41,7 @@ const ProfileCard = ({ children }) => {
             title={`${acknowledgments.title}🙏`}
             description={acknowledgments.description}
           />
+          <br />
         </CardContentRight>
       </CardContent>
     </CardContainer>

@@ -64,10 +64,6 @@ const CardContentRight = styled.section`
   gap: ${({ theme }) => theme.spacing.xlarge};
   overflow-y: auto;
 
-  & div:last-child {
-    margin-bottom: ${({ theme }) => theme.spacing.xxlarge};
-  }
-
   /* Estilos personalizados para el scrollbar */
   &::-webkit-scrollbar {
     width: 10px;
