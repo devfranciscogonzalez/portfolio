@@ -7,7 +7,7 @@ const EducationHeader = styled.header`
 
 const EducationGrid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 7fr;
+  grid-template-columns: 2fr 11fr;
   grid-template-rows: auto auto auto;
   align-items: flex-start;
   gap: ${({ theme }) => theme.spacing.medium};
@@ -36,41 +36,4 @@ const BorderFirstRow = styled.div`
   height: ${({ theme }) => theme.spacing.xlarge};
 `;
 
-const EducationCard = styled.article`
-  display: flex;
-  flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.primary};
-  padding: ${({ theme }) => theme.padding.large};
-  border-radius: ${({ theme }) => theme.borderRadius.medium};
-  color: ${({ theme }) => theme.colors.text.secondary};
-`;
-
-const CardHeader = styled.header`
-  padding-bottom: ${({ theme }) => theme.padding.small};
-  border-bottom: 1px dashed ${({ theme }) => theme.colors.utility.border};
-`;
-
-const CardContent = styled.div`
-  display: flex;
-  align-items: flex-start;
-  gap: ${({ theme }) => theme.spacing.large};
-  margin-top: ${({ theme }) => theme.spacing.large};
-`;
-const CardLogoAnchor = styled.a`
-  min-width: 140px;
-`;
-
-const CardLogoImg = styled.img`
-  aspect-ratio: 400 / 247;
-`;
-
-export {
-  BorderFirstRow,
-  CardContent,
-  CardHeader,
-  CardLogoAnchor,
-  CardLogoImg,
-  EducationCard,
-  EducationGrid,
-  EducationHeader,
-};
+export { BorderFirstRow, EducationGrid, EducationHeader };

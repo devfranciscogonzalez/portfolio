@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { H4, Paragraph } from "../../../../components";
 import Tag from "../Tag/Tag";
-import { TagGroup } from "./Card.styles";
+import { TagGroup } from "./ProfileCard.styles";
 import { SectionWrapper } from "./SectionCard.styles";
 
 const SectionCard = ({ title, description, additionalInfo, tags }) => (

@@ -8,9 +8,9 @@ import {
   CardContentLeft,
   CardContentRight,
   CardHeader,
-} from "./Card.styles";
+} from "./ProfileCard.styles";
 
-const Card = ({ children }) => {
+const ProfileCard = ({ children }) => {
   const { title, knowledge, technicalSkills, mindset, acknowledgments } =
     PROFILE_TEXT;
 
@@ -47,8 +47,8 @@ const Card = ({ children }) => {
   );
 };
 
-Card.propTypes = {
+ProfileCard.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Card;
+export default ProfileCard;

@@ -59,4 +59,14 @@ const SocialMediaButton = styled.a`
   }
 `;
 
-export { PrimaryButton, SecondaryButton, SocialMediaButton };
+const EducationButton = styled(AnchorButton)`
+  color: ${({ theme }) => theme.colors.text.primary};
+  background-color: ${({ theme }) => theme.colors.tertiary};
+  padding: ${({ theme }) => theme.spacing.small};
+  
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.hover.primary};
+  }
+`;
+
+export { PrimaryButton, SecondaryButton, SocialMediaButton, EducationButton };
