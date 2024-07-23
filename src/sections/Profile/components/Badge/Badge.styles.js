@@ -20,6 +20,7 @@ const BadgeContainer = styled.span`
     min-width: 50%;
     justify-content: center;
     margin-top: ${({ theme }) => theme.spacing.small};
+    font-size: ${({ theme }) => theme.fontSizes.xsmall};
   }
 `;
 

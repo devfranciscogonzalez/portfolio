@@ -1,7 +1,7 @@
 import { PrimaryButton, SecondaryButton } from "./Button.styles";
 import PropTypes from "prop-types";
 
-const ActionButton = ({ href, icon: Icon, isPrimary = false, value = "" }) => {
+const ActionButton = ({ href, icon: Icon, value = "", isPrimary = false }) => {
   const Button = isPrimary ? PrimaryButton : SecondaryButton;
   return (
     <Button

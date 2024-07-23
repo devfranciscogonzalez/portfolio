@@ -61,7 +61,7 @@ export const theme = {
     small: "2px",
     medium: "5px",
     // large: "8px",
-    xlarge: "16px",
+    // xlarge: "16px",
   },
   zIndex: {
     fixed: 1000,

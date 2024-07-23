@@ -28,6 +28,7 @@ const EducationCard = ({ title, description }) => {
         </CardLogoAnchor>
         <EducationButtonWrapper>
           <ActionEducationButton
+            isPrimary
             href={curriculumUrl}
             icon={CurriculumSvg}
             value="Malla Curricular"

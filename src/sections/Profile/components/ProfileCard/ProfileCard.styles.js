@@ -25,6 +25,10 @@ const CardContainer = styled.article`
   &:hover svg path {
     fill: inherit;
   }
+
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+    padding: ${({ theme }) => theme.padding.medium};
+  }
 `;
 
 const CardHeader = styled.header`
@@ -52,6 +56,7 @@ const CardContentLeft = styled.section`
 
   @media (width<= ${({ theme }) => theme.breakpoints.tablet}) {
     width: 100%;
+    min-width: auto;
     gap: ${({ theme }) => theme.spacing.medium};
   }
 `;

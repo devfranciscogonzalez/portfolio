@@ -5,7 +5,7 @@ import {
   Profile,
   Education,
   // Contact,
-  //  Technology
+  Technology,
 } from "./sections";
 import { theme } from "./theme/theme";
 import { Layout } from "./components";
@@ -19,7 +19,7 @@ function App() {
           <Home />
           <Profile />
           <Education />
-          {/* <Technology /> */}
+          <Technology />
           {/* <Contact /> */}
         </Layout>
       </ThemeProvider>

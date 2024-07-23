@@ -48,6 +48,10 @@ const H4 = styled.h4`
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: ${({ theme }) => theme.fontSizes.small};
   }
+
+  @media (width <= ${({ theme }) => theme.breakpoints.smallMobile}) {
+    font-size: ${({ theme }) => theme.fontSizes.xsmall};
+  }
 `;
 
 const SmallText = styled.p`

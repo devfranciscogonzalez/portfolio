@@ -5,9 +5,9 @@ import {
 import PropTypes from "prop-types";
 
 const ActionEducationButton = ({
+  isPrimary = false,
   href,
   icon: Icon,
-  isPrimary = false,
   value = "",
 }) => {
   const Button = isPrimary ? EducationButtonPrimary : EducationButtonSecondary;

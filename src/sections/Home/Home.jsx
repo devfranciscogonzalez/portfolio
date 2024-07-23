@@ -12,9 +12,9 @@ const Home = () => (
       <H2>{USER.profession}</H2>
       <HomeButtonWrapper>
         <ActionButton
+          isPrimary
           href={SOCIAL_LINKS.curriculum}
           icon={DownloadSvg}
-          isPrimary
           value="Descargar CV"
         />
         <ActionButton

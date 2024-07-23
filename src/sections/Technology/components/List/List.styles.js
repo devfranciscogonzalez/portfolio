@@ -2,10 +2,18 @@ import styled from "styled-components";
 
 const List = styled.ul`
   display: grid;
-  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: ${({ theme }) => theme.spacing.medium};
-  padding: 0;
+  width: 100%;
   list-style: none;
+
+  & > :first-child {
+    grid-column: span 2;
+    justify-content: flex-start;
+    padding: ${({ theme }) => theme.padding.medium};
+  }
 `;
 
 const Item = styled.li`
@@ -13,13 +21,13 @@ const Item = styled.li`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: ${({ theme }) => theme.spacing.small};
   height: 180px;
-  width: 180px;
-  padding: 0.5rem 0;
-  border: 2px solid ${({ theme }) => theme.colors.primary};
+  width: 100%;
   background-color: ${({ theme }) => theme.colors.primary};
-  border-radius: 10px;
   color: ${({ theme }) => theme.colors.text.secondary};
+  border-radius: ${({ theme }) => theme.borderRadius.medium};
+
   svg + svg {
     filter: blur(16px);
     opacity: 0.2;
@@ -29,4 +37,24 @@ const Item = styled.li`
   }
 `;
 
-export { List, Item };
+const ItemSpan = styled.li`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: ${({ theme }) => theme.spacing.small};
+  height: 180px;
+  width: 100%;
+  background-color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.text.secondary};
+
+  svg + svg {
+    filter: blur(16px);
+    opacity: 0.2;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+  }
+`;
+
+export { List, Item, ItemSpan };

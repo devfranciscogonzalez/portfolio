@@ -29,13 +29,13 @@ const EducationButton = styled.a`
 
 const EducationButtonPrimary = styled(EducationButton)`
   &:hover {
-    background-color: #2f4697;
+    background-color: #e11113;
   }
 `;
 
 const EducationButtonSecondary = styled(EducationButton)`
   &:hover {
-    background-color: #e11113;
+    background-color: #2f4697;
   }
 `;
 
