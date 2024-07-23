@@ -15,7 +15,7 @@ const CardContainer = styled.article`
 `;
 
 const CardHeader = styled.header`
-  border-bottom: 1px solid ${({ theme }) => theme.colors.text.secondary};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.tertiary};
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     text-align: center;

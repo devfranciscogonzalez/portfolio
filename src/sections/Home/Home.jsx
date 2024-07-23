@@ -6,7 +6,7 @@ import { SOCIAL_LINKS } from "../../constants/socialLinks";
 import { USER } from "../../constants/userInfo";
 
 const Home = () => (
-  <Section $variant="center" id="home">
+  <Section $variant="first" id="home">
     <HomeHero>
       <H1>{USER.name}</H1>
       <H2>{USER.profession}</H2>

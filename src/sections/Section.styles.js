@@ -1,9 +1,15 @@
 import styled, { css } from "styled-components";
 
 const SectionBase = styled.section`
-  min-height: 100dvh;
   display: flex;
+  min-height: 80dvh;
   border-bottom: 1px solid ${({ theme }) => theme.colors.utility.border};
+`;
+
+const firstStyles = css`
+  min-height: 100dvh;
+  justify-content: center;
+  align-items: center;
 `;
 
 const centerStyles = css`
@@ -33,6 +39,8 @@ const Section = styled(SectionBase)`
         return startStyles;
       case "fullWidth":
         return fullWidthStyles;
+      case "first":
+        return firstStyles;
       default:
         return "";
     }
