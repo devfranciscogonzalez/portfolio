@@ -96,8 +96,7 @@ const MobileNavList = styled.ul`
   gap: ${({ theme }) => theme.spacing.medium};
   height: 100%;
   max-height: calc(100dvh - ${({ theme }) => theme.spacing.header});
-  padding: ${({ theme }) => theme.padding.medium}
-    ${({ theme }) => theme.padding.large};
+  padding: ${({ theme }) => theme.padding.medium} ${({ theme }) => theme.padding.large};
   list-style: none;
 
   @media (width <= 768px) {

@@ -8,10 +8,8 @@ const TechnologyContainer = styled.div`
 `;
 
 const TechnologyHeader = styled.header`
-  padding-bottom: ${({ theme }) => theme.padding.large};
   width: 100%;
 `;
-
 export {
   TechnologyHeader,
   TechnologyContainer,

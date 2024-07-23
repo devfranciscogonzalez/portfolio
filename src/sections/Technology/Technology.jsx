@@ -1,5 +1,5 @@
 import * as TechIcons from "../../assets/icons/technologies";
-import { H3, MediumText } from "../../components";
+import { H3, MediumText, Paragraph } from "../../components";
 import { TECHNOLOGIES } from "../../constants/technologies";
 import { Section } from "../Section.styles";
 import { Item, List } from "./components/List/List.styles";
@@ -13,6 +13,10 @@ const TechnologySection = () => (
           <TechnologyHeader>
             <H3>Tecnologías</H3>
           </TechnologyHeader>
+          <Paragraph>
+            A lo largo de mi carrera he trabajado con una variedad de
+            tecnologías y herramientas. A continuación, algunas de ellas.
+          </Paragraph>
         </Item>
         <Item>
           <TechIcons.HTML />
