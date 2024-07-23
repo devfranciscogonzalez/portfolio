@@ -7,3 +7,4 @@ export { default as Laravel } from "./Laravel";
 export { default as React } from "./React";
 export { default as SQL } from "./Sql";
 export { default as TypeScript } from "./TypeScript";
+export { default as PHP } from "./Php";

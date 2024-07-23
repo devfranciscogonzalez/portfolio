@@ -2,10 +2,7 @@ import * as TechIcons from "../../assets/icons/technologies";
 import { H3, MediumText } from "../../components";
 import { TECHNOLOGIES } from "../../constants/technologies";
 import { Section } from "../Section.styles";
-import {
-  Item,
-  List
-} from "./components/List/List.styles";
+import { Item, List } from "./components/List/List.styles";
 import { TechnologyContainer, TechnologyHeader } from "./Technology.styles";
 
 const TechnologySection = () => (
@@ -41,6 +38,11 @@ const TechnologySection = () => (
           <TechIcons.React />
           <TechIcons.React />
           <MediumText>React</MediumText>
+        </Item>
+        <Item>
+          <TechIcons.PHP />
+          <TechIcons.PHP />
+          <MediumText>PHP</MediumText>
         </Item>
         <Item>
           <TechIcons.Laravel />

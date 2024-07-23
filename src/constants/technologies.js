@@ -5,6 +5,7 @@ const TECHNOLOGIES = {
   typescript: "TypeScript",
   react: "React",
   laravel: "Laravel",
+  php: "PHP",
   sql: "SQL",
   git: "Git",
   figma: "Figma",
