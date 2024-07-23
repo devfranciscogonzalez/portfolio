@@ -28,7 +28,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    min-height: 100dvh;
     background-color: ${({ theme }) => theme.colors.background.light};
     color: ${({ theme }) => theme.colors.text.primary};
   }

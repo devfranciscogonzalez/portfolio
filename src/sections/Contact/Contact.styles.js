@@ -3,7 +3,7 @@ import styled from "styled-components";
 const ContactHeader = styled.header`
   padding-bottom: ${({ theme }) => theme.padding.large};
   width: 100%;
-  color: ${({ theme }) => theme.colors.text.secondary};
+  color: ${({ theme }) => theme.colors.text.primary};
 `;
 
 const ContactFormWrapper = styled.div`

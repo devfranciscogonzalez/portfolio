@@ -4,7 +4,7 @@ import {
   Home,
   Profile,
   Education,
-  // Contact,
+  Contact,
   Technology,
 } from "./sections";
 import { theme } from "./theme/theme";
@@ -20,7 +20,7 @@ function App() {
           <Profile />
           <Education />
           <Technology />
-          {/* <Contact /> */}
+          <Contact />
         </Layout>
       </ThemeProvider>
     </>

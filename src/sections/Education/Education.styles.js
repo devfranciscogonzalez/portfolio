@@ -46,7 +46,7 @@ const EducationButtonWrapper = styled.div`
 
 export {
   BorderFirstRow,
+  EducationButtonWrapper,
   EducationGrid,
   EducationHeader,
-  EducationButtonWrapper,
 };

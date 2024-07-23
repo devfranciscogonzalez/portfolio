@@ -1,76 +1,42 @@
 import * as TechIcons from "../../assets/icons/technologies";
-import { H3, MediumText, Paragraph } from "../../components";
-import { TECHNOLOGIES } from "../../constants/technologies";
+import { H3, Paragraph } from "../../components";
+import { TECHNOLOGIES_TEXT } from "../../constants/technologies";
 import { Section } from "../Section.styles";
 import { Item, List } from "./components/List/List.styles";
-import { TechnologyContainer, TechnologyHeader } from "./Technology.styles";
+import TechnologyItem from "./components/List/TechnologyItem";
+import { TechnologyHeader } from "./Technology.styles";
 
-const TechnologySection = () => (
-  <Section $variant="start" id="technology">
-    <TechnologyContainer>
-      <List>
-        <Item>
-          <TechnologyHeader>
-            <H3>Tecnologías</H3>
-          </TechnologyHeader>
-          <Paragraph>
-            A lo largo de mi carrera he trabajado con una variedad de
-            tecnologías y herramientas. A continuación, algunas de ellas.
-          </Paragraph>
-        </Item>
-        <Item>
-          <TechIcons.HTML />
-          <TechIcons.HTML />
-          <MediumText>{TECHNOLOGIES.html}</MediumText>
-        </Item>
-        <Item>
-          <TechIcons.CSS />
-          <TechIcons.CSS />
-          <MediumText>CSS</MediumText>
-        </Item>
-        <Item>
-          <TechIcons.JavaScript />
-          <TechIcons.JavaScript />
-          <MediumText>JavaScript</MediumText>
-        </Item>
-        <Item>
-          <TechIcons.TypeScript />
-          <TechIcons.TypeScript />
-          <MediumText>TypeScript</MediumText>
-        </Item>
-        <Item>
-          <TechIcons.React />
-          <TechIcons.React />
-          <MediumText>React</MediumText>
-        </Item>
-        <Item>
-          <TechIcons.PHP />
-          <TechIcons.PHP />
-          <MediumText>PHP</MediumText>
-        </Item>
-        <Item>
-          <TechIcons.Laravel />
-          <TechIcons.Laravel />
-          <MediumText>Laravel</MediumText>
-        </Item>
-        <Item>
-          <TechIcons.SQL />
-          <TechIcons.SQL />
-          <MediumText>SQL</MediumText>
-        </Item>
-        <Item>
-          <TechIcons.Git />
-          <TechIcons.Git />
-          <MediumText>Git</MediumText>
-        </Item>
-        <Item>
-          <TechIcons.Figma />
-          <TechIcons.Figma />
-          <MediumText>Figma</MediumText>
-        </Item>
-      </List>
-    </TechnologyContainer>
-  </Section>
-);
+const TechnologySection = () => {
+  const { title, description, technologies } = TECHNOLOGIES_TEXT;
+
+  const techItems = [
+    { icon: TechIcons.HTML, name: technologies.html },
+    { icon: TechIcons.CSS, name: technologies.css },
+    { icon: TechIcons.JavaScript, name: technologies.javascript },
+    { icon: TechIcons.TypeScript, name: technologies.typescript },
+    { icon: TechIcons.React, name: technologies.react },
+    { icon: TechIcons.PHP, name: technologies.php },
+    { icon: TechIcons.Laravel, name: technologies.laravel },
+    { icon: TechIcons.SQL, name: technologies.sql },
+    { icon: TechIcons.Git, name: technologies.git },
+    { icon: TechIcons.Figma, name: technologies.figma },
+  ];
+
+  return (
+    <Section $variant="center" id="technology">
+        <List>
+          <Item>
+            <TechnologyHeader>
+              <H3>{title}</H3>
+            </TechnologyHeader>
+            <Paragraph>{description}</Paragraph>
+          </Item>
+          {techItems.map(({ icon, name }) => (
+            <TechnologyItem key={name} icon={icon} name={name} />
+          ))}
+        </List>
+    </Section>
+  );
+};
 
 export default TechnologySection;

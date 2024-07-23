@@ -4,14 +4,15 @@ import { ContactForm, EmailCopy } from "./components";
 import { ContactFormWrapper, ContactHeader } from "./Contact.styles";
 
 const ContactSection = () => (
-  <Section $variant="center" id="contact">
+  <Section id="contact">
+
     <ContactHeader>
       <H3>Contaco</H3>
     </ContactHeader>
     <ContactFormWrapper>
       <ContactForm />
+    {/* <EmailCopy /> */}
     </ContactFormWrapper>
-    <EmailCopy />
   </Section>
 );
 

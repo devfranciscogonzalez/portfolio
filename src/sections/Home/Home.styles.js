@@ -1,17 +1,5 @@
 import styled from "styled-components";
 
-const HomeHero = styled.article`
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  text-align: start;
-
-  @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
-    align-items: center;
-    text-align: center;
-  }
-`;
-
 const HomeButtonWrapper = styled.div`
   display: flex;
   gap: ${({ theme }) => theme.spacing.medium};
@@ -23,4 +11,4 @@ const HomeButtonWrapper = styled.div`
   }
 `;
 
-export { HomeHero, HomeButtonWrapper };
+export { HomeButtonWrapper };
