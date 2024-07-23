@@ -15,12 +15,12 @@ const firstStyles = css`
   align-items: flex-start;
   min-height: 100dvh;
 `;
-// PROFILE & CONTACT
+// PROFILE & CONTACT & TECHNOLOGY
 const centerStyles = css`
   align-items: center;
 `;
 
-// Education
+// EDUCATION
 const startStyles = css`
   flex-direction: column;
   justify-content: center;

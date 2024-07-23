@@ -1,4 +1,11 @@
-import { CopyButton, EmailContainer, EmailText } from "./EmailCopy.styles";
+import { CopySvg, EmailSvg } from "../../../../assets/icons/button";
+import {
+  CopyButtonPrimary,
+  CopyButtonSecondary,
+  CopyButtonWrapper,
+  EmailContainer,
+  EmailText,
+} from "./EmailCopy.styles";
 
 const email = "devfranciscogonzalez@gmail.com";
 
@@ -17,7 +24,14 @@ const EmailCopy = () => {
   return (
     <EmailContainer>
       <EmailText>{email}</EmailText>
-      <CopyButton onClick={copyToClipboard}>Copiar</CopyButton>
+      <CopyButtonWrapper>
+        <CopyButtonPrimary onClick={copyToClipboard}>
+          <CopySvg />
+        </CopyButtonPrimary>
+        <CopyButtonSecondary onClick={copyToClipboard}>
+          <EmailSvg />
+        </CopyButtonSecondary>
+      </CopyButtonWrapper>
     </EmailContainer>
   );
 };

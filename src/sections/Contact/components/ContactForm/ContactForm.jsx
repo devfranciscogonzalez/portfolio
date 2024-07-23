@@ -1,7 +1,14 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import { FormFieldset, FormLabel } from "./ContactForm.styles";
-// import { FormFieldset } from "./ContactForm.styles";
+import { SendSvg } from "../../../../assets/icons/button";
+import {
+  ButtonForm,
+  Form,
+  FormFieldset,
+  FormLabel,
+  Input,
+  TextArea,
+} from "./ContactForm.styles";
 
 const EMAILJS_ID = {
   serviceId: "service_jn22ztn",
@@ -30,42 +37,45 @@ const ContactForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <Form ref={form} onSubmit={sendEmail}>
       <FormFieldset>
-        <legend>Formulario de Contacto</legend>
+        {/* <Legend>Formulario</Legend> */}
         <FormLabel>
           Nombre
-          <input
+          <Input
             type="text"
             name="user_name"
             maxLength={50}
             required
-            placeholder="Nombre"
+            placeholder="Francisco González"
           />
         </FormLabel>
         <FormLabel>
           Email
-          <input
+          <Input
             type="email"
             name="user_email"
             maxLength={50}
             required
-            placeholder="Email"
+            placeholder="devfranciscogonzalez@gmail.com"
           />
         </FormLabel>
         <FormLabel>
           ¿En qué puedo ayudarte?
-          <textarea
+          <TextArea
             name="message"
             rows={4}
             maxLength={500}
             required
-            placeholder="Mensaje"
+            placeholder="Estoy interesado en colaborar contigo en un proyecto..."
           />
         </FormLabel>
-        <button type="submit">Enviar</button>
+        <ButtonForm type="submit">
+          <SendSvg />
+          Enviar
+        </ButtonForm>
       </FormFieldset>
-    </form>
+    </Form>
   );
 };
 

@@ -1,37 +1,81 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const EmailContainer = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: fit-content;
+
+  color: ${({ theme }) => theme.colors.primary};
+  outline: 1px solid ${({ theme }) => theme.colors.utility.border};
+
+  background-color: ${({ theme }) => theme.colors.secondary};
 `;
 
-const EmailText = styled.span`
-  font-size: 16px;
-  color: #333;
-`;
-
-const CopyButton = styled.button`
-  padding: 5px 10px;
-  font-size: 14px;
+const EmailText = styled.a`
+  font-family: ${({ theme }) => theme.fonts.primary};
+  font-size: ${({ theme }) => theme.fontSizes.small};
+  font-weight: 300;
+  
   cursor: pointer;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+
+  padding: ${({ theme }) => theme.padding.medium};
 
   &:hover {
-    background-color: #0056b3;
-  }
-
-  &:active {
-    background-color: #004494;
+    color: ${({ theme }) => theme.colors.hover.primary};
+    text-decoration: underline;
   }
 `;
 
-export { EmailContainer, EmailText, CopyButton };
+const CopyButtonPrimary = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: ${({ theme }) => theme.spacing.xsmall};
+
+  font-family: ${({ theme }) => theme.fonts.primary};
+  font-size: ${({ theme }) => theme.fontSizes.small};
+  text-align: center;
+  text-decoration: none;
+
+  border: none;
+  border-radius: ${({ theme }) => theme.borderRadius.medium};
+  cursor: pointer;
+
+  color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.secondary};
+  outline: 1px solid ${({ theme }) => theme.colors.utility.border};
+  transition: color 0.3s ease, background-color 0.3s ease;
+`;
+
+const CopyButtonSecondary = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: ${({ theme }) => theme.spacing.xsmall};
+
+  font-family: ${({ theme }) => theme.fonts.primary};
+  font-size: ${({ theme }) => theme.fontSizes.small};
+  text-align: center;
+  text-decoration: none;
+
+  background-color: ${({ theme }) => theme.colors.secondary};
+  cursor: pointer;
+  border: none;
+
+  color: ${({ theme }) => theme.colors.text.primary};
+`;
+const CopyButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: ${({ theme }) => theme.spacing.small};
+  background-color: ${({ theme }) => theme.colors.hover.secondary};
+`;
+
+export {
+  EmailContainer,
+  EmailText,
+  CopyButtonPrimary,
+  CopyButtonSecondary,
+  CopyButtonWrapper,
+};

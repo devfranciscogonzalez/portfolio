@@ -5,7 +5,7 @@ const AnchorButton = styled.a`
   justify-content: center;
   align-items: center;
   gap: ${({ theme }) => theme.spacing.small};
-  padding: ${({ theme }) => theme.spacing.medium};
+  padding: ${({ theme }) => theme.padding.medium};
 
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.small};
@@ -35,7 +35,7 @@ const PrimaryButton = styled(AnchorButton)`
 
 const SecondaryButton = styled(AnchorButton)`
   color: ${({ theme }) => theme.colors.primary};
-  background-color: transparent;
+  background-color: ${({ theme }) => theme.colors.secondary};
   outline: 1px solid ${({ theme }) => theme.colors.utility.border};
 
   &:hover {
@@ -59,14 +59,4 @@ const SocialMediaButton = styled.a`
   }
 `;
 
-const EducationButton = styled(AnchorButton)`
-  color: ${({ theme }) => theme.colors.text.primary};
-  background-color: ${({ theme }) => theme.colors.tertiary};
-  padding: ${({ theme }) => theme.spacing.small};
-
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.hover.primary};
-  }
-`;
-
-export { PrimaryButton, SecondaryButton, SocialMediaButton, EducationButton };
+export { PrimaryButton, SecondaryButton, SocialMediaButton };
