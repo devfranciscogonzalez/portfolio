@@ -4,19 +4,16 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.padding.medium};
-  padding: ${({ theme }) => theme.padding.medium};
   background-color: ${({ theme }) => theme.colors.secondary};
   border-radius: ${({ theme }) => theme.borderRadius.medium};
   color: ${({ theme }) => theme.colors.text.primary};
   width: 100%;
 `;
 
-
 const FormFieldset = styled.fieldset`
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.padding.medium};
-  padding: ${({ theme }) => theme.padding.medium};
   border: none;
 `;
 const FormLabel = styled.label`
@@ -34,6 +31,8 @@ const Input = styled.input`
   color: ${({ theme }) => theme.colors.text.tertiary};
 
   &:focus {
+    background-color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.text.primary};
   }
 `;
 
@@ -43,6 +42,7 @@ const TextArea = styled.textarea`
   border: none;
   background-color: ${({ theme }) => theme.colors.hover.secondary};
   color: ${({ theme }) => theme.colors.text.tertiary};
+  font-size: ${({ theme }) => theme.fontSizes.small};
 `;
 
 const ButtonForm = styled.button`

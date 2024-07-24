@@ -14,6 +14,10 @@ const List = styled.ul`
     justify-content: flex-start;
     padding: ${({ theme }) => theme.padding.medium};
   }
+
+  @media (width <= ${({ theme }) => theme.breakpoints.smallMobile}) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 const Item = styled.li`

@@ -10,22 +10,33 @@ const ContactContainer = styled.div`
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     flex-direction: column;
+    gap: ${({ theme }) => theme.spacing.medium};
+    align-items: center;
   }
 `;
 
 const ContactHeader = styled.header`
-  width: 50%;
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.spacing.medium};
+  width: 50%;
+
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+    width: 100%;
+  }
 `;
 
 const ContactFormWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   width: 50%;
+  gap: ${({ theme }) => theme.spacing.medium};
+  
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+    width: 100%;
+  }
 `;
 
 export { ContactHeader, ContactFormWrapper, ContactContainer };

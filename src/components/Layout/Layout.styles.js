@@ -15,9 +15,10 @@ const MainContainer = styled.main`
   max-width: ${({ theme }) => theme.breakpoints.laptop};
   padding: 0 ${({ theme }) => theme.padding.large};
 
-  /* @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
-    gap: ${({ theme }) => theme.spacing.xlarge};
-  } */
+  @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
+    /* gap: ${({ theme }) => theme.spacing.xlarge}; */
+    padding: 0 ${({ theme }) => theme.padding.medium};
+  }
 `;
 
 export { CenteredLayout, MainContainer };

@@ -86,8 +86,13 @@ const CardContentRight = styled.section`
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background-color: ${({ theme }) => theme.colors.primaryHover};
+    background-color: ${({ theme }) => theme.colors.hover.primary};
+
   }
+  /*     
+  scrollbar-color: ${({ theme }) => theme.colors.primary} ${({ theme }) =>
+    theme.colors.secondary};
+  scrollbar-width: thin; */
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     width: 100%;

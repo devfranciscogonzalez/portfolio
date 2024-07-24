@@ -4,6 +4,7 @@ import {
   CopyButtonSecondary,
   CopyButtonWrapper,
   EmailContainer,
+  EmailOutline,
   EmailText,
 } from "./EmailCopy.styles";
 
@@ -23,15 +24,17 @@ const EmailCopy = () => {
 
   return (
     <EmailContainer>
-      <EmailText>{email}</EmailText>
-      <CopyButtonWrapper>
-        <CopyButtonPrimary onClick={copyToClipboard}>
-          <CopySvg />
-        </CopyButtonPrimary>
-        <CopyButtonSecondary onClick={copyToClipboard}>
-          <EmailSvg />
-        </CopyButtonSecondary>
-      </CopyButtonWrapper>
+      <EmailOutline>
+        <EmailText>{email}</EmailText>
+        <CopyButtonWrapper>
+          <CopyButtonPrimary onClick={copyToClipboard}>
+            <CopySvg />
+          </CopyButtonPrimary>
+          <CopyButtonSecondary onClick={copyToClipboard}>
+            <EmailSvg />
+          </CopyButtonSecondary>
+        </CopyButtonWrapper>
+      </EmailOutline>
     </EmailContainer>
   );
 };

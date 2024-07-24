@@ -14,10 +14,8 @@ const ContactSection = () => (
         <H3>Contaco</H3>
         <Paragraph>
           ¡Gracias por visitar mi portafolio! Si tienes alguna pregunta,
-          propuesta de colaboración o simplemente quieres saludar, no dudes en
-          ponerte en contacto conmigo. Estoy siempre abierto a nuevas
-          oportunidades y emocionado por conectar con personas apasionadas por
-          la tecnología.
+          propuesta de colaboración completa el formulario y me pondre en
+          contacto contigo o puedes contactarme por mis redes sociales.
         </Paragraph>
       </ContactHeader>
       <ContactFormWrapper>
