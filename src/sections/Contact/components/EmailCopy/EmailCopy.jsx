@@ -26,7 +26,7 @@ const EmailCopy = () => {
         setIsCopy(true);
         setTimeout(() => {
           setIsCopy(false);
-        }, 2000);
+        }, 1000);
       })
       .catch((err) => {
         console.error("Failed to copy: ", err);
@@ -36,11 +36,19 @@ const EmailCopy = () => {
   return (
     <EmailContainer>
       <EmailOutline>
-        <EmailText>{email}</EmailText>
+        <EmailText
+          href={SOCIAL_LINKS.email}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Correo Electrónico"
+        >
+          {email}
+        </EmailText>
         <CopyButtonWrapper>
           <CopyButtonPrimary
             onClick={copyToClipboard}
             aria-label="Copiar Correo"
+            disabled={isCopy}
           >
             {isCopy ? <CopyCheckSvg /> : <CopySvg />}
           </CopyButtonPrimary>

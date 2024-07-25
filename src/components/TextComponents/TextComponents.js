@@ -77,7 +77,7 @@ const Paragraph = styled.p`
   font-weight: 300;
   /* color: ${({ theme }) => theme.colors.text}; */
 
-  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (width <= ${({ theme }) => theme.breakpoints.laptop}) {
     font-size: ${({ theme }) => theme.fontSizes.small};
   }
 `;
