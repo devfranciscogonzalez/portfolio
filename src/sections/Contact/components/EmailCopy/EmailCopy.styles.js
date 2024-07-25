@@ -6,7 +6,6 @@ const EmailContainer = styled.div`
   align-items: center;
   width: 100%;
 
-
   background-color: ${({ theme }) => theme.colors.secondary};
 `;
 
