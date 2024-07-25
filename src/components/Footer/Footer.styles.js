@@ -2,14 +2,30 @@ import styled from "styled-components";
 
 const FooterContainer = styled.footer`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: ${({ theme }) => theme.spacing.medium};
+  flex-direction: column;
   width: 100%;
   max-width: ${({ theme }) => theme.breakpoints.laptop};
-  padding: ${({ theme }) => theme.padding.large};
+  padding: 0 ${({ theme }) => theme.padding.large};
 
   text-align: center;
+`;
+
+const HrFooter = styled.hr`
+  width: 100%;
+  border: 0;
+  border-top: 1px solid ${({ theme }) => theme.colors.utility.border};
+`;
+
+const FooterContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: ${({ theme }) => theme.padding.medium} 0;
+
+  @media (width < ${({ theme }) => theme.breakpoints.mobile}) {
+    flex-direction: column;
+    gap: ${({ theme }) => theme.spacing.small};
+  }
 `;
 
 const FooterWrapperSocialMedia = styled.div`
@@ -28,4 +44,10 @@ const FooterSpan = styled.span`
   text-align: center;
 `;
 
-export { FooterContainer, FooterWrapperSocialMedia, FooterSpan };
+export {
+  FooterContainer,
+  FooterWrapperSocialMedia,
+  FooterSpan,
+  HrFooter,
+  FooterContent,
+};
