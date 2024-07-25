@@ -4,3 +4,4 @@ export { default as CurriculumSvg } from "./CurriculumSvg.jsx";
 export { default as SchoolSvg } from "./SchoolSvg.jsx";
 export { default as SendSvg } from "./SendSvg.jsx";
 export { default as CopySvg } from "./CopySvg.jsx";
+export { default as CopyCheckSvg } from "./CopyCheckSvg.jsx";

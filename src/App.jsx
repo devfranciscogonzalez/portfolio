@@ -6,18 +6,16 @@ import { Layout } from "./components";
 
 function App() {
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Layout>
-          <Home />
-          <Profile />
-          <Education />
-          <Technology />
-          <Contact />
-        </Layout>
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Layout>
+        <Home />
+        <Profile />
+        <Education />
+        <Technology />
+        <Contact />
+      </Layout>
+    </ThemeProvider>
   );
 }
 

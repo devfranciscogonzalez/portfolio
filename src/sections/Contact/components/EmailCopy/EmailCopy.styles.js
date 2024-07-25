@@ -61,7 +61,7 @@ const CopyButtonPrimary = styled.button`
   }
 `;
 
-const CopyButtonSecondary = styled.button`
+const CopyButtonSecondary = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
