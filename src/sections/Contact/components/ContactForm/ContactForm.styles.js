@@ -43,6 +43,13 @@ const TextArea = styled.textarea`
   background-color: ${({ theme }) => theme.colors.hover.secondary};
   color: ${({ theme }) => theme.colors.text.tertiary};
   font-size: ${({ theme }) => theme.fontSizes.small};
+  resize: vertical;
+  min-height: 100px;
+
+  &:focus {
+    background-color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.text.primary};
+  }
 `;
 
 const ButtonForm = styled.button`
