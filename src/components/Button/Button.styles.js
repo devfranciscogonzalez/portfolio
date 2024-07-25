@@ -31,6 +31,10 @@ const PrimaryButton = styled(AnchorButton)`
   &:hover {
     background-color: ${({ theme }) => theme.colors.hover.primary};
   }
+
+  & svg {
+    fill: ${({ theme }) => theme.colors.text.secondary};
+  }
 `;
 
 const SecondaryButton = styled(AnchorButton)`
@@ -40,6 +44,10 @@ const SecondaryButton = styled(AnchorButton)`
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.hover.secondary};
+  }
+
+  & svg {
+    fill: ${({ theme }) => theme.colors.primary};
   }
 `;
 

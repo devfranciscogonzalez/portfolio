@@ -1,13 +1,9 @@
-import { theme } from "../../../theme/theme";
 import { Svg } from "../icon.styles";
 
 const EmailSvg = () => {
   return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 64 512 384">
-      <path
-        fill={theme.colors.primary}
-        d="M64 112c-9 0-16 7-16 16v22l173 142c20 17 50 17 71 0l172-142v-22c0-9-7-16-16-16H64zM48 212v172c0 9 7 16 16 16h384c9 0 16-7 16-16V212L322 329c-38 31-94 31-132 0L48 212zM0 128c0-35 29-64 64-64h384c35 0 64 29 64 64v256c0 35-29 64-64 64H64c-35 0-64-29-64-64V128z"
-      />
+    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path d="M48 64a48 48 0 0 0-29 86l218 164c11 8 27 8 38 0l218-164a48 48 0 0 0-29-86H48zM0 176v208c0 35 29 64 64 64h384c35 0 64-29 64-64V176L294 339a64 64 0 0 1-76 0L0 176z" />
     </Svg>
   );
 };
