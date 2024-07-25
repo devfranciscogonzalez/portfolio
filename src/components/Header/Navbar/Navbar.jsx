@@ -46,7 +46,7 @@ const Navbar = () => {
 
   return (
     <Nav $menuOpen={menuOpen}>
-      <MenuButton onClick={toggleMenu}>
+      <MenuButton onClick={toggleMenu} aria-label="Botón de menú">
         <NavbarSvg isOpen={menuOpen} />
       </MenuButton>
       <NavList>
@@ -69,8 +69,8 @@ const Navbar = () => {
               <a
                 href={`#${id}`}
                 className={activeSection === id ? "active" : ""}
-                aria-label={label}
                 onClick={toggleMenu}
+                aria-label={label}
               >
                 {label}
               </a>
