@@ -1,11 +1,12 @@
-import { DownloadSvg, EmailSvg } from "../../assets/icons/button";
+import { Download, Email } from "../../assets/icons/button";
+import logo from "../../assets/logo/logo.svg";
 import { ActionButton, H1, H2 } from "../../components";
 import { SOCIAL_LINKS } from "../../constants/socialLinks";
 import { USER } from "../../constants/userInfo";
 import { Section } from "../Section.styles";
 import AvailableForWork from "./components/AvailableForWork/AvailableForWork";
 import { HomeButtonWrapper } from "./Home.styles";
-import logo from "../../assets/logo/logo.svg";
+
 const Home = () => (
   <Section $variant="center" id="home">
     <div style={{ width: "60%" }}>
@@ -16,12 +17,12 @@ const Home = () => (
         <ActionButton
           isPrimary
           href={SOCIAL_LINKS.curriculum}
-          icon={DownloadSvg}
+          icon={Download}
           value="Descargar CV"
         />
         <ActionButton
           href={SOCIAL_LINKS.email}
-          icon={EmailSvg}
+          icon={Email}
           value="Correo Electrónico"
         />
       </HomeButtonWrapper>

@@ -1,7 +1,7 @@
-import { SvgTechnology } from "../icon.styles";
+import { Svg } from "../icon.styles";
 
 const Css = () => (
-  <SvgTechnology xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+  <Svg $size="xlarge"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
     <path fill="#0c73b8" d="M41 460 0 0h451l-41 460-185 52" />
     <path fill="#30a9dc" d="m226 472 149-41 35-394H226" />
     <path
@@ -12,6 +12,6 @@ const Css = () => (
       fill="#fff"
       d="M226 265h69l-7 73-62 17v59l115-32 26-288H226v56h80l-6 58h-74z"
     />
-  </SvgTechnology>
+  </Svg>
 );
 export default Css;

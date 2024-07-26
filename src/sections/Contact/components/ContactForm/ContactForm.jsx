@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import { SendSvg } from "../../../../assets/icons/button";
+import { Send } from "../../../../assets/icons/button";
 import {
   ButtonForm,
   Form,
@@ -71,7 +71,7 @@ const ContactForm = () => {
           />
         </FormLabel>
         <ButtonForm type="submit">
-          <SendSvg />
+          <Send />
           Enviar
         </ButtonForm>
       </FormFieldset>

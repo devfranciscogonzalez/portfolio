@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { CurriculumSvg, SchoolSvg } from "../../../../assets/icons/button";
+import { Curriculum, School } from "../../../../assets/icons/button";
 import { logoUbbWhite } from "../../../../assets/images/index";
 import { H4, Paragraph } from "../../../../components";
 import { EDUCATION_TEXT } from "../../../../constants/educationText";
@@ -30,12 +30,12 @@ const EducationCard = ({ title, description }) => {
           <ActionEducationButton
             isPrimary
             href={curriculumUrl}
-            icon={CurriculumSvg}
+            icon={Curriculum}
             value="Malla Curricular"
           />
           <ActionEducationButton
             href={readMoreUrl}
-            icon={SchoolSvg}
+            icon={School}
             value="Leer más"
           />
         </EducationButtonWrapper>

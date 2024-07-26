@@ -4,10 +4,11 @@ const Nav = styled.nav`
   width: 100%;
   max-width: ${({ theme }) => theme.breakpoints.desktop};
   height: ${({ theme }) => theme.spacing.xxlarge};
+
   border-radius: ${({ theme }) => theme.borderRadius.medium};
-  background-color: hsla(44, 100%, 93%, 0.2);
-  /* box-shadow: 0 2px 6px 0 ${({ theme }) => theme.colors.utility.shadow}; */
   outline: 1px solid ${({ theme }) => theme.colors.utility.border};
+
+  background-color: hsla(44, 100%, 93%, 0.2);
   backdrop-filter: blur(10px);
 
   @media (width <= 768px) {
@@ -49,7 +50,7 @@ const NavItem = styled.li`
     font-family: ${({ theme }) => theme.fonts.secondary};
     font-weight: 400;
     font-size: ${({ theme }) => theme.fontSizes.small};
-    letter-spacing: ${({ theme }) => theme.letterSpacings.small};
+    letter-spacing: ${({ theme }) => theme.letterSpacings.medium};
     color: ${({ theme }) => theme.colors.text.primary};
     text-transform: uppercase;
     cursor: pointer;
@@ -90,6 +91,7 @@ const NavItem = styled.li`
 
 const MobileNavList = styled.ul`
   display: none;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -120,10 +122,19 @@ const MenuButton = styled.button`
 `;
 
 const Svg = styled.svg`
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   fill: ${({ theme }) => theme.colors.primary};
   cursor: pointer;
+  transition: fill 0.3s ease;
+  &:hover {
+    fill: ${({ theme }) => theme.colors.hover.primary};
+  }
+
+  @media (width <= ${({ theme }) => theme.breakpoints.smallMobile}) {
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 const Rect = styled.rect`
@@ -136,6 +147,8 @@ const SocialMediaWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: ${({ theme }) => theme.spacing.small};
+  position: absolute;
+  bottom: ${({ theme }) => theme.spacing.medium};
 `;
 
 export {

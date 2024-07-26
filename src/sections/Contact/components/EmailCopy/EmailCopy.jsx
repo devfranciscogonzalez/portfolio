@@ -1,9 +1,5 @@
 import { useState } from "react";
-import {
-  CopySvg,
-  EmailSvg,
-  CopyCheckSvg,
-} from "../../../../assets/icons/button";
+import { CopyCheck, Copy, Email } from "../../../../assets/icons/button";
 import { SOCIAL_LINKS } from "../../../../constants/socialLinks";
 import {
   CopyButtonPrimary,
@@ -50,7 +46,7 @@ const EmailCopy = () => {
             aria-label="Copiar Correo"
             disabled={isCopy}
           >
-            {isCopy ? <CopyCheckSvg /> : <CopySvg />}
+            {isCopy ? <CopyCheck /> : <Copy />}
           </CopyButtonPrimary>
           <CopyButtonSecondary
             href={SOCIAL_LINKS.email}
@@ -58,7 +54,7 @@ const EmailCopy = () => {
             rel="noopener noreferrer"
             aria-label="Correo Electrónico"
           >
-            <EmailSvg />
+            <Email />
           </CopyButtonSecondary>
         </CopyButtonWrapper>
       </EmailOutline>

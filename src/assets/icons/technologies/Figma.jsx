@@ -1,9 +1,9 @@
-import { SvgTechnology } from "../icon.styles";
+import { Svg } from "../icon.styles";
 
 const Figma = () => (
-  <SvgTechnology
+  <Svg
+    $size="xlarge"
     fill="none"
-    // viewBox="0 0 55 80"
     viewBox="-10 0 70 80"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -19,6 +19,6 @@ const Figma = () => (
         <path fill="#fff" d="M0 0h53v80H0z" />
       </clipPath>
     </defs>
-  </SvgTechnology>
+  </Svg>
 );
 export default Figma;

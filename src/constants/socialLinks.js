@@ -1,5 +1,4 @@
 const SOCIAL_LINKS = {
-  twitter: "https://x.com/devfranciscog",
   linkedin: "https://linkedin.com/in/devfranciscog",
   instagram: "https://www.instagram.com/fanchi.gp",
   github: "https://github.com/devfranciscog",

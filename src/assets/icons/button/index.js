@@ -1,7 +1,7 @@
-export { default as DownloadSvg } from "./DownloadSvg.jsx";
-export { default as EmailSvg } from "./EmailSvg.jsx";
-export { default as CurriculumSvg } from "./CurriculumSvg.jsx";
-export { default as SchoolSvg } from "./SchoolSvg.jsx";
-export { default as SendSvg } from "./SendSvg.jsx";
-export { default as CopySvg } from "./CopySvg.jsx";
-export { default as CopyCheckSvg } from "./CopyCheckSvg.jsx";
+export { default as Download } from "./Download.jsx";
+export { default as Email } from "./Email.jsx";
+export { default as Curriculum } from "./Curriculum.jsx";
+export { default as School } from "./School.jsx";
+export { default as Send } from "./Send.jsx";
+export { default as Copy } from "./Copy.jsx";
+export { default as CopyCheck } from "./CopyCheck.jsx";

@@ -1,6 +1,6 @@
 import { Svg } from "../icon.styles";
 
-const CopyCheckSvg = () => {
+const CopyCheck = () => {
   return (
     <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
       <path
@@ -11,4 +11,4 @@ const CopyCheckSvg = () => {
   );
 };
 
-export default CopyCheckSvg;
+export default CopyCheck;

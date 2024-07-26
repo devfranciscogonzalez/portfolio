@@ -1,6 +1,4 @@
-export {default as DiscordSvg} from "./DiscordSvg";
-export {default as EmailSocialSvg} from "./EmailSocialSvg";
-export {default as GitHubSvg} from "./GitHubSvg";
-export {default as InstagramSvg} from "./InstagramSvg";
-export {default as LinkedInSvg} from "./LinkedInSvg";
-export {default as TwitterSvg} from "./TwitterSvg";
+export { default as Discord } from "./Discord";
+export { default as GitHub } from "./GitHub";
+export { default as Instagram } from "./Instagram";
+export { default as LinkedIn } from "./LinkedIn";

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import NavbarSvg from "./NavbarSvg";
-import { SECTIONS } from "../../../constants/sections";
-import SocialMedia from "../../SocialMedia/SocialMedia";
+import { SECTIONS } from "../../constants/sections";
+import SocialMedia from "../SocialMedia/SocialMedia";
 import {
   MenuButton,
   MobileNavList,
