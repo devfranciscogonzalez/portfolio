@@ -95,7 +95,7 @@ const MobileNavList = styled.ul`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: ${({ theme }) => theme.spacing.medium};
+  gap: ${({ theme }) => theme.spacing.xlarge};
   height: 100%;
   max-height: calc(100dvh - ${({ theme }) => theme.spacing.header});
   padding: ${({ theme }) => theme.padding.medium} ${({ theme }) => theme.padding.large};
