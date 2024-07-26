@@ -108,22 +108,26 @@ const MobileNavList = styled.ul`
 
 const MenuButton = styled.button`
   display: none;
+  justify-content: flex-end;
+  align-items: center;
+  height: ${({ theme }) => theme.spacing.xxlarge};
+  width: 100%;
+  padding-right: ${({ theme }) => theme.spacing.medium};
+
   background: none;
   border: none;
-  font-size: 1.5rem;
+
   cursor: pointer;
-  height: ${({ theme }) => theme.spacing.xxlarge};
-  margin: 0 ${({ theme }) => theme.spacing.medium} 0 auto;
-  padding: ${({ theme }) => theme.padding.xsmall};
 
   @media (width <= 768px) {
-    display: block;
+    display: flex;
   }
 `;
 
 const Svg = styled.svg`
   width: 24px;
   height: 24px;
+
   fill: ${({ theme }) => theme.colors.primary};
   cursor: pointer;
   transition: fill 0.3s ease;
@@ -139,14 +143,14 @@ const Svg = styled.svg`
 
 const Rect = styled.rect`
   transform-origin: center;
-  transition: transform 300ms ease;
+  transition: transform 0.3s ease;
 `;
 
 const SocialMediaWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: ${({ theme }) => theme.spacing.small};
+  gap: ${({ theme }) => theme.spacing.medium};
   position: absolute;
   bottom: ${({ theme }) => theme.spacing.medium};
 `;

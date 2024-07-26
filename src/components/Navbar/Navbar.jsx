@@ -12,6 +12,7 @@ import {
 } from "./Navbar.styles";
 
 const Navbar = () => {
+  
   const [activeSection, setActiveSection] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
 
