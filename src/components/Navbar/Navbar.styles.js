@@ -52,9 +52,10 @@ const NavItem = styled.li`
     font-size: ${({ theme }) => theme.fontSizes.small};
     letter-spacing: ${({ theme }) => theme.letterSpacings.medium};
     color: ${({ theme }) => theme.colors.text.primary};
+
     text-transform: uppercase;
-    cursor: pointer;
     text-decoration: none;
+    cursor: pointer;
 
     &:hover {
       font-weight: 700;

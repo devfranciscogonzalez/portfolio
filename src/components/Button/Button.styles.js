@@ -51,20 +51,4 @@ const SecondaryButton = styled(AnchorButton)`
   }
 `;
 
-const SocialMediaButton = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  padding: ${({ theme }) => theme.spacing.small};
-  border-radius: ${({ theme }) => theme.borderRadius.medium};
-  transform: scale(1);
-  transition: transform 0.3s ease, background-color 0.3s ease, fill 0.3s ease;
-
-  &:hover {
-    transform: scale(1.1);
-    background-color: ${({ theme }) => theme.colors.hover.secondary};
-  }
-`;
-
-export { PrimaryButton, SecondaryButton, SocialMediaButton };
+export { PrimaryButton, SecondaryButton };

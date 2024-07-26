@@ -5,7 +5,7 @@ import {
   Discord,
 } from "../../assets/icons/socialMedia";
 import { SOCIAL_LINKS } from "../../constants/socialLinks";
-import { SocialMediaButton } from "../Button/Button.styles";
+import { SocialMediaButton } from "./SocialMedia.styles";
 
 const socialMediaLinks = [
   { href: SOCIAL_LINKS.github, svg: GitHub, label: "GitHub" },
