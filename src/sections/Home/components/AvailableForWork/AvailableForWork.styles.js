@@ -16,15 +16,15 @@ const pulse = keyframes`
 
 const Container = styled.div`
   display: flex;
-  align-items: baseline;
+  align-items: center;
 
   gap: ${({ theme }) => theme.spacing.small};
 `;
 
 const PulsingDot = styled.div`
   display: inline;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   animation: ${pulse} 2s infinite;
   background-color: rgb(76, 175, 80);
