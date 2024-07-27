@@ -1,4 +1,4 @@
-import { Svg } from "../icon.styles";
+import { Svg } from "../icons.styles";
 const WorkTeam = () => {
   return (
     <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.4 122.9" fill="#4caf50">

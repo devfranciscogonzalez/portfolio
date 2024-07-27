@@ -1,4 +1,4 @@
-import { Svg } from "../icon.styles";
+import { Svg } from "../icons.styles";
 
 const Creative = () => {
   return (
