@@ -1,2 +1,2 @@
-export { default as AvailableForWork } from "./AvailableForWork/AvailableForWork";
-export { default as ActionButton } from "./Button/ActionButton";
+export { default as HomeAvailableForWork } from "./HomeAvailableForWork/HomeAvailableForWork";
+export { default as HomeActionButton } from "./HomeButton/HomeActionButton";

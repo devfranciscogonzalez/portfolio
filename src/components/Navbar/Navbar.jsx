@@ -51,16 +51,18 @@ const Navbar = () => {
   return (
     <Nav $menuOpen={menuOpen}>
       <MenuButton onClick={toggleMenu} aria-label="Botón de menú">
+        <NavItemLogo>
+          <a href="#home" aria-label="Home">
+            <Logo />
+          </a>
+        </NavItemLogo>
         <NavbarSvg isOpen={menuOpen} />
       </MenuButton>
       <NavList>
         {SECTIONS.map(({ id, label }) =>
           id === "home" ? (
             <NavItemLogo key={id}>
-              <a
-                href={`#${id}`}
-                aria-label={label}
-              >
+              <a href={`#${id}`} aria-label={label}>
                 <Logo />
               </a>
             </NavItemLogo>

@@ -97,6 +97,7 @@ const NavItem = styled.li`
 
 const NavItemLogo = styled.li`
   height: 100%;
+  list-style: none;
 
   a {
     height: 100%;
@@ -122,8 +123,9 @@ const MobileNavList = styled.ul`
   align-items: center;
   gap: ${({ theme }) => theme.spacing.xlarge};
   height: 100%;
+
   max-height: calc(100dvh - ${({ theme }) => theme.spacing.header});
-  padding: ${({ theme }) => theme.padding.medium} ${({ theme }) => theme.padding.large};
+
   list-style: none;
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
@@ -163,11 +165,11 @@ const MobileNavItem = styled.li`
 
 const MenuButton = styled.button`
   display: none;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   height: ${({ theme }) => theme.spacing.xxlarge};
   width: 100%;
-  padding-right: ${({ theme }) => theme.spacing.medium};
+  padding: 0 ${({ theme }) => theme.spacing.small};
 
   background: none;
   border: none;
