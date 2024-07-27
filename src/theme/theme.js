@@ -90,7 +90,7 @@ export const theme = {
   },
   lineHeights: {
     // small: 1.0,
-    medium: 1.3,
+    medium: 1.4,
     // large: 1.6,
   },
   letterSpacings: {

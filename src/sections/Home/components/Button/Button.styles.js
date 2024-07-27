@@ -22,9 +22,9 @@ const AnchorButton = styled.a`
     font-size: ${({ theme }) => theme.fontSizes.xsmall};
     padding: ${({ theme }) => theme.padding.smallMedium};
 
-    & svg{
-      width: 16px;
-      height: 16px;
+    & svg {
+      width: 20px;
+      height: 20px;
     }
   }
 `;

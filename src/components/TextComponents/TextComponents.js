@@ -47,10 +47,12 @@ const H4 = styled.h4`
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: ${({ theme }) => theme.fontSizes.small};
+    line-height: ${({ theme }) => theme.lineHeights.medium};
   }
 
   @media (width <= ${({ theme }) => theme.breakpoints.smallMobile}) {
     font-size: ${({ theme }) => theme.fontSizes.xsmall};
+    line-height: ${({ theme }) => theme.lineHeights.medium};
   }
 `;
 
