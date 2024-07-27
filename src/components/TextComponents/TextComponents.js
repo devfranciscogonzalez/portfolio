@@ -21,6 +21,7 @@ const H2 = styled.h2`
 
   @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: ${({ theme }) => theme.fontSizes.medium};
+    line-height: ${({ theme }) => theme.lineHeights.medium};
   }
 `;
 

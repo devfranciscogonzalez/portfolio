@@ -32,7 +32,6 @@ const PulsingDot = styled.div`
     width: 8px;
     height: 8px;
   }
-  
 `;
 
 const Text = styled.span`
