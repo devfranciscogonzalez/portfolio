@@ -16,7 +16,7 @@ const pulse = keyframes`
 
 const Container = styled.div`
   display: flex;
-  align-items: center;
+  align-items: baseline;
 
   gap: ${({ theme }) => theme.spacing.small};
 `;
@@ -30,8 +30,8 @@ const PulsingDot = styled.div`
   background-color: rgb(76, 175, 80);
 
   @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
   }
 `;
 
