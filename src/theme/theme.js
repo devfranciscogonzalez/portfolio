@@ -70,6 +70,7 @@ export const theme = {
   breakpoints: {
     smallMobile: "33rem",
     mobile: "36rem",
+    smallTablet: "38.75rem",
     tablet: "48rem",
     laptop: "62rem",
     desktop: "70rem",
@@ -91,12 +92,12 @@ export const theme = {
   lineHeights: {
     // small: 1.0,
     medium: 1.4,
-    // large: 1.6,
+    large: 1.6,
   },
   letterSpacings: {
     small: ".0625rem",
     medium: ".125rem",
-    // large: ".25rem",
+    large: ".1563rem",
     // large: "1rem",
   },
 };

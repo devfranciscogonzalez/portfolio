@@ -18,7 +18,7 @@ const AnchorButton = styled.a`
 
   transition: background-color 0.3s ease;
 
-  @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
     font-size: ${({ theme }) => theme.fontSizes.xsmall};
     padding: ${({ theme }) => theme.padding.smallMedium};
 
