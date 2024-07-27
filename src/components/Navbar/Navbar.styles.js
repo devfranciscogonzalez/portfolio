@@ -112,6 +112,10 @@ const NavItemLogo = styled.li`
   svg {
     width: 35px;
     height: 35px;
+
+    & path {
+      fill: ${({ theme }) => theme.colors.primary};
+    }
   }
 `;
 
