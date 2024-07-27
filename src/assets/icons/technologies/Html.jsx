@@ -1,4 +1,4 @@
-import { Svg } from "../icon.styles";
+import { Svg } from "../icons.styles";
 
 const Html = () => (
   <Svg $size="xlarge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
