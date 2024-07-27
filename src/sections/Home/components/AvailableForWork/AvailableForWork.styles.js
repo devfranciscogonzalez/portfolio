@@ -22,6 +22,7 @@ const Container = styled.div`
 `;
 
 const PulsingDot = styled.div`
+  display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
