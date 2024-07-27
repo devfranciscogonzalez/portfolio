@@ -47,7 +47,7 @@ export const theme = {
     xlarge: "2rem",
     xxlarge: "3rem",
     header: "4rem",
-    section: "6rem",
+    // section: "6rem",
   },
   padding: {
     xsmall: ".25rem",

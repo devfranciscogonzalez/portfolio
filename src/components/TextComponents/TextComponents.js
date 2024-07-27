@@ -5,8 +5,7 @@ const H1 = styled.h1`
   font-family: ${({ theme }) => theme.fonts.tertiary};
   font-size: ${({ theme }) => theme.fontSizes.xxlarge};
   font-weight: 600;
-  line-height: ${({ theme }) => theme.lineHeights.medium};
-
+  /* line-height: ${({ theme }) => theme.lineHeights.medium}; */
   @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: ${({ theme }) => theme.fontSizes.xlarge};
   }
@@ -14,11 +13,11 @@ const H1 = styled.h1`
 // TITULO SECUNDARIO CARRERA
 const H2 = styled.h2`
   font-family: ${({ theme }) => theme.fonts.secondary};
-  font-size: ${({ theme }) => theme.fontSizes.large};
+  font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: ${({ theme }) => theme.letterSpacings.small};
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.text.subPrimary};
+  color: ${({ theme }) => theme.colors.text.primary};
 
   @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: ${({ theme }) => theme.fontSizes.medium};
@@ -59,6 +58,7 @@ const SmallText = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.small};
   font-weight: 300;
 `;
+
 // EDUCACION GRID
 const MediumText = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.medium};

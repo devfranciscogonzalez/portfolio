@@ -8,4 +8,3 @@ export {
   SmallText,
   MediumText,
 } from "./TextComponents/TextComponents";
-export {default as ActionButton} from "./Button/ActionButton";

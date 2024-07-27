@@ -2,10 +2,10 @@ import { Container, PulsingDot, Text } from "./AvailableForWork.styles";
 
 const AvailableForWork = () => {
   return (
-    <Container>
-      <Text>Disponible</Text>
-      <PulsingDot />
-    </Container>
+      <Container>
+        <Text>Disponible</Text>
+        <PulsingDot />
+      </Container>
   );
 };
 

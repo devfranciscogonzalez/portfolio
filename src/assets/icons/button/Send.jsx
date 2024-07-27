@@ -1,5 +1,5 @@
 import { theme } from "../../../theme/theme";
-import { Svg } from "../icon.styles";
+import { Svg } from "../icons.styles";
 
 const Send = () => {
   return (

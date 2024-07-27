@@ -9,10 +9,13 @@ import {
   NavItem,
   NavList,
   SocialMediaWrapper,
+  NavItemLogo,
+  MobileNavItem,
 } from "./Navbar.styles";
 
+import Logo from "../../assets/logo/Logo";
+
 const Navbar = () => {
-  
   const [activeSection, setActiveSection] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -51,22 +54,33 @@ const Navbar = () => {
         <NavbarSvg isOpen={menuOpen} />
       </MenuButton>
       <NavList>
-        {SECTIONS.map(({ id, label }) => (
-          <NavItem key={id}>
-            <a
-              href={`#${id}`}
-              className={activeSection === id ? "active" : ""}
-              aria-label={label}
-            >
-              {label}
-            </a>
-          </NavItem>
-        ))}
+        {SECTIONS.map(({ id, label }) =>
+          id === "home" ? (
+            <NavItemLogo key={id}>
+              <a
+                href={`#${id}`}
+                aria-label={label}
+              >
+                <Logo />
+              </a>
+            </NavItemLogo>
+          ) : (
+            <NavItem key={id}>
+              <a
+                href={`#${id}`}
+                className={activeSection === id ? "active" : ""}
+                aria-label={label}
+              >
+                {label}
+              </a>
+            </NavItem>
+          )
+        )}
       </NavList>
       {menuOpen && (
         <MobileNavList>
           {SECTIONS.map(({ id, label }) => (
-            <NavItem key={id}>
+            <MobileNavItem key={id}>
               <a
                 href={`#${id}`}
                 className={activeSection === id ? "active" : ""}
@@ -75,7 +89,7 @@ const Navbar = () => {
               >
                 {label}
               </a>
-            </NavItem>
+            </MobileNavItem>
           ))}
           <SocialMediaWrapper>
             <SocialMedia />

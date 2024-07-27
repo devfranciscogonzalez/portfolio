@@ -5,6 +5,7 @@ const sizeMap = {
   medium: "24px",
   large: "28px",
   xlarge: "60px",
+  logo: "30px"
 };
 
 const Svg = styled.svg`

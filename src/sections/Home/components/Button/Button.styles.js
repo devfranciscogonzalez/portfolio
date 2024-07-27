@@ -20,7 +20,12 @@ const AnchorButton = styled.a`
 
   @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: ${({ theme }) => theme.fontSizes.xsmall};
-    padding: ${({ theme }) => theme.spacing.smallMedium};
+    padding: ${({ theme }) => theme.padding.smallMedium};
+
+    & svg{
+      width: 16px;
+      height: 16px;
+    }
   }
 `;
 

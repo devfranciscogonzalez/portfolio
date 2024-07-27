@@ -45,8 +45,14 @@ const NavList = styled.ul`
 `;
 
 const NavItem = styled.li`
+  height: 100%;
   a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+
     font-family: ${({ theme }) => theme.fonts.secondary};
     font-weight: 400;
     font-size: ${({ theme }) => theme.fontSizes.small};
@@ -66,7 +72,7 @@ const NavItem = styled.li`
       position: absolute;
       left: 50%;
       right: 50%;
-      bottom: 0%;
+      bottom: 30%;
       width: 0;
       height: 1px;
       background-color: ${({ theme }) => theme.colors.primary};
@@ -82,11 +88,29 @@ const NavItem = styled.li`
     &.active {
       font-weight: 700;
     }
-
-    @media (width <= 768px) {
+    @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
       font-size: ${({ theme }) => theme.fontSizes.medium};
       letter-spacing: ${({ theme }) => theme.letterSpacings.medium};
     }
+  }
+`;
+
+const NavItemLogo = styled.li`
+  height: 100%;
+
+  a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  svg {
+    width: 35px;
+    height: 35px;
   }
 `;
 
@@ -102,8 +126,38 @@ const MobileNavList = styled.ul`
   padding: ${({ theme }) => theme.padding.medium} ${({ theme }) => theme.padding.large};
   list-style: none;
 
-  @media (width <= 768px) {
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     display: flex;
+  }
+`;
+
+const MobileNavItem = styled.li`
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: ${({ theme }) => theme.fonts.secondary};
+    font-weight: 400;
+    font-size: ${({ theme }) => theme.fontSizes.small};
+    letter-spacing: ${({ theme }) => theme.letterSpacings.medium};
+    color: ${({ theme }) => theme.colors.text.primary};
+
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: 700;
+    }
+
+    &.active {
+      font-weight: 700;
+    }
+    @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+      font-size: ${({ theme }) => theme.fontSizes.medium};
+      letter-spacing: ${({ theme }) => theme.letterSpacings.medium};
+    }
   }
 `;
 
@@ -132,8 +186,9 @@ const Svg = styled.svg`
   fill: ${({ theme }) => theme.colors.primary};
   cursor: pointer;
   transition: fill 0.3s ease;
+
   &:hover {
-    fill: ${({ theme }) => theme.colors.hover.primary};
+    opacity: 0.5;
   }
 
   @media (width <= ${({ theme }) => theme.breakpoints.smallMobile}) {
@@ -165,4 +220,6 @@ export {
   Svg,
   Rect,
   SocialMediaWrapper,
+  NavItemLogo,
+  MobileNavItem,
 };
