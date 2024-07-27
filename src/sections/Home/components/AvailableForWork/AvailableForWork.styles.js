@@ -33,6 +33,10 @@ const Text = styled.span`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.medium};
   color: ${({ theme }) => theme.colors.text.tertiary};
+
+  @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: ${({ theme }) => theme.fontSizes.small};
+  }
 `;
 
 export { Container, PulsingDot, Text };
