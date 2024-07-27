@@ -1,29 +1,30 @@
 import styled, { keyframes } from "styled-components";
 
 const pulse = keyframes`
-  /* 0% {
+  0% {
     box-shadow: 0 0 0 0 rgb(76, 175, 80, 0.7);
   }
   
   70% {
-    box-shadow: 0 0 0 6px rgb(51, 217, 178, 0);
+    box-shadow: 0 0 0 4px rgb(51, 217, 178, 0);
   }
   
   100% {
     box-shadow: 0 0 0 0 rgb(51, 217, 178, 0);
-  } */
+  }
 `;
 
 const Container = styled.div`
   display: flex;
-  align-items: center;
+  align-items: baseline;
+
   gap: ${({ theme }) => theme.spacing.small};
 `;
 
 const PulsingDot = styled.div`
-  width: 16px;
-  height: 16px;
-
+  display: inline;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   animation: ${pulse} 2s infinite;
   background-color: rgb(76, 175, 80);
@@ -36,6 +37,7 @@ const PulsingDot = styled.div`
 
 const Text = styled.span`
   height: 16px;
+
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.small};
   text-transform: uppercase;
