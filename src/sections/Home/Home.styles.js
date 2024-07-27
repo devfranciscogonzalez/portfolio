@@ -6,6 +6,7 @@ const HomeUserWrapper = styled.div`
   align-items: flex-start;
 
   @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
+    justify-content: center;
     align-items: center;
     text-align: center;
   }

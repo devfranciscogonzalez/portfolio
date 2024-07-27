@@ -9,7 +9,7 @@ import { HomeButtonWrapper, HomeUserWrapper } from "./Home.styles";
 const Home = () => (
   <Section $variant="first" id="home">
     <HomeUserWrapper>
-      <AvailableForWork />
+    <AvailableForWork />
       <H1>{USER.name}</H1>
       <H2>{USER.profession}</H2>
     </HomeUserWrapper>

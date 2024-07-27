@@ -27,6 +27,12 @@ const PulsingDot = styled.div`
   border-radius: 50%;
   animation: ${pulse} 2s infinite;
   background-color: rgb(76, 175, 80);
+
+  @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
+    width: 8px;
+    height: 8px;
+  }
+  
 `;
 
 const Text = styled.span`
