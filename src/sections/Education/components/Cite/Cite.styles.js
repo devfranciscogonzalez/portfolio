@@ -5,6 +5,10 @@ const Blockquote = styled.blockquote`
   font-size: ${({ theme }) => theme.fontSizes.medium};
   font-style: italic;
   font-weight: 300;
+
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: ${({ theme }) => theme.fontSizes.small};
+  }
 `;
 
 const CiteText = styled.a`
@@ -14,9 +18,13 @@ const CiteText = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.text.primary};
 
-  cursor: pointer;  
+  cursor: pointer;
   &:hover {
     color: #0040b0;
+  }
+
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: ${({ theme }) => theme.fontSizes.xsmall};
   }
 `;
 
