@@ -51,11 +51,7 @@ const Navbar = () => {
   return (
     <Nav $menuOpen={menuOpen}>
       <MenuButton onClick={toggleMenu} aria-label="Botón de menú">
-        <NavItemLogo>
-          <a href="#home" aria-label="Home">
-            <Logo />
-          </a>
-        </NavItemLogo>
+        <Logo />
         <NavbarSvg isOpen={menuOpen} />
       </MenuButton>
       <NavList>

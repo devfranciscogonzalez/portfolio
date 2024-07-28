@@ -180,7 +180,13 @@ const MenuButton = styled.button`
 
   cursor: pointer;
 
-  @media (width <= 768px) {
+  svg {
+    width: 35px;
+    height: 35px;
+    fill: ${({ theme }) => theme.colors.primary};
+  }
+
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     display: flex;
   }
 `;
