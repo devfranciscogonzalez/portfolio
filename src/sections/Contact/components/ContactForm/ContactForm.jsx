@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
-import { Send } from "../../../../assets/icons/button";
+import { useRef, useState } from "react";
+import { Send, SendCheck } from "../../../../assets/icons/button";
 import {
   ButtonForm,
   Form,
@@ -18,22 +18,25 @@ const EMAILJS_ID = {
 
 const ContactForm = () => {
   const form = useRef();
+  const [isSent, setIsSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm(EMAILJS_ID.serviceId, EMAILJS_ID.templateId, form.current, {
-        publicKey: EMAILJS_ID.publicKey,
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+      .sendForm(
+        EMAILJS_ID.serviceId,
+        EMAILJS_ID.templateId,
+        form.current,
+        EMAILJS_ID.publicKey
+      )
+      .then(() => {
+        setIsSent(true);
+        form.current.reset();
+        setTimeout(() => {
+          setIsSent(false);
+        }, 1000);
+      });
   };
 
   return (
@@ -70,8 +73,8 @@ const ContactForm = () => {
           />
         </FormLabel>
         <ButtonForm type="submit">
-          <Send />
-          Enviar
+          {isSent ? <SendCheck /> : <Send />}
+          {isSent ? "Enviado" : "Enviar"}
         </ButtonForm>
       </FormFieldset>
     </Form>

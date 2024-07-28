@@ -5,3 +5,4 @@ export { default as School } from "./School.jsx";
 export { default as Send } from "./Send.jsx";
 export { default as Copy } from "./Copy.jsx";
 export { default as CopyCheck } from "./CopyCheck.jsx";
+export {default as SendCheck} from "./SendCheck.jsx";

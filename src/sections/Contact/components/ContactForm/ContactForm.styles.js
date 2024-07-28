@@ -67,6 +67,10 @@ const ButtonForm = styled.button`
   color: ${({ theme }) => theme.colors.text.secondary};
   background-color: ${({ theme }) => theme.colors.primary};
 
+  svg {
+    fill: ${({ theme }) => theme.colors.secondary};
+  }
+
   &:hover {
     background-color: ${({ theme }) => theme.colors.hover.primary};
   }
@@ -74,8 +78,8 @@ const ButtonForm = styled.button`
   @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
     font-size: ${({ theme }) => theme.fontSizes.xsmall};
     padding: ${({ theme }) => theme.padding.smallMedium};
-
-    & svg {
+    
+    svg {
       width: 20px;
       height: 20px;
     }
