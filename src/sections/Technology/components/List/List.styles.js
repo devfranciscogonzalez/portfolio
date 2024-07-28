@@ -40,7 +40,7 @@ const Item = styled.li`
   }
 
   @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
-    height: 130px;
+    height: 150px;
   }
 `;
 
