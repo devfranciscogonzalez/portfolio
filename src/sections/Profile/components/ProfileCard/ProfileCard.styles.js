@@ -3,7 +3,6 @@ import styled from "styled-components";
 const CardContainer = styled.article`
   display: flex;
   flex-direction: column;
-  /* padding: ${({ theme }) => theme.padding.large}; */
   background-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.text.primary};
 
@@ -23,10 +22,6 @@ const CardContainer = styled.article`
 
   &:hover svg path {
     fill: inherit;
-  }
-
-  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
-    padding: ${({ theme }) => theme.padding.medium};
   }
 `;
 
@@ -97,7 +92,6 @@ const CardContentRight = styled.section`
   }
 `;
 
-
 const SectionWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -116,7 +110,11 @@ const TagGroup = styled.div`
 `;
 
 export {
-  CardContainer, CardContent, CardContentLeft,
-  CardContentRight, CardHeader, SectionWrapper, TagGroup
+  CardContainer,
+  CardContent,
+  CardContentLeft,
+  CardContentRight,
+  CardHeader,
+  SectionWrapper,
+  TagGroup,
 };
-

@@ -1,13 +1,13 @@
 import * as TechIcons from "../../assets/icons/technologies";
-import { H3, Paragraph } from "../../components";
+import { H3, Paragraph, Strong } from "../../components";
 import { TECHNOLOGIES_TEXT } from "../../constants/technologies";
 import { Section } from "../Section.styles";
-import { Item, List } from "./components/List/List.styles";
+import { ItemSpan, List } from "./components/List/List.styles";
 import TechnologyItem from "./components/List/TechnologyItem";
 import { TechnologyHeader } from "./Technology.styles";
 
 const TechnologySection = () => {
-  const { title, description, technologies } = TECHNOLOGIES_TEXT;
+  const { title, technologies } = TECHNOLOGIES_TEXT;
 
   const techItems = [
     { icon: TechIcons.HTML, name: technologies.html },
@@ -24,17 +24,21 @@ const TechnologySection = () => {
 
   return (
     <Section $variant="center" id="technology">
-        <List>
-          <Item>
-            <TechnologyHeader>
-              <H3>{title}</H3>
-            </TechnologyHeader>
-            <Paragraph>{description}</Paragraph>
-          </Item>
-          {techItems.map(({ icon, name }) => (
-            <TechnologyItem key={name} icon={icon} name={name} />
-          ))}
-        </List>
+      <List>
+        <ItemSpan>
+          <TechnologyHeader>
+            <H3>{title}</H3>
+          </TechnologyHeader>
+          <Paragraph>
+            En mi búsqueda por crear soluciones óptimas y robustas, he{" "}
+            <Strong>aprendido</Strong> y <Strong>utilizado</Strong> el siguiente
+            conjunto de tecnologías:
+          </Paragraph>
+        </ItemSpan>
+        {techItems.map(({ icon, name }) => (
+          <TechnologyItem key={name} icon={icon} name={name} />
+        ))}
+      </List>
     </Section>
   );
 };

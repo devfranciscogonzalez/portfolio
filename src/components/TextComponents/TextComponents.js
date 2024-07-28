@@ -25,7 +25,7 @@ const H2 = styled.h2`
   }
 `;
 
-// TODOS LOS DE LAS SECTIONS Y CARDS
+// Titulos de secciones por ejemplo: Perfil
 const H3 = styled.h3`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.xlarge};
@@ -37,7 +37,7 @@ const H3 = styled.h3`
   }
 `;
 
-// TITULO SECIONES DE LAS CARDS DE PROFILE
+// TITULO SECIONES DE LAS CARDS DE PROFILE, Education
 const H4 = styled.h4`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.medium};
@@ -56,22 +56,23 @@ const H4 = styled.h4`
   }
 `;
 
-const SmallText = styled.p`
-  font-family: ${({ theme }) => theme.fonts.primary};
-  font-size: ${({ theme }) => theme.fontSizes.small};
-  font-weight: 300;
-`;
-
-// EDUCACION GRID
+// Grid education
 const MediumText = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.medium};
   font-family: ${({ theme }) => theme.fonts.secondary};
-  font-weight: 300;
+  font-weight: ${({ $bold }) => ($bold ? 400 : 300)};
   text-transform: uppercase;
+  letter-spacing: ${({ theme }) => theme.letterSpacings.small};
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: ${({ theme }) => theme.fontSizes.small};
   }
+`;
+
+const SmallText = styled.p`
+  font-family: ${({ theme }) => theme.fonts.primary};
+  font-size: ${({ theme }) => theme.fontSizes.small};
+  font-weight: 300;
 `;
 
 const Paragraph = styled.p`

@@ -70,7 +70,7 @@ export const theme = {
   breakpoints: {
     smallMobile: "33rem",
     mobile: "36rem",
-    smallTablet: "38.75rem",
+    smallTablet: "40rem",
     tablet: "48rem",
     laptop: "62rem",
     desktop: "70rem",

@@ -15,7 +15,7 @@ const List = styled.ul`
     padding: ${({ theme }) => theme.padding.medium};
   }
 
-  @media (width <= ${({ theme }) => theme.breakpoints.smallMobile}) {
+  @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
     grid-template-columns: 1fr 1fr;
   }
 `;
@@ -38,6 +38,10 @@ const Item = styled.li`
     width: 120px;
     height: 120px;
   }
+  
+  @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
+    height: 130px;
+  }
 `;
 
 const ItemSpan = styled.li`
@@ -45,18 +49,12 @@ const ItemSpan = styled.li`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: ${({ theme }) => theme.spacing.small};
+  gap: ${({ theme }) => theme.spacing.medium};
   height: 180px;
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.text.secondary};
 
-  svg + svg {
-    filter: blur(16px);
-    opacity: 0.2;
-    position: absolute;
-    width: 120px;
-    height: 120px;
+  @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
+    height: 130px;
   }
 `;
 

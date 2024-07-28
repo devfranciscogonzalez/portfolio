@@ -1,12 +1,12 @@
+import PropTypes from "prop-types";
 import { MediumText } from "../../../../components";
 import { Item } from "./List.styles";
-import PropTypes from "prop-types";
 
 const TechnologyItem = ({ icon: Icon, name }) => (
   <Item>
     <Icon />
     <Icon />
-    <MediumText>{name}</MediumText>
+    <MediumText $bold>{name}</MediumText>
   </Item>
 );
 

@@ -74,8 +74,9 @@ const GlobalStyles = createGlobalStyle`
     font-style: normal;
     font-display: fallback;
   }
-
-  /* @font-face {
+  
+/* 
+  @font-face {
     font-family: "Apercu Mono";
     src: url(${ApercuMonoMedium}) format("truetype");
     font-weight: 500;
