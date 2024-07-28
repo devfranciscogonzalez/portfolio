@@ -6,7 +6,7 @@ import {
   ContactFormWrapper,
   ContactHeader,
 } from "./Contact.styles";
-import Arrow from "../../assets/icons/arrow/Arrow";
+import { Arrow } from "../../assets/icons/arrow";
 
 const ContactSection = () => (
   <Section $variant="center" id="contact">

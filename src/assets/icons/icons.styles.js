@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const sizeMap = {
   small: "16px",
+  smallMedium: "19px",
   medium: "24px",
   large: "28px",
   xlarge: "60px",

@@ -3,29 +3,31 @@ import { H1, H2 } from "../../components";
 import { SOCIAL_LINKS } from "../../constants/socialLinks";
 import { USER } from "../../constants/userInfo";
 import { Section } from "../Section.styles";
-import { HomeActionButton, HomeAvailableForWork } from "./components";
+import { ActionButton, AvailableForWork } from "./components";
+import Welcome from "./components/Welcome/Welcome";
 import { HomeButtonWrapper, HomeUserWrapper } from "./Home.styles";
 
 const Home = () => (
   <Section $variant="first" id="home">
     <HomeUserWrapper>
-      <HomeAvailableForWork />
+      <AvailableForWork />
       <H1>{USER.name}</H1>
       <H2>{USER.profession}</H2>
     </HomeUserWrapper>
     <HomeButtonWrapper>
-      <HomeActionButton
+      <ActionButton
         isPrimary
         href={SOCIAL_LINKS.curriculum}
         icon={Download}
         value="Descargar CV"
       />
-      <HomeActionButton
+      <ActionButton
         href={SOCIAL_LINKS.email}
         icon={Email}
         value="Correo Electrónico"
       />
     </HomeButtonWrapper>
+    <Welcome />
   </Section>
 );
 

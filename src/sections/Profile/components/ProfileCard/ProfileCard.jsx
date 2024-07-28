@@ -30,7 +30,7 @@ const ProfileCard = ({ children }) => {
               Profesional con una sólida
               <Strong> formación científica </Strong> y
               <Strong> práctica en computación</Strong>,
-              <Strong> informática</Strong> y <Strong> gestión</Strong> 🧑‍💻
+              <Strong> informática</Strong> y <Strong> gestión</Strong>📊
             </Paragraph>
             <Paragraph>{knowledge.additionalInfo}</Paragraph>
             {knowledge.education && (
@@ -45,7 +45,7 @@ const ProfileCard = ({ children }) => {
             <H4>{technicalSkills.title}</H4>
             <Paragraph>
               En mi búsqueda por <Strong>proponer</Strong> y{" "}
-              <Strong>desarrollar soluciones tecnológicas</Strong> 🤖, he
+              <Strong>desarrollar soluciones tecnológicas💻</Strong>, he
               adquirido experiencia en:
             </Paragraph>
             {technicalSkills.items && (
@@ -69,8 +69,8 @@ const ProfileCard = ({ children }) => {
           <SectionWrapper>
             <H4>{acknowledgments.title}</H4>
             <Paragraph>
-              Gracias por visitar mi perfil 🌟 ¡Estoy entusiasmado con la
-              posibilidad de colaborar contigo! 🤝
+              Gracias por visitar mi perfil 🌟 <Strong>¡Estoy entusiasmado con la
+              posibilidad de colaborar contigo!</Strong> 🤝
             </Paragraph>
           </SectionWrapper>
           <br />

@@ -11,6 +11,7 @@ const firstStyles = css`
   justify-content: center;
   align-items: flex-start;
   min-height: 100dvh;
+  position: relative;
 `;
 
 // PROFILE & CONTACT & TECHNOLOGY
