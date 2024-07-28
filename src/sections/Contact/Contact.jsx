@@ -18,12 +18,10 @@ const ContactSection = () => (
       <ContactHeader>
         <H3>📬 Contacto</H3>
         <Paragraph>
-          <Strong style={{ color: "#2ECC71" }}>
-            ¡Gracias por visitar mi portafolio!
-          </Strong>{" "}
-          😊 Si tienes alguna pregunta o propuesta de colaboración,{" "}
-          <Strong style={{ color: "#3498DB" }}>completa el formulario</Strong> y
-          me pondré en contacto contigo.
+          <Strong $green>¡Gracias por visitar mi portafolio!</Strong> 😊 Si tienes
+          alguna pregunta o propuesta de colaboración,{" "}
+          <Strong $blue>completa el formulario</Strong> y me pondré en contacto
+          contigo.
         </Paragraph>
         <Arrow />
       </ContactHeader>

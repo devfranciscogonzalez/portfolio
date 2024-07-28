@@ -87,6 +87,9 @@ const Paragraph = styled.p`
 
 const Strong = styled.strong`
   font-weight: 400;
+
+  ${({ $green }) => $green && `color: #2ECC71;`}
+  ${({ $blue }) => $blue && `color: #3498DB;`}
 `;
 
 export { H1, H2, H3, H4, MediumText, Paragraph, SmallText, Strong };
