@@ -60,17 +60,20 @@ const ProfileCard = ({ children }) => {
             <H4>{mindset.title}</H4>
             <Paragraph>
               Enfocada en la <Strong>disciplina</Strong> y{" "}
-              <Strong>dedicación</Strong> 📚, disfruto de mantenerme en un{" "}
-              <Strong>estado constante de aprendizaje</Strong> 📖. Estoy siempre
+              <Strong>dedicación</Strong> 💪, me esfuerzo por
+              <Strong> aprender </Strong> algo nuevo cada día 📖. Siempre
               abierto a recibir <Strong>retroalimentación</Strong> y{" "}
-              <Strong>enfrentar</Strong> nuevos desafíos 🚀
+              <Strong>enfrentar</Strong> nuevos desafíos 🚀.
             </Paragraph>
           </SectionWrapper>
           <SectionWrapper>
             <H4>{acknowledgments.title}</H4>
             <Paragraph>
-              Gracias por visitar mi perfil 🌟 <Strong>¡Estoy entusiasmado con la
-              posibilidad de colaborar contigo!</Strong> 🤝
+              Gracias por visitar mi perfil 🌟{" "}
+              <Strong>
+                ¡Estoy entusiasmado por la posibilidad de colaborar contigo!
+              </Strong>{" "}
+              🤝
             </Paragraph>
           </SectionWrapper>
           <br />
