@@ -4,7 +4,8 @@ export {
   H2,
   H3,
   H4,
+  MediumText,
   Paragraph,
   SmallText,
-  MediumText,
+  Strong,
 } from "./TextComponents/TextComponents";

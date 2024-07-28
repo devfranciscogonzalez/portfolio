@@ -11,7 +11,8 @@ const BadgeContainer = styled.span`
   font-family: ${({ theme }) => theme.fonts.secondary};
   font-size: ${({ theme }) => theme.fontSizes.xsmall};
   font-weight: 300;
-  color: ${({ theme }) => theme.colors.text.tertiary};
+
+  color: ${({ theme }) => theme.colors.text.primary};
   text-transform: uppercase;
   letter-spacing: ${({ theme }) => theme.letterSpacings.small};
   text-align: center;

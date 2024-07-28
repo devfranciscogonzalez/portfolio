@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 const SectionBase = styled.section`
   display: flex;
-  padding: ${({ theme }) => theme.spacing.header} 0;
+  padding-top: ${({ theme }) => theme.spacing.header};
 `;
 
 // HOME

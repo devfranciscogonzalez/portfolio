@@ -28,8 +28,7 @@ const Item = styled.li`
   gap: ${({ theme }) => theme.spacing.small};
   height: 180px;
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.text.secondary};
+  color: ${({ theme }) => theme.colors.text.primary};
   border-radius: ${({ theme }) => theme.borderRadius.medium};
 
   svg + svg {

@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import { Curriculum, School } from "../../../../assets/icons/button";
 import { logoUbbWhite } from "../../../../assets/images/index";
-import { H4, Paragraph } from "../../../../components";
+import { H4 } from "../../../../components";
 import { EDUCATION_TEXT } from "../../../../constants/educationText";
-import { EducationButtonWrapper } from "../../Education.styles";
-import ActionEducationButton from "../EducationButton/ActionEducationButton";
+
+import Cite from "../Cite/Cite";
 import {
   CardContainer,
   CardContentLeft,
@@ -12,6 +12,8 @@ import {
   CardHeader,
   CardLogoAnchor,
   CardLogoImg,
+  EducationButton,
+  EducationButtonWrapper,
 } from "./EducationCard.styles";
 
 const EducationCard = ({ title, description }) => {
@@ -27,24 +29,29 @@ const EducationCard = ({ title, description }) => {
           <CardLogoImg src={logoUbbWhite} alt="Universidad del Bío-Bío" />
         </CardLogoAnchor>
         <EducationButtonWrapper>
-          <ActionEducationButton
-            isPrimary
+          <EducationButton
             href={curriculumUrl}
-            icon={Curriculum}
-            value="Malla Curricular"
-          />
-          <ActionEducationButton
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Malla Curricular"
+          >
+            <Curriculum /> Malla Curricular
+          </EducationButton>
+          <EducationButton
             href={readMoreUrl}
-            icon={School}
-            value="Leer más"
-          />
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Leer más"
+          >
+            <School /> Leer más
+          </EducationButton>
         </EducationButtonWrapper>
       </CardContentLeft>
       <CardContentRight>
         <CardHeader>
           <H4>{title}</H4>
         </CardHeader>
-        <Paragraph>{description}</Paragraph>
+        <Cite description={description} />
       </CardContentRight>
     </CardContainer>
   );

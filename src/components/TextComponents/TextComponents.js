@@ -5,7 +5,7 @@ const H1 = styled.h1`
   font-family: ${({ theme }) => theme.fonts.tertiary};
   font-size: ${({ theme }) => theme.fontSizes.xxlarge};
   font-weight: 600;
-  
+
   @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
     font-size: ${({ theme }) => theme.fontSizes.xlarge};
   }
@@ -78,11 +78,14 @@ const Paragraph = styled.p`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.medium};
   font-weight: 300;
-  /* color: ${({ theme }) => theme.colors.text}; */
 
   @media (width <= ${({ theme }) => theme.breakpoints.laptop}) {
     font-size: ${({ theme }) => theme.fontSizes.small};
   }
 `;
 
-export { H1, H2, H3, H4, MediumText, Paragraph, SmallText };
+const Strong = styled.strong`
+  font-weight: 400;
+`;
+
+export { H1, H2, H3, H4, MediumText, Paragraph, SmallText, Strong };

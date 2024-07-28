@@ -3,10 +3,9 @@ import styled from "styled-components";
 const CardContainer = styled.article`
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.primary};
-  padding: ${({ theme }) => theme.padding.large};
-  border-radius: ${({ theme }) => theme.borderRadius.medium};
-  color: ${({ theme }) => theme.colors.text.secondary};
+  /* padding: ${({ theme }) => theme.padding.large}; */
+  background-color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.text.primary};
 
   & img {
     filter: grayscale(100%);
@@ -18,7 +17,7 @@ const CardContainer = styled.article`
   }
 
   & svg path {
-    fill: ${({ theme }) => theme.colors.tertiary};
+    fill: ${({ theme }) => theme.colors.primary};
     transition: fill 0.3s ease;
   }
 
@@ -75,19 +74,18 @@ const CardContentRight = styled.section`
   }
 
   &::-webkit-scrollbar-track {
-    background: ${({ theme }) => theme.colors.secondary};
+    background: ${({ theme }) => theme.colors.tertiary};
     border-radius: ${({ theme }) => theme.borderRadius.medium};
   }
 
   &::-webkit-scrollbar-thumb {
     background-color: ${({ theme }) => theme.colors.primary};
     border-radius: 10px;
-    border: 2px solid ${({ theme }) => theme.colors.secondary};
+    border: 2px solid ${({ theme }) => theme.colors.tertiary};
   }
 
   &::-webkit-scrollbar-thumb:hover {
     background-color: ${({ theme }) => theme.colors.hover.primary};
-
   }
   /*     
   scrollbar-color: ${({ theme }) => theme.colors.primary} ${({ theme }) =>
@@ -99,6 +97,18 @@ const CardContentRight = styled.section`
   }
 `;
 
+
+const SectionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: ${({ theme }) => theme.spacing.medium};
+  margin-right: ${({ theme }) => theme.spacing.medium};
+
+  & h4 {
+    border-bottom: 1px solid ${({ theme }) => theme.colors.tertiary};
+  }
+`;
+
 const TagGroup = styled.div`
   display: flex;
   gap: ${({ theme }) => theme.spacing.small};
@@ -106,10 +116,7 @@ const TagGroup = styled.div`
 `;
 
 export {
-  CardContainer,
-  CardHeader,
-  CardContent,
-  TagGroup,
-  CardContentLeft,
-  CardContentRight,
+  CardContainer, CardContent, CardContentLeft,
+  CardContentRight, CardHeader, SectionWrapper, TagGroup
 };
+

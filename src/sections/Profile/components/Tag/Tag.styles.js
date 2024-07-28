@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const TagSpan = styled.span`
   display: inline-block;
-  background-color: ${({ theme }) => theme.colors.tertiary};
   
   padding: ${({ theme }) => theme.padding.xsmall} ${({ theme }) => theme.padding.small};
   border: 1px solid ${({ theme }) => theme.colors.tertiary};

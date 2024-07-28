@@ -37,16 +37,5 @@ const BorderFirstRow = styled.div`
   height: ${({ theme }) => theme.spacing.xlarge};
 `;
 
-const EducationButtonWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: ${({ theme }) => theme.spacing.small};
-`;
+export { BorderFirstRow, EducationGrid, EducationHeader };
 
-export {
-  BorderFirstRow,
-  EducationButtonWrapper,
-  EducationGrid,
-  EducationHeader,
-};

@@ -5,8 +5,8 @@ const BadgeSkillsContainer = styled.section`
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
-  border-top: 1px solid ${({ theme }) => theme.colors.tertiary};
-  border-bottom: 1px solid ${({ theme }) => theme.colors.tertiary};
+  border-top: 1px solid ${({ theme }) => theme.colors.primary};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
   padding: ${({ theme }) => theme.padding.small} 0;
 
 `;
