@@ -22,7 +22,7 @@ const WelcomeContainer = styled.div`
 
   svg {
     animation: ${bounce} 1s infinite;
-    fill: ${({ theme }) => theme.colors.tertiary};
+    fill: #525252;
   }
 
   @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
@@ -37,7 +37,7 @@ const WelcomeText = styled.p`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.medium};
   font-weight: 300;
-  color: ${({ theme }) => theme.colors.text.tertiary};
+  color: #525252;
 
   @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
     font-size: ${({ theme }) => theme.fontSizes.small};
