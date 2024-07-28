@@ -180,7 +180,7 @@ const MenuButton = styled.button`
 
   cursor: pointer;
 
-  svg {
+  & svg:first-child {
     width: 35px;
     height: 35px;
     fill: ${({ theme }) => theme.colors.primary};
