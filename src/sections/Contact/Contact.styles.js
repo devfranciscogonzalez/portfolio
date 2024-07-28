@@ -4,7 +4,6 @@ const ContactContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
 
   gap: ${({ theme }) => theme.spacing.xlarge};
 
@@ -12,10 +11,6 @@ const ContactContainer = styled.div`
     flex-direction: column;
     gap: ${({ theme }) => theme.spacing.medium};
     align-items: center;
-  }
-
-  & h3 {
-    text-align: center;
   }
 `;
 
@@ -37,7 +32,6 @@ const ContactHeader = styled.header`
 const ContactFormWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   width: 50%;
   gap: ${({ theme }) => theme.spacing.medium};

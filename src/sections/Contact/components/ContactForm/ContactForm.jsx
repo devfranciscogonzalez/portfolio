@@ -39,7 +39,6 @@ const ContactForm = () => {
   return (
     <Form ref={form} onSubmit={sendEmail}>
       <FormFieldset>
-        {/* <Legend>Formulario</Legend> */}
         <FormLabel>
           Nombre
           <Input

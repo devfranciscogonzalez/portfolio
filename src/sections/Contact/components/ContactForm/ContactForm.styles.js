@@ -1,34 +1,29 @@
 import styled from "styled-components";
 
 const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: ${({ theme }) => theme.padding.medium};
-  background-color: ${({ theme }) => theme.colors.secondary};
-  border-radius: ${({ theme }) => theme.borderRadius.medium};
-  color: ${({ theme }) => theme.colors.text.primary};
   width: 100%;
 `;
 
 const FormFieldset = styled.fieldset`
   display: flex;
   flex-direction: column;
-  gap: ${({ theme }) => theme.padding.medium};
+  gap: ${({ theme }) => theme.spacing.medium};
   border: none;
 `;
+
 const FormLabel = styled.label`
   display: flex;
   flex-direction: column;
-  gap: ${({ theme }) => theme.padding.small};
+  gap: ${({ theme }) => theme.spacing.small};
   font-family: ${({ theme }) => theme.fonts.secondary};
 `;
 
 const Input = styled.input`
   padding: ${({ theme }) => theme.padding.small};
-  border-radius: ${({ theme }) => theme.borderRadius.medium};
   border: none;
+  border-radius: ${({ theme }) => theme.borderRadius.medium};
   background-color: ${({ theme }) => theme.colors.hover.secondary};
-  color: ${({ theme }) => theme.colors.text.tertiary};
+  color: ${({ theme }) => theme.colors.text.primary};
 
   &:focus {
     background-color: ${({ theme }) => theme.colors.secondary};
@@ -37,14 +32,14 @@ const Input = styled.input`
 `;
 
 const TextArea = styled.textarea`
+  min-height: 100px;
   padding: ${({ theme }) => theme.padding.small};
+  font-size: ${({ theme }) => theme.fontSizes.small};
+  color: ${({ theme }) => theme.colors.text.primary};
   border-radius: ${({ theme }) => theme.borderRadius.medium};
   border: none;
   background-color: ${({ theme }) => theme.colors.hover.secondary};
-  color: ${({ theme }) => theme.colors.text.tertiary};
-  font-size: ${({ theme }) => theme.fontSizes.small};
   resize: vertical;
-  min-height: 100px;
 
   &:focus {
     background-color: ${({ theme }) => theme.colors.secondary};
