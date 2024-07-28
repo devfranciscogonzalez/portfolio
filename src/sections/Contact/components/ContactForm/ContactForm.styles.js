@@ -58,8 +58,6 @@ const ButtonForm = styled.button`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.small};
   font-weight: 400;
-  text-align: center;
-  text-decoration: none;
 
   border-radius: ${({ theme }) => theme.borderRadius.medium};
   cursor: pointer;
@@ -71,6 +69,16 @@ const ButtonForm = styled.button`
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.hover.primary};
+  }
+
+  @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
+    font-size: ${({ theme }) => theme.fontSizes.xsmall};
+    padding: ${({ theme }) => theme.padding.smallMedium};
+
+    & svg {
+      width: 20px;
+      height: 20px;
+    }
   }
 `;
 
