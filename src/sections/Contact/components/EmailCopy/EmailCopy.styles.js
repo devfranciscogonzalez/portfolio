@@ -60,8 +60,7 @@ const CopyButtonPrimary = styled.button`
   }
 
   @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
-    font-size: ${({ theme }) => theme.fontSizes.xsmall};
-    padding: ${({ theme }) => theme.padding.smallMedium};
+    padding: ${({ theme }) => theme.padding.small};
 
     & svg {
       min-width: 20px;
@@ -96,8 +95,7 @@ const CopyButtonSecondary = styled.a`
   }
 
   @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
-    font-size: ${({ theme }) => theme.fontSizes.xsmall};
-    padding: ${({ theme }) => theme.padding.smallMedium};
+    padding: ${({ theme }) => theme.padding.small};
 
     & svg {
       min-width: 20px;
@@ -110,9 +108,8 @@ const CopyButtonWrapper = styled.div`
   display: flex;
   align-items: center;
   padding: ${({ theme }) => theme.padding.xsmall};
-
   @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
-    padding: 0;
+    padding: .125rem;
   }
 `;
 
