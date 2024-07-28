@@ -1,30 +1,30 @@
 import styled from "styled-components";
 
 const EmailContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-
   background-color: ${({ theme }) => theme.colors.secondary};
 `;
 
 const EmailOutline = styled.div`
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   outline: 1px solid ${({ theme }) => theme.colors.utility.border};
+  border-radius: ${({ theme }) => theme.borderRadius.medium};
   text-align: center;
-  width: 100%;
-  border-radius: ${({ theme }) => theme.spacing.small};
 `;
 
-const EmailText = styled.a`
+const EmailText = styled.button`
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.small};
   font-weight: 300;
-  color: ${({ theme }) => theme.colors.primary};
-  flex-grow: 1;
+
+  padding: 0 ${({ theme }) => theme.padding.xsmall};
+
   cursor: pointer;
 
   &:hover {
@@ -39,7 +39,7 @@ const CopyButtonPrimary = styled.button`
   align-items: center;
   gap: ${({ theme }) => theme.spacing.xsmall};
 
-  padding: ${({ theme }) => theme.padding.medium};
+  padding: ${({ theme }) => theme.padding.smallMedium};
 
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.small};
@@ -49,14 +49,24 @@ const CopyButtonPrimary = styled.button`
   border: none;
   cursor: pointer;
 
-  background-color: ${({ theme }) => theme.colors.hover.secondary};
+  background-color: transparent;
 
   & svg {
     fill: ${({ theme }) => theme.colors.primary};
   }
 
   &:hover {
-    opacity: 0.7;
+    background-color: ${({ theme }) => theme.colors.hover.secondary};
+  }
+
+  @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
+    font-size: ${({ theme }) => theme.fontSizes.xsmall};
+    padding: ${({ theme }) => theme.padding.smallMedium};
+
+    & svg {
+      min-width: 20px;
+      min-height: 20px;
+    }
   }
 `;
 
@@ -65,14 +75,13 @@ const CopyButtonSecondary = styled.a`
   justify-content: center;
   align-items: center;
   gap: ${({ theme }) => theme.spacing.xsmall};
-  padding: ${({ theme }) => theme.padding.medium};
+  padding: ${({ theme }) => theme.padding.smallMedium};
 
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.small};
   text-align: center;
   text-decoration: none;
 
-  background-color: ${({ theme }) => theme.colors.hover.secondary};
   cursor: pointer;
   border: none;
 
@@ -83,13 +92,28 @@ const CopyButtonSecondary = styled.a`
   }
 
   &:hover {
-    opacity: 0.7;
+    background-color: ${({ theme }) => theme.colors.hover.secondary};
+  }
+
+  @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
+    font-size: ${({ theme }) => theme.fontSizes.xsmall};
+    padding: ${({ theme }) => theme.padding.smallMedium};
+
+    & svg {
+      min-width: 20px;
+      min-height: 20px;
+    }
   }
 `;
+
 const CopyButtonWrapper = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding: ${({ theme }) => theme.padding.xsmall};
+
+  @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
+    padding: 0;
+  }
 `;
 
 export {

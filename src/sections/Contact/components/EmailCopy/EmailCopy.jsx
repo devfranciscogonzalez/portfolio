@@ -33,10 +33,9 @@ const EmailCopy = () => {
     <EmailContainer>
       <EmailOutline>
         <EmailText
-          href={SOCIAL_LINKS.email}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Correo Electrónico"
+          onClick={copyToClipboard}
+          aria-label="Copiar Correo"
+          disabled={isCopy}
         >
           {email}
         </EmailText>
