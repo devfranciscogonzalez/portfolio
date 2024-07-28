@@ -79,9 +79,10 @@ const Paragraph = styled.p`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSizes.medium};
   font-weight: 300;
-  
+
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: ${({ theme }) => theme.fontSizes.small};
+    line-height: ${({ theme }) => theme.lineHeights.medium};
   }
 `;
 
