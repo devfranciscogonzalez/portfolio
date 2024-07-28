@@ -30,7 +30,7 @@ const ProfileCard = ({ children }) => {
               Profesional con una sólida
               <Strong> formación científica </Strong> y
               <Strong> práctica en computación</Strong>,
-              <Strong> informática</Strong> y <Strong> gestión</Strong>📊
+              <Strong> informática</Strong> y <Strong> gestión.</Strong>📊
             </Paragraph>
             <Paragraph>{knowledge.additionalInfo}</Paragraph>
             {knowledge.education && (
@@ -63,7 +63,7 @@ const ProfileCard = ({ children }) => {
               <Strong>dedicación</Strong> 💪, me esfuerzo por
               <Strong> aprender </Strong> algo nuevo cada día 📖. Siempre
               abierto a recibir <Strong>retroalimentación</Strong> y{" "}
-              <Strong>enfrentar</Strong> nuevos desafíos 🚀.
+              <Strong>enfrentar</Strong> nuevos desafíos. 🚀
             </Paragraph>
           </SectionWrapper>
           <SectionWrapper>
