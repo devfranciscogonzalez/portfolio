@@ -29,6 +29,10 @@ const Input = styled.input`
     background-color: ${({ theme }) => theme.colors.secondary};
     color: ${({ theme }) => theme.colors.text.primary};
   }
+
+  @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
+    font-size: 0.875rem;
+  }
 `;
 
 const TextArea = styled.textarea`
@@ -44,6 +48,10 @@ const TextArea = styled.textarea`
   &:focus {
     background-color: ${({ theme }) => theme.colors.secondary};
     color: ${({ theme }) => theme.colors.text.primary};
+  }
+
+  @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
+    font-size: 0.875rem;
   }
 `;
 
@@ -78,7 +86,7 @@ const ButtonForm = styled.button`
   @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
     font-size: ${({ theme }) => theme.fontSizes.xsmall};
     padding: ${({ theme }) => theme.padding.smallMedium};
-    
+
     svg {
       width: 20px;
       height: 20px;
