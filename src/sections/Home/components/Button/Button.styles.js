@@ -21,7 +21,6 @@ const AnchorButton = styled.a`
   @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
     font-size: ${({ theme }) => theme.fontSizes.xsmall};
     padding: ${({ theme }) => theme.padding.smallMedium};
-    align-items: baseline;
 
     & svg {
       min-width: 20px;
