@@ -19,7 +19,7 @@ const ProfileCard = ({ children }) => {
   return (
     <CardContainer>
       <CardHeader>
-        <H3>{title}</H3>
+        <H3>👨‍💻{title}</H3>
       </CardHeader>
       <CardContent>
         <CardContentLeft>{children}</CardContentLeft>

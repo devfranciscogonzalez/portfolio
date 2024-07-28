@@ -13,6 +13,10 @@ const ContactContainer = styled.div`
     gap: ${({ theme }) => theme.spacing.medium};
     align-items: center;
   }
+
+  & h3 {
+    text-align: center;
+  }
 `;
 
 const ContactHeader = styled.header`
@@ -23,6 +27,10 @@ const ContactHeader = styled.header`
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     width: 100%;
+    order: -1;
+    & svg {
+      display: none;
+    }
   }
 `;
 
@@ -33,7 +41,7 @@ const ContactFormWrapper = styled.div`
   align-items: center;
   width: 50%;
   gap: ${({ theme }) => theme.spacing.medium};
-  
+
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     width: 100%;
   }

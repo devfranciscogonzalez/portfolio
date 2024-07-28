@@ -38,7 +38,7 @@ const Item = styled.li`
     width: 120px;
     height: 120px;
   }
-  
+
   @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
     height: 130px;
   }

@@ -13,7 +13,7 @@ const Education = () => {
   return (
     <Section $variant="start" id="education">
       <EducationHeader>
-        <H3>{title}</H3>
+        <H3>🎓{title}</H3>
       </EducationHeader>
       <EducationGrid>
         <BorderFirstRow />

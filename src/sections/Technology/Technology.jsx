@@ -27,7 +27,7 @@ const TechnologySection = () => {
       <List>
         <ItemSpan>
           <TechnologyHeader>
-            <H3>{title}</H3>
+            <H3>💻{title}</H3>
           </TechnologyHeader>
           <Paragraph>
             En mi búsqueda por crear soluciones óptimas y robustas, he{" "}
