@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Curriculum, School } from "../../../../assets/icons/button";
-import { logoUbbWhite } from "../../../../assets/images/index";
+import { logoUbbBlack } from "../../../../assets/images";
 import { H4 } from "../../../../components";
 import { EDUCATION_TEXT } from "../../../../constants/educationText";
 
@@ -26,7 +26,7 @@ const EducationCard = ({ title, description }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <CardLogoImg src={logoUbbWhite} alt="Universidad del Bío-Bío" />
+          <CardLogoImg src={logoUbbBlack} alt="Universidad del Bío-Bío" />
         </CardLogoAnchor>
         <EducationButtonWrapper>
           <EducationButton
