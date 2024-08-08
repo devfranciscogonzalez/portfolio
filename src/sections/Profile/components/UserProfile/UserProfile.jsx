@@ -11,7 +11,7 @@ export const UserProfile = () => {
     <UserContainer>
       <UserCoverImage src={setup} alt="Imagen de portada del perfil" />
       <UserAvatar>
-        <UserAvatarImage src={userPhoto} alt="Foto de perfil del usuario" />
+      <UserAvatarImage src={userPhoto} alt="Foto de perfil del usuario" />
       </UserAvatar>
     </UserContainer>
   );

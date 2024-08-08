@@ -32,8 +32,10 @@ const UserAvatar = styled.div`
 
 const UserAvatarImage = styled.img`
   width: 130px;
-  aspect-ratio: 1080 / 1159;
-  border-radius: 50%;
+  height: 130px;
+  border-radius: 100%;
+  aspect-ratio: 1 / 1;  
 `;
 
 export { UserAvatar, UserAvatarImage, UserContainer, UserCoverImage };
+

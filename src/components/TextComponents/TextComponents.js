@@ -44,7 +44,7 @@ const H4 = styled.h4`
   letter-spacing: ${({ theme }) => theme.letterSpacings.small};
   font-weight: 500;
   text-transform: uppercase;
-
+  
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: ${({ theme }) => theme.fontSizes.small};
     line-height: ${({ theme }) => theme.lineHeights.medium};
