@@ -1,10 +1,15 @@
-import { Project } from "../../view";
-import { Section } from "./Section.styles";
+import { Section } from "../Section.styles";
+import { ProjectHeader } from "./Project.styles";
+import { H3 } from "../../components";
+import ProjectCard from "./components/ProjectCard/ProjectCard";
 
-const ProjectSection = () => (
-  <Section $variant="center" id="project">
-    <Project />
+const Project = () => (
+  <Section $variant="start" id="project">
+    <ProjectHeader>
+      <H3>Projectos</H3>
+    </ProjectHeader>
+    <ProjectCard />
   </Section>
 );
 
-export default ProjectSection;
+export default Project;
