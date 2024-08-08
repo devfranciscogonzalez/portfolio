@@ -32,7 +32,7 @@ const UserAvatar = styled.div`
 
 const UserAvatarImage = styled.img`
   width: 130px;
-  aspect-ratio: 2160 / 2108;
+  aspect-ratio: 1080 / 1159;
   border-radius: 50%;
 `;
 
