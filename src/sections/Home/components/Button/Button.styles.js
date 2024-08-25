@@ -21,6 +21,7 @@ const AnchorButton = styled.a`
   @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
     font-size: ${({ theme }) => theme.fontSizes.xsmall};
     padding: ${({ theme }) => theme.padding.smallMedium};
+    line-height: ${({ theme }) => theme.lineHeights.small};
 
     & svg {
       min-width: 20px;
@@ -32,6 +33,7 @@ const AnchorButton = styled.a`
 const PrimaryButton = styled(AnchorButton)`
   color: ${({ theme }) => theme.colors.text.secondary};
   background-color: ${({ theme }) => theme.colors.primary};
+  width: 205px;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.hover.primary};
@@ -46,6 +48,7 @@ const SecondaryButton = styled(AnchorButton)`
   color: ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => theme.colors.secondary};
   outline: 1px solid ${({ theme }) => theme.colors.utility.border};
+  width: 205px;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.hover.secondary};

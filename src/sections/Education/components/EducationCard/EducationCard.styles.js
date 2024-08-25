@@ -93,6 +93,10 @@ const EducationButton = styled.a`
   &:hover {
     background-color: ${({ theme }) => theme.colors.hover.secondary};
   }
+  
+  @media (width <= ${({ theme }) => theme.breakpoints.smallMobile}) {
+    line-height: ${({ theme }) => theme.lineHeights.xsmall};
+  }
 `;
 
 export {

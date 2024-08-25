@@ -89,7 +89,8 @@ export const theme = {
     xxlarge: "4rem",
   },
   lineHeights: {
-    // small: 1.0,
+    xsmall: 1.0,
+    small: 1.2,
     medium: 1.4,
     large: 1.6,
   },
