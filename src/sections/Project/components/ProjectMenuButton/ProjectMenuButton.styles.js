@@ -6,6 +6,7 @@ const MenuButtonWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: ${({ theme }) => theme.spacing.xxlarge};
+  padding: ${({ theme }) => theme.padding.xsmall};
   gap: ${({ theme }) => theme.spacing.small};
   position: absolute;
   background-color: hsla(44, 100%, 93%, 0.2);
