@@ -4,20 +4,20 @@ const MenuButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: ${({ theme }) => theme.spacing.xxlarge};
   gap: ${({ theme }) => theme.spacing.small};
   position: absolute;
-  width: 100%;
   background-color: hsla(44, 100%, 93%, 0.2);
   backdrop-filter: blur(10px);
-  height: ${({ theme }) => theme.spacing.xxlarge};
   bottom: ${({ theme }) => theme.spacing.large};
-  border-radius: ${({ theme }) => theme.borderRadius.medium};
 `;
 
 const ProjectButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 105px;
   gap: ${({ theme }) => theme.spacing.xsmall};
   padding: ${({ theme }) => theme.padding.xsmall};
   font-family: ${({ theme }) => theme.fonts.primary};
@@ -39,12 +39,16 @@ const ProjectButton = styled.button`
   & svg path {
     fill: ${({ theme }) => theme.colors.primary};
   }
+  @media (width <= ${({ theme }) => theme.breakpoints.smallMobile}) {
+    line-height: ${({ theme }) => theme.lineHeights.xsmall};
+  }
 `;
 
 const ProjectAnchor = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 105px;
   gap: ${({ theme }) => theme.spacing.xsmall};
   padding: ${({ theme }) => theme.padding.xsmall};
   font-family: ${({ theme }) => theme.fonts.primary};
@@ -68,6 +72,9 @@ const ProjectAnchor = styled.a`
     path {
       fill: ${({ theme }) => theme.colors.primary};
     }
+  }
+  @media (width <= ${({ theme }) => theme.breakpoints.smallMobile}) {
+    line-height: ${({ theme }) => theme.lineHeights.xsmall};
   }
 `;
 

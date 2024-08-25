@@ -60,6 +60,7 @@ const CardContentRight = styled.section`
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     order: 2;
+    width: 100%;
     min-width: 100%;
   }
 `;
@@ -116,8 +117,9 @@ const CardSpan = styled.span`
 `;
 
 const CardImg = styled.img`
+  width: 100%;
   height: 100%;
-  /* aspect-ratio: 2962 / 2371; */
+  aspect-ratio: 360 / 333;
 `;
 
 export {
