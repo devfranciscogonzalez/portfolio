@@ -6,6 +6,7 @@ const sizeMap = {
   medium: "24px",
   large: "28px",
   xlarge: "60px",
+  check: "35px",
   logo: "30px"
 };
 

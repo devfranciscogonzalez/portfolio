@@ -8,6 +8,7 @@ const Citation = ({ description }) => {
     <>
       <Blockquote cite={EDUCATION_TEXT.readMoreUrl}>{description}</Blockquote>
       <CiteText
+        id="cite"
         href={EDUCATION_TEXT.readMoreUrl}
         target="_blank"
         rel="noopener noreferrer"

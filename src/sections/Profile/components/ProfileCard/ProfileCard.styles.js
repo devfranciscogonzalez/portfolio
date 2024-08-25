@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
-const CardContainer = styled.article`
+const CardContainer = styled.section`
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.secondary};
-  color: ${({ theme }) => theme.colors.text.primary};
 
   & img {
     filter: grayscale(100%);
@@ -25,26 +23,22 @@ const CardContainer = styled.article`
   }
 `;
 
-const CardHeader = styled.header`
-  margin-bottom: ${({ theme }) => theme.spacing.large};
-`;
-
-const CardContent = styled.article`
+const CardContent = styled.div`
   display: flex;
   align-items: flex-start;
-  gap: ${({ theme }) => theme.spacing.xlarge};
+  gap: ${({ theme }) => theme.spacing.medium};
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     flex-direction: column;
   }
 `;
 
-const CardContentLeft = styled.section`
+const CardContentLeft = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 45%;
+  width: 47%;
   min-width: 393px;
   gap: ${({ theme }) => theme.spacing.xxlarge};
 
@@ -55,11 +49,11 @@ const CardContentLeft = styled.section`
   }
 `;
 
-const CardContentRight = styled.section`
-  width: 55%;
-  height: 344px;
+const CardContentRight = styled.article`
   display: flex;
   flex-direction: column;
+  width: 53%;
+  height: 344px;
   gap: ${({ theme }) => theme.spacing.xlarge};
   overflow-y: auto;
 
@@ -82,10 +76,6 @@ const CardContentRight = styled.section`
   &::-webkit-scrollbar-thumb:hover {
     background-color: ${({ theme }) => theme.colors.hover.primary};
   }
-  /*     
-  scrollbar-color: ${({ theme }) => theme.colors.primary} ${({ theme }) =>
-    theme.colors.secondary};
-  scrollbar-width: thin; */
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     width: 100%;
@@ -105,7 +95,7 @@ const SectionWrapper = styled.div`
 
 const TagGroup = styled.div`
   display: flex;
-  gap: ${({ theme }) => theme.spacing.small};
+  gap: ${({ theme }) => theme.spacing.xsmall};
   flex-wrap: wrap;
 `;
 
@@ -114,7 +104,6 @@ export {
   CardContent,
   CardContentLeft,
   CardContentRight,
-  CardHeader,
   SectionWrapper,
   TagGroup,
 };

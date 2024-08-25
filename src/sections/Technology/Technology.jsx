@@ -23,7 +23,7 @@ const TechnologySection = () => {
   ];
 
   return (
-    <Section $variant="center" id="technology">
+    <Section id="technology">
       <List>
         <ItemSpan>
           <TechnologyHeader>

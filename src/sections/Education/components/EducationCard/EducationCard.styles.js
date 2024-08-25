@@ -4,9 +4,18 @@ import { logoUbbColor } from "../../../../assets/images";
 const CardContainer = styled.article`
   display: flex;
   gap: ${({ theme }) => theme.spacing.medium};
-  padding: ${({ theme }) => theme.padding.large} ${({ theme }) => theme.padding.medium};
+  padding: ${({ theme }) => theme.padding.large}  ${({ theme }) => theme.padding.medium};
   border-radius: ${({ theme }) => theme.borderRadius.medium};
   background-color: ${({ theme }) => theme.colors.hover.secondary};
+
+  &:hover img {
+    content: url(${logoUbbColor});
+  }
+
+  &:hover #cite {
+    color: #0040b0;
+    text-decoration: underline;
+  }
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     flex-direction: column;
@@ -20,21 +29,21 @@ const CardHeader = styled.header`
   }
 `;
 
-const CardContentLeft = styled.section`
+const CardContentLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: ${({ theme }) => theme.spacing.medium};
   min-width: 220px;
-  
+  gap: ${({ theme }) => theme.spacing.medium};
+
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     order: 2;
     width: 100%;
   }
 `;
 
-const CardContentRight = styled.section`
+const CardContentRight = styled.div`
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.spacing.medium};
@@ -46,10 +55,6 @@ const CardLogoAnchor = styled.a`
   align-items: center;
   width: 180px;
   height: 119px;
-
-  &:hover img {
-    content: url(${logoUbbColor});
-  }
 `;
 
 const CardLogoImg = styled.img`
@@ -68,6 +73,8 @@ const EducationButton = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
+  height: 36px;
   gap: ${({ theme }) => theme.spacing.xsmall};
   padding: ${({ theme }) => theme.padding.xsmall};
 
@@ -96,6 +103,5 @@ export {
   CardLogoAnchor,
   CardLogoImg,
   EducationButton,
-  EducationButtonWrapper
+  EducationButtonWrapper,
 };
-

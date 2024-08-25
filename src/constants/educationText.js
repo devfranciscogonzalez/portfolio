@@ -12,7 +12,7 @@ const EDUCATION_TEXT = {
       '"Puede desempeñarse en organizaciones públicas o privadas, de servicio o productivas. Asimismo, está preparado para ejercer como consultor independiente y emprender su propia idea de negocio."',
   },
   licenciado: {
-    title: "Licenciado en ciencias de la ingenieria",
+    title: "Licenciado en ciencias de la ingeniería",
     date: "26-04-2024",
     description:
       '"Permite la continuación de estudios de postgrado en instituciones nacionales o internacionales, con posibilidad de integrarse a equipos de investigación académica para aportar al desarrollo del conocimiento."',

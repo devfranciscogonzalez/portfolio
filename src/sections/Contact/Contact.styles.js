@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ContactContainer = styled.div`
   display: flex;
-  gap: ${({ theme }) => theme.spacing.xlarge};
+  gap: ${({ theme }) => theme.spacing.large};
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     flex-direction: column;
@@ -14,10 +14,10 @@ const ContactContainer = styled.div`
   }
 `;
 
-const ContactHeader = styled.header`
+const ContactContent = styled.article`
   display: flex;
   flex-direction: column;
-  gap: ${({ theme }) => theme.spacing.medium};
+  gap: ${({ theme }) => theme.spacing.large};
   width: 50%;
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
@@ -29,7 +29,11 @@ const ContactHeader = styled.header`
   }
 `;
 
-const ContactFormWrapper = styled.div`
+const ContactHeader = styled.header`
+  width: 100%;
+`;
+
+const ContactFormWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -41,4 +45,4 @@ const ContactFormWrapper = styled.div`
   }
 `;
 
-export { ContactHeader, ContactFormWrapper, ContactContainer };
+export { ContactHeader, ContactFormWrapper, ContactContainer, ContactContent };

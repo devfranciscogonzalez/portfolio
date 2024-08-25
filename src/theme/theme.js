@@ -47,7 +47,6 @@ export const theme = {
     xlarge: "2rem",
     xxlarge: "3rem",
     header: "4rem",
-    // section: "6rem",
   },
   padding: {
     xsmall: ".25rem",
@@ -81,7 +80,7 @@ export const theme = {
     tertiary: "Playfair Display",
   },
   fontSizes: {
-    xsmall: ".75rem",
+    xsmall: ".875rem",
     small: "1rem",
     medium: "1.25rem",
     // mediumLarge: "1.375rem",
