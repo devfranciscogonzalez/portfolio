@@ -3,15 +3,14 @@ import { Svg } from "../icons.styles";
 const SquareUp = () => {
   return (
     <Svg
-      class="link_externalIcon__uwKVa"
       data-testid="geist-icon"
       fill="none"
       height="24"
-      shape-rendering="geometricPrecision"
+      shapeRendering="geometricPrecision"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
       viewBox="0 0 24 28"
       width="24"
     >

@@ -9,6 +9,10 @@ const CardContainer = styled.article`
     color: #0040b0;
     text-decoration: underline;
   }
+
+  &:hover #check {
+    fill: #22c55e;
+  }
 `;
 
 const CardContent = styled.section`
@@ -91,7 +95,6 @@ const CardAnchorTitle = styled.a`
     text-decoration: underline;
     color: #0040b0;
   }
-
 
   @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: ${({ theme }) => theme.fontSizes.small};

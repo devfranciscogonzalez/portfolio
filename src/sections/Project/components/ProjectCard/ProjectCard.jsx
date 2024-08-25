@@ -32,7 +32,7 @@ const ProjectCard = () => {
   );
 
   useEffect(() => {
-    setToLocalStorage("openInfoUser", open);
+    setToLocalStorage("openVideo", openVideo);
   }, [openVideo]);
 
   const handleOpenVideo = () => {
