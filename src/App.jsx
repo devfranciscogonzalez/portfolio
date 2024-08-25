@@ -12,8 +12,8 @@ function App() {
         <Home />
         <Profile />
         <Education />
-        <Technology />
         <Project />
+        <Technology />
         <Contact />
       </Layout>
     </ThemeProvider>

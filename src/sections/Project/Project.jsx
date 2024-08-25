@@ -4,7 +4,7 @@ import { H3 } from "../../components";
 import ProjectCard from "./components/ProjectCard/ProjectCard";
 
 const Project = () => (
-  <Section $variant="start" id="project">
+  <Section id="project">
     <ProjectHeader>
       <H3>Projectos</H3>
     </ProjectHeader>

@@ -13,6 +13,7 @@ const TECHNOLOGIES_TEXT = {
     sql: "SQL",
     git: "Git",
     figma: "Figma",
+    postgre: "PostgreSQL",
   },
 };
 

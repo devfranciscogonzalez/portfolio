@@ -11,7 +11,7 @@ import EducationCard from "./components/EducationCard/EducationCard";
 const Education = () => {
   const { title, engineer, licenciado } = EDUCATION_TEXT;
   return (
-    <Section $variant="start" id="education">
+    <Section id="education">
       <EducationHeader>
         <H3>🎓{title}</H3>
       </EducationHeader>

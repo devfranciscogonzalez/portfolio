@@ -1,30 +1,84 @@
-import { ProyectoCamanchaca } from "../../../../assets/images"
-import { H4, Paragraph, SmallText } from "../../../../components"
-import { CardContainer, CardContentLeft, CardContentRight, CardHeader, CardLogoAnchor, CardLogoImg } from "./ProjectCard.styles"
-
+import { useEffect, useState } from "react";
+import LiteYouTubeEmbed from "react-lite-youtube-embed";
+import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
+import { SquareUp } from "../../../../assets/icons/button";
+import { ProyectoCamanchaca } from "../../../../assets/images";
+import { H4 } from "../../../../components";
+import { PROJECT_TEXT } from "../../../../constants/projectText";
+import {
+  getFromLocalStorage,
+  setToLocalStorage,
+} from "../../../../utils/storage";
+import ProjectListDescription from "../ProjectListDescription/ProjectListDescription";
+import ProjectMenuButton from "../ProjectMenuButton/ProjectMenuButton";
+import ProjectTechnologies from "../ProjectTechnologies/ProjectTechnologies";
+import {
+  CardAnchorTitle,
+  CardContainer,
+  CardContent,
+  CardContentLeft,
+  CardContentRight,
+  CardHeader,
+  CardImg,
+  CardSpan,
+  CardVideo,
+} from "./ProjectCard.styles";
 
 const ProjectCard = () => {
+  const { videoUrl, videId } = PROJECT_TEXT.proyecto1;
+
+  const [openVideo, setOpenVideo] = useState(
+    getFromLocalStorage("openVideo", false)
+  );
+
+  useEffect(() => {
+    setToLocalStorage("openInfoUser", open);
+  }, [openVideo]);
+
+  const handleOpenVideo = () => {
+    setOpenVideo(!openVideo);
+  };
   return (
     <CardContainer>
-      <CardContentLeft>
-        <CardHeader>
-          <H4>Planificador de Servicios Logísticos</H4>
-        </CardHeader>
-        <SmallText>Proyecto para optar al título profesional de Ingeniero Civil en Informática</SmallText>
-        <Paragraph>Desarrollar un sistema web de planificación que respalde la gestión de servicios. Este sistema registrará los datos necesarios para la ejecución de los procesos y garantizará su disponibilidad para los responsables de llevarlos a cabo. </Paragraph>
-      </CardContentLeft>
-      <CardContentRight>
-        <CardLogoAnchor
-          href="https://www.ubiobio.cl/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <CardLogoImg src={ProyectoCamanchaca} alt="Universidad del Bío-Bío" />
-        </CardLogoAnchor>
-      </CardContentRight>
-
+      <CardContent>
+        <CardContentLeft>
+          <CardHeader>
+            <H4>Planificador de Servicios Logísticos</H4>
+          </CardHeader>
+          <ProjectTechnologies />
+          <ProjectListDescription />
+        </CardContentLeft>
+        <CardContentRight>
+          <CardImg
+            src={ProyectoCamanchaca}
+            alt="Imagen de un Camión con el logo Camanchaca"
+          />
+          <ProjectMenuButton handleOpenVideo={handleOpenVideo} />
+        </CardContentRight>
+      </CardContent>
+      {openVideo && (
+        <CardVideo>
+          <CardHeader>
+            <CardAnchorTitle
+              href={videoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ver demo del proyecto Planificador de Servicios Logísticos"
+            >
+              <CardSpan>
+                Sistema Web: Planificador de Servicios Logísticos
+              </CardSpan>
+              <SquareUp />
+            </CardAnchorTitle>
+          </CardHeader>
+          <LiteYouTubeEmbed
+            id={videId}
+            title="Demostración Completa del Sistema Web Planificador de Servicios Logísticos"
+          />
+        </CardVideo>
+      )}
     </CardContainer>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

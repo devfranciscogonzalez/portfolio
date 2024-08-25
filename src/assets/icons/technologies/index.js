@@ -8,3 +8,4 @@ export { default as React } from "./React";
 export { default as SQL } from "./Sql";
 export { default as TypeScript } from "./TypeScript";
 export { default as PHP } from "./Php";
+export { default as PostgreSql } from "./PostgreSql";

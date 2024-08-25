@@ -12,11 +12,11 @@ const List = styled.ul`
   & > :first-child {
     grid-column: span 2;
     justify-content: flex-start;
-    padding: ${({ theme }) => theme.padding.medium};
   }
 
-  @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (width <= ${({ theme }) => theme.breakpoints.smallMobile}) {
     grid-template-columns: 1fr 1fr;
+    gap: ${({ theme }) => theme.spacing.small};
   }
 `;
 
@@ -39,7 +39,7 @@ const Item = styled.li`
     height: 120px;
   }
 
-  @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
     height: 150px;
   }
 `;
@@ -49,12 +49,12 @@ const ItemSpan = styled.li`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: ${({ theme }) => theme.spacing.medium};
+  gap: ${({ theme }) => theme.spacing.large};
   height: 180px;
   width: 100%;
 
-  @media (width <= ${({ theme }) => theme.breakpoints.smallTablet}) {
-    height: 130px;
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+    height: 150px;
   }
 `;
 

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { H3, H4, Paragraph, Strong } from "../../../../components";
+import { H4, Paragraph, Strong } from "../../../../components";
 import { PROFILE_TEXT } from "../../../../constants/profileText";
 import Tag from "../Tag/Tag";
 import {
@@ -7,20 +7,15 @@ import {
   CardContent,
   CardContentLeft,
   CardContentRight,
-  CardHeader,
   SectionWrapper,
   TagGroup,
 } from "./ProfileCard.styles";
 
 const ProfileCard = ({ children }) => {
-  const { title, knowledge, technicalSkills, mindset, acknowledgments } =
-    PROFILE_TEXT;
+  const { knowledge, technicalSkills, mindset, acknowledgments } = PROFILE_TEXT;
 
   return (
     <CardContainer>
-      <CardHeader>
-        <H3>👨‍💻{title}</H3>
-      </CardHeader>
       <CardContent>
         <CardContentLeft>{children}</CardContentLeft>
         <CardContentRight>

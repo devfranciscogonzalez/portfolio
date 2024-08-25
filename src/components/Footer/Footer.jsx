@@ -12,7 +12,7 @@ const Footer = () => {
     <FooterContainer>
       <HrFooter />
       <FooterContent>
-        <FooterSpan>Francisco Miguel Gonzalez Placencia | 2024</FooterSpan>
+        <FooterSpan>Construido con React y Styled-Components | 2024</FooterSpan>
         <FooterWrapperSocialMedia>
           <SocialMedia />
         </FooterWrapperSocialMedia>
