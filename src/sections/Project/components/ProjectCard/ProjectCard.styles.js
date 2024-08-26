@@ -40,6 +40,8 @@ const CardContentLeft = styled.section`
   padding-top: ${({ theme }) => theme.padding.large};
   padding-bottom: ${({ theme }) => theme.padding.large};
 
+  order: ${({ $useOrder }) => ($useOrder ? 1 : "initial")};
+
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     padding-left: ${({ theme }) => theme.padding.medium};
     padding-right: ${({ theme }) => theme.padding.medium};
@@ -117,7 +119,6 @@ const CardSpan = styled.span`
 `;
 
 const CardImg = styled.img`
-  width: 100%;
   height: 100%;
   aspect-ratio: 360 / 333;
   object-fit: cover;

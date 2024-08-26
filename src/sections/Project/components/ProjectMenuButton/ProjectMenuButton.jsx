@@ -9,7 +9,7 @@ import {
 } from "./ProjectMenuButton.styles";
 
 const ProjectMenuButton = ({ handleOpenVideo, openVideo }) => {
-  const { codeUrl, demoUrl } = PROJECT_TEXT.proyecto1;
+  const { codeUrl, demoUrl } = PROJECT_TEXT.project1;
 
   return (
     <MenuButtonWrapper>

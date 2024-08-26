@@ -1,8 +1,9 @@
 const PROJECT_TEXT = {
   title: "Proyecto",
-  proyecto1: {
+  project1: {
     title: "Planificador de Servicios Logísticos",
-    codeUrl: "https://github.com/devfranciscogonzalez/planificador-servicios-logisticos",
+    codeUrl:
+      "https://github.com/devfranciscogonzalez/planificador-servicios-logisticos",
     demoUrl: "https://planificador-servicios-logisticos.vercel.app/",
     camanchacaUrl: "https://www.camanchaca.cl/",
     clrUrl: "https://www.camanchacalogistics.cl/",
@@ -18,6 +19,9 @@ const PROJECT_TEXT = {
     //   "JWT",
     //   "Heroku",
     // ],
+  },
+  project2: {
+    title: "Aplicación de Inventario",
   },
 };
 

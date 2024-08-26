@@ -19,7 +19,7 @@ const ProjectListDescription = () => {
     "Facilita la disponibilidad de los datos, eliminando la dependencia de métodos tradicionales como llamadas telefónicas y correos electrónicos.",
     "Implementado con Laravel como API, utilizando Sanctum para la autenticación y gestión de roles.",
   ];
-  const { camanchacaUrl, clrUrl } = PROJECT_TEXT.proyecto1;
+  const { camanchacaUrl, clrUrl } = PROJECT_TEXT.project1;
 
   return (
     <ProjectDescriptionWrapper>
