@@ -53,7 +53,10 @@ const ProjectCard = () => {
             src={ProyectoCamanchaca}
             alt="Imagen de un Camión con el logo Camanchaca"
           />
-          <ProjectMenuButton handleOpenVideo={handleOpenVideo} />
+          <ProjectMenuButton
+            handleOpenVideo={handleOpenVideo}
+            openVideo={openVideo}
+          />
         </CardContentRight>
       </CardContent>
       {openVideo && (

@@ -8,4 +8,5 @@ export { default as Play } from "./Play.jsx";
 export { default as School } from "./School.jsx";
 export { default as Send } from "./Send.jsx";
 export { default as SendCheck } from "./SendCheck.jsx";
-export {default as SquareUp} from "./SquareUp.jsx";
+export { default as SquareUp } from "./SquareUp.jsx";
+export { default as Hidden } from "./Hidden.jsx";

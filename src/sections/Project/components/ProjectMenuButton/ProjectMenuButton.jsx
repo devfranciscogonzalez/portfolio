@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Link, Play } from "../../../../assets/icons/button";
+import { Hidden, Link, Play } from "../../../../assets/icons/button";
 import { GitHub } from "../../../../assets/icons/socialMedia";
 import { PROJECT_TEXT } from "../../../../constants/projectText";
 import {
@@ -8,17 +8,26 @@ import {
   ProjectButton,
 } from "./ProjectMenuButton.styles";
 
-const ProjectMenuButton = ({ handleOpenVideo }) => {
+const ProjectMenuButton = ({ handleOpenVideo, openVideo }) => {
   const { codeUrl, demoUrl } = PROJECT_TEXT.proyecto1;
 
   return (
     <MenuButtonWrapper>
       <ProjectButton
         onClick={handleOpenVideo}
-        aria-label="Ver video del proyecto Planificador de Servicios Logísticos"
+        aria-label={`${
+          openVideo
+            ? "Ocultar video del proyecto Planificador de Servicios Logísticos"
+            : "Ver video del proyecto Planificador de Servicios Logísticos"
+        }`}
+        style={
+          openVideo ? { backgroundColor: "hsl(44, 100%, 93%)" } : undefined
+        }
       >
-        <Play /> Ver video
+        {openVideo ? <Hidden /> : <Play />}
+        {openVideo ? "Ocultar" : "Ver Video"}
       </ProjectButton>
+
       <ProjectAnchor
         href={codeUrl}
         target="_blank"
@@ -41,6 +50,7 @@ const ProjectMenuButton = ({ handleOpenVideo }) => {
 
 ProjectMenuButton.propTypes = {
   handleOpenVideo: PropTypes.func.isRequired,
+  openVideo: PropTypes.bool.isRequired,
 };
 
 export default ProjectMenuButton;
