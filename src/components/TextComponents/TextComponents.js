@@ -88,7 +88,9 @@ const Paragraph = styled.p`
 
 const Strong = styled.strong`
   font-weight: 400;
-  /* ${({ $green }) => $green && `color: #155f35;`} */
+
+  ${({ $styledcomponents }) => $styledcomponents && `color: #86375f;`}
+  ${({ $react }) => $react && `color: #005b6c;`}  
   ${({ $blue }) => $blue && `color: #2d5290;`}
 `;
 

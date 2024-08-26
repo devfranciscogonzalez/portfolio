@@ -46,6 +46,10 @@ const FooterSpan = styled.span`
   text-transform: uppercase;
   letter-spacing: ${({ theme }) => theme.letterSpacings.small};
   text-align: center;
+
+  svg {
+    vertical-align: -7%;
+  }
 `;
 
 export {
