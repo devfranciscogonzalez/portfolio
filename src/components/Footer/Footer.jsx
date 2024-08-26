@@ -1,4 +1,5 @@
 import SocialMedia from "../SocialMedia/SocialMedia";
+import { Strong } from "../TextComponents/TextComponents";
 import {
   FooterContainer,
   FooterWrapperSocialMedia,
@@ -6,13 +7,18 @@ import {
   HrFooter,
   FooterContent,
 } from "./Footer.styles";
+import { React } from "../../assets/icons/technologies";
 
 const Footer = () => {
   return (
     <FooterContainer>
       <HrFooter />
       <FooterContent>
-        <FooterSpan>Construido con React y Styled-Components | 2024</FooterSpan>
+        <FooterSpan>
+          Construido con <Strong $react>React</Strong>
+          <React size="xsmall" /> y<Strong $styledcomponents> Styled-Components</Strong>💅
+          | 2024
+        </FooterSpan>
         <FooterWrapperSocialMedia>
           <SocialMedia />
         </FooterWrapperSocialMedia>

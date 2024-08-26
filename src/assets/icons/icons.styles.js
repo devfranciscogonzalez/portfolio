@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const sizeMap = {
+  xsmall: "13px",
   small: "16px",
   smallMedium: "19px",
   medium: "24px",
