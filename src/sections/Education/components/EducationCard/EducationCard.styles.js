@@ -3,6 +3,7 @@ import { logoUbbColor } from "../../../../assets/images";
 
 const CardContainer = styled.article`
   display: flex;
+  width: 100%;
   gap: ${({ theme }) => theme.spacing.medium};
   padding: ${({ theme }) => theme.padding.large}  ${({ theme }) => theme.padding.medium};
   border-radius: ${({ theme }) => theme.borderRadius.medium};

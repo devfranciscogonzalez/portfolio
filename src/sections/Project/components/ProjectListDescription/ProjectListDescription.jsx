@@ -14,12 +14,8 @@ import {
 } from "./ProjectListDescription.styles";
 
 const ProjectListDescription = () => {
-  const projectListDescription = [
-    "Automatiza y estandariza los registros que antes se hacían en planillas Excel, reduciendo la pérdida de tiempo en el análisis e interpretación de datos.",
-    "Facilita la disponibilidad de los datos, eliminando la dependencia de métodos tradicionales como llamadas telefónicas y correos electrónicos.",
-    "Implementado con Laravel como API, utilizando Sanctum para la autenticación y gestión de roles.",
-  ];
-  const { camanchacaUrl, clrUrl } = PROJECT_TEXT.project1;
+  const { camanchacaUrl, clrUrl, projectListDescription } =
+    PROJECT_TEXT.project1;
 
   return (
     <ProjectDescriptionWrapper>
@@ -45,7 +41,7 @@ const ProjectListDescription = () => {
             rel="noopener noreferrer"
             aria-label="Página web oficial de la empresa Camanchaca"
           >
-            Camanchaca S.A:
+            Camanchaca S.A.
           </ProjectAnchorText>
         </Paragraph>
         <ListDescription>

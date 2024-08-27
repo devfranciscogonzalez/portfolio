@@ -1,14 +1,11 @@
-import { useEffect, useState } from "react";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
+import * as TechIcons from "../../../../assets/icons/technologies";
 import { ProyectoInventario } from "../../../../assets/images";
 import { H4 } from "../../../../components";
 import { PROJECT_TEXT } from "../../../../constants/projectText";
-import {
-  getFromLocalStorage,
-  setToLocalStorage,
-} from "../../../../utils/storage";
-import ProjectListDescription from "../ProjectListDescription/ProjectListDescription";
-import ProjectMenuButton from "../ProjectMenuButton/ProjectMenuButton";
+import { TECHNOLOGIES_TEXT } from "../../../../constants/technologies";
+import ProjectListDescriptionTwo from "../ProjectListDescription/ProjectListDescriptionTwo";
+import ProjectoMenuButtonTwo from "../ProjectMenuButton/ProjectoMenuButtonTwo";
 import ProjectTechnologies from "../ProjectTechnologies/ProjectTechnologies";
 import {
   CardContainer,
@@ -18,8 +15,6 @@ import {
   CardHeader,
   CardImg,
 } from "./ProjectCard.styles";
-import { TECHNOLOGIES_TEXT } from "../../../../constants/technologies";
-import * as TechIcons from "../../../../assets/icons/technologies";
 
 const ProjectCardTwo = () => {
   const { title } = PROJECT_TEXT.project2;
@@ -31,36 +26,23 @@ const ProjectCardTwo = () => {
     { icon: TechIcons.Sheets, name: technologies.sheets },
   ];
 
-  const [openVideo, setOpenVideo] = useState(
-    getFromLocalStorage("openVideo", false)
-  );
-
-  useEffect(() => {
-    setToLocalStorage("openVideo", openVideo);
-  }, [openVideo]);
-
-  const handleOpenVideo = () => {
-    setOpenVideo(!openVideo);
-  };
   return (
     <CardContainer>
       <CardContent>
-        <CardContentLeft $useOrder={true}>
+        <CardContentLeft $right={true}>
           <CardHeader>
             <H4>{title}</H4>
           </CardHeader>
           <ProjectTechnologies techItems={techItems} />
-          <ProjectListDescription />
+          <ProjectListDescriptionTwo />
         </CardContentLeft>
         <CardContentRight>
           <CardImg
+            $right={true}
             src={ProyectoInventario}
             alt="Imagen del Proyecto Aplicación de Inventario"
           />
-          <ProjectMenuButton
-            handleOpenVideo={handleOpenVideo}
-            openVideo={openVideo}
-          />
+          <ProjectoMenuButtonTwo />
         </CardContentRight>
       </CardContent>
     </CardContainer>

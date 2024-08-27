@@ -15,8 +15,8 @@ const Footer = () => {
       <HrFooter />
       <FooterContent>
         <FooterSpan>
-          Construido con <Strong $react>React</Strong>
-          <React size="xsmall" /> y<Strong $styledcomponents> Styled-Components</Strong>💅
+          Construido con <Strong $react>React </Strong>
+          <React size="xsmall" /> y<Strong $styledcomponents> Styled-Components</Strong> 💅
           | 2024
         </FooterSpan>
         <FooterWrapperSocialMedia>

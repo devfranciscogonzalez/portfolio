@@ -9,7 +9,7 @@ const MenuButtonWrapper = styled.div`
   padding: ${({ theme }) => theme.padding.xsmall};
   gap: ${({ theme }) => theme.spacing.small};
   position: absolute;
-  background-color: hsla(44, 100%, 93%, 0.2);
+  background-color: hsla(44, 100%, 93%, 0.1);
   backdrop-filter: blur(10px);
   bottom: ${({ theme }) => theme.spacing.large};
 `;
@@ -49,7 +49,6 @@ const ProjectAnchor = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 105px;
   gap: ${({ theme }) => theme.spacing.xsmall};
   padding: ${({ theme }) => theme.padding.xsmall};
   font-family: ${({ theme }) => theme.fonts.primary};
