@@ -23,9 +23,21 @@ import {
   CardSpan,
   CardVideo,
 } from "./ProjectCard.styles";
+import { TECHNOLOGIES_TEXT } from "../../../../constants/technologies";
+import * as TechIcons from "../../../../assets/icons/technologies";
 
 const ProjectCard = () => {
-  const { videoUrl, videId } = PROJECT_TEXT.proyecto1;
+  const { title, videoUrl, videId } = PROJECT_TEXT.project1;
+  const { technologies } = TECHNOLOGIES_TEXT;
+
+  const techItems = [
+    { icon: TechIcons.JavaScript, name: technologies.javascript },
+    { icon: TechIcons.React, name: technologies.react },
+    { icon: TechIcons.PHP, name: technologies.php },
+    { icon: TechIcons.Laravel, name: technologies.laravel },
+    { icon: TechIcons.PostgreSql, name: technologies.postgre },
+    { icon: TechIcons.Git, name: technologies.git },
+  ];
 
   const [openVideo, setOpenVideo] = useState(
     getFromLocalStorage("openVideo", false)
@@ -43,9 +55,9 @@ const ProjectCard = () => {
       <CardContent>
         <CardContentLeft>
           <CardHeader>
-            <H4>Planificador de Servicios Logísticos</H4>
+            <H4>{title}</H4>
           </CardHeader>
-          <ProjectTechnologies />
+          <ProjectTechnologies techItems={techItems} />
           <ProjectListDescription />
         </CardContentLeft>
         <CardContentRight>
@@ -53,7 +65,10 @@ const ProjectCard = () => {
             src={ProyectoCamanchaca}
             alt="Imagen de un Camión con el logo Camanchaca"
           />
-          <ProjectMenuButton handleOpenVideo={handleOpenVideo} />
+          <ProjectMenuButton
+            handleOpenVideo={handleOpenVideo}
+            openVideo={openVideo}
+          />
         </CardContentRight>
       </CardContent>
       {openVideo && (

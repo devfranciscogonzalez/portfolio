@@ -14,6 +14,8 @@ const TECHNOLOGIES_TEXT = {
     git: "Git",
     figma: "Figma",
     postgre: "PostgreSQL",
+    appsheet: "Appsheet",
+    sheets: "Google Sheets",
   },
 };
 

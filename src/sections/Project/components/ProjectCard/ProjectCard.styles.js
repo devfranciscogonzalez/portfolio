@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const CardContainer = styled.article`
+  width: 100%;
   border-radius: ${({ theme }) => theme.borderRadius.medium};
   background-color: ${({ theme }) => theme.colors.hover.secondary};
 
@@ -36,9 +37,12 @@ const CardContentLeft = styled.section`
   flex-direction: column;
   width: 100%;
   gap: ${({ theme }) => theme.spacing.medium};
-  padding-left: ${({ theme }) => theme.padding.medium};
+  padding-left: ${({ $right, theme }) => ($right ? 0 : theme.padding.medium)};
   padding-top: ${({ theme }) => theme.padding.large};
   padding-bottom: ${({ theme }) => theme.padding.large};
+  padding-right: ${({ $right, theme }) => ($right ? theme.padding.medium : 0)};
+
+  order: ${({ $right }) => ($right ? 1 : "initial")};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     padding-left: ${({ theme }) => theme.padding.medium};
@@ -107,6 +111,7 @@ const CardAnchorTitle = styled.a`
     }
   }
 `;
+
 const CardSpan = styled.span`
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -121,7 +126,17 @@ const CardImg = styled.img`
   height: 100%;
   aspect-ratio: 360 / 333;
   object-fit: cover;
+
+  ${({ $right, theme }) => $right 
+    ? `border-radius: ${theme.borderRadius.medium} 0 0 ${theme.borderRadius.medium}` 
+    : `border-radius: 0 ${theme.borderRadius.medium} ${theme.borderRadius.medium} 0`
+};
+
+  @media (width <= ${({ theme }) => theme.breakpoints.tablet}) {
+    border-radius: 0 0 ${({ theme }) => theme.borderRadius.medium} ${({ theme }) => theme.borderRadius.medium};
+  }
 `;
+
 export {
   CardContainer,
   CardContent,

@@ -13,7 +13,7 @@ const ProjectTechItem = styled.li`
   align-items: center;
 
   & svg {
-    width: 32px;
+    width: 100%;
     height: 32px;
   }
 `;
