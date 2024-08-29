@@ -14,6 +14,11 @@ const CardContainer = styled.article`
   &:hover #check {
     fill: #22c55e;
   }
+  
+  &:hover #dot {
+    fill: #2d5290;
+  }
+
 `;
 
 const CardContent = styled.section`

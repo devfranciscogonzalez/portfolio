@@ -4,7 +4,7 @@ const SOCIAL_LINKS = {
   github: "https://github.com/devfranciscogonzalez",
   email: "mailto:devfranciscogonzalez@gmail.com",
   curriculum:
-    "https://drive.google.com/file/d/1dljFzGEcUWXefv5wBWlOxHR4HNZXmvFN/view?usp=sharing",
+    "https://drive.google.com/file/d/10sRjAOK-X8xNjjVQeudhxOlJK2HeI37M/view?usp=sharing",
 };
 
 export { SOCIAL_LINKS };
