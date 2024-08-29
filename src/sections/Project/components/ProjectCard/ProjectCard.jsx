@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 import { SquareUp } from "../../../../assets/icons/button";
+import * as TechIcons from "../../../../assets/icons/technologies";
 import { ProyectoCamanchaca } from "../../../../assets/images";
 import { H4 } from "../../../../components";
 import { PROJECT_TEXT } from "../../../../constants/projectText";
+import { TECHNOLOGIES_TEXT } from "../../../../constants/technologies";
 import {
   getFromLocalStorage,
   setToLocalStorage,
@@ -23,8 +25,6 @@ import {
   CardSpan,
   CardVideo,
 } from "./ProjectCard.styles";
-import { TECHNOLOGIES_TEXT } from "../../../../constants/technologies";
-import * as TechIcons from "../../../../assets/icons/technologies";
 
 const ProjectCard = () => {
   const { title, videoUrl, videId } = PROJECT_TEXT.project1;

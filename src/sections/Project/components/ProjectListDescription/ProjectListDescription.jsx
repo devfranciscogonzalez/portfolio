@@ -1,4 +1,4 @@
-import Check from "../../../../assets/icons/check/Check";
+import { Check, Dot } from "../../../../assets/icons/check";
 import {
   Paragraph,
   Strong,
@@ -14,16 +14,19 @@ import {
 } from "./ProjectListDescription.styles";
 
 const ProjectListDescription = () => {
-  const { camanchacaUrl, clrUrl, projectListDescription } =
-    PROJECT_TEXT.project1;
+  const {
+    camanchacaUrl,
+    clrUrl,
+    projectListDescription,
+    projectListTechnologies,
+  } = PROJECT_TEXT.project1;
 
   return (
     <ProjectDescriptionWrapper>
       <ListDescriptionWrapper>
         <Paragraph>
-          Enfocado en resolver los <Strong>problemas de coordinación</Strong> y
-          <Strong> ejecución</Strong> de los servicios logísticos de la unidad
-          negocio{" "}
+          Sistema web para la <Strong>planificación</Strong> y{" "}
+          <Strong>gestión de servicios logísticos </Strong>del{" "}
           <ProjectAnchorText
             id="clr"
             href={clrUrl}
@@ -33,7 +36,7 @@ const ProjectListDescription = () => {
           >
             Centro Logístico Rocuant (CLR)
           </ProjectAnchorText>
-          , perteneciente a la empresa {"  "}
+          , una unidad de negocio perteneciente a la empresa {"  "}
           <ProjectAnchorText
             id="camanchaca"
             href={camanchacaUrl}
@@ -42,13 +45,28 @@ const ProjectListDescription = () => {
             aria-label="Página web oficial de la empresa Camanchaca"
           >
             Camanchaca S.A.
-          </ProjectAnchorText>
+          </ProjectAnchorText>{" "}
+          Este sistema resolvió:
         </Paragraph>
         <ListDescription>
           {projectListDescription.map((description) => (
             <ItemDescription key={description}>
               <Check />
               <SpanDescription>{description}</SpanDescription>
+            </ItemDescription>
+          ))}
+        </ListDescription>
+        <Paragraph>
+          <Strong $blue> Se utilizo las siguientes tecnologías: </Strong>
+        </Paragraph>
+        <ListDescription>
+          {Object.entries(projectListTechnologies).map(([key, value]) => (
+            <ItemDescription key={key}>
+              <Dot />
+
+              <SpanDescription>
+                <Strong>{key}</Strong>: {value}
+              </SpanDescription>
             </ItemDescription>
           ))}
         </ListDescription>

@@ -92,6 +92,7 @@ const Strong = styled.strong`
   ${({ $styledcomponents }) => $styledcomponents && `color: #86375f;`}
   ${({ $react }) => $react && `color: #005b6c;`}  
   ${({ $blue }) => $blue && `color: #2d5290;`}
+  ${({ $green }) => $green && `color: #22c55e;`}
 `;
 
 export { H1, H2, H3, H4, MediumText, Paragraph, SmallText, Strong };

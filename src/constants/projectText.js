@@ -10,10 +10,20 @@ const PROJECT_TEXT = {
     videoUrl: "https://www.youtube.com/watch?v=yEZx7CkEmbE",
     videId: "yEZx7CkEmbE",
     projectListDescription: [
-      "Automatiza y estandariza los registros que antes se hacían en planillas Excel, reduciendo la pérdida de tiempo en el análisis e interpretación de datos.",
-      "Facilita la disponibilidad de los datos, eliminando la dependencia de métodos tradicionales como llamadas telefónicas y correos electrónicos.",
-      "Implementado con Laravel como API, utilizando Sanctum para la autenticación y gestión de roles.",
+      "Problemas de coordinación y seguimiento interno de las solicitudes de los clientes.",
+      "Falta de estructura y formato en los registros.",
+      "Disponibilidad de la información para todos los actores involucrados.",
     ],
+    projectListTechnologies: {
+      Frontend:
+        "ReactJS, Material-UI, Tanstack Query, Axios, Yup (validación de formularios), React Router (navegación, rutas públicas y privadas).",
+      Backend: " Laravel con API RESTful y autenticación mediante Sanctum.",
+      "Base de datos": " PostgreSQL.",
+      "Patrón de diseño":
+        "Repositorio, utilizado para separar la obtención de datos de la lógica de negocio, mejorando la mantenibilidad del sistema.",
+      Despliegue:
+        "API y base de datos alojadas en DigitalOcean, frontend desplegado en Vercel.",
+    },
   },
   project2: {
     title: "2. Aplicación de Inventario",
@@ -22,10 +32,16 @@ const PROJECT_TEXT = {
     demoUrl:
       "https://www.appsheet.com/start/eab9335e-4c64-453c-ae2e-14f451301dcb",
     projectListDescription: [
-      "Seguimiento más preciso de los materiales, reduciendo significativamente las pérdidas.",
-      "Eliminación de la dependencia de registros en papel, ahorrando tiempo y recursos.",
-      "Reducción de errores humanos que se producen con los registros manuales, obteniendo mayor precisión en la información.",
+      "Reducción significativa en la pérdida de materiales.",
+      "Eliminación de la dependencia de registros en papel.",
+      "Obtención de mayor precisión en la información de stock.",
     ],
+    projectListTechnologies: {
+      AppSheet:
+        "Plataforma de desarrollo sin código para la creación de la aplicación.",
+      "Google Sheets":
+        "Empleado como base de datos para el almacenamiento y gestión de la información.",
+    },
   },
 };
 
