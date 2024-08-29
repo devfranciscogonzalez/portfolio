@@ -1,5 +1,5 @@
 const PROJECT_TEXT = {
-  title: "Proyecto",
+  title: "Proyectos",
   project1: {
     title: "1. Planificador de Servicios Logísticos",
     codeUrl:
