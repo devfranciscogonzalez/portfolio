@@ -6,7 +6,7 @@
 
  👉 [Visita mi portafolio aquí](https://www.franciscogonzalez.dev/)
 
-  <i>Desarrollado con las siguientes tecnologías</i>
+  <i>Desarrollado con las siguientes tecnologías:</i>
 
   <div>
   <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
