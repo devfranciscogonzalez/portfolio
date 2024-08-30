@@ -1,8 +1,16 @@
-# React + Vite
+<div align='center'>
+  
+   [![www-franciscogonzalez-dev-1.png](https://i.postimg.cc/K8qx1LQK/www-franciscogonzalez-dev-1.png)](https://www.franciscogonzalez.dev/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <h1>👨‍💻Portfolio Personal</h1>
 
-Currently, two official plugins are available:
+ 👉 [Visita mi portafolio aquí](https://www.franciscogonzalez.dev/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <i>Desarrollado con las siguientes tecnologías</i>
+
+  <div>
+  <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
+  
+  [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
+  </div>
+</div>
