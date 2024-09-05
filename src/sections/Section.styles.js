@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 const SectionBase = styled.section`
-  padding-top: ${({ theme }) => theme.spacing.header};
+  padding-top: ${({ theme }) => theme.spacing.section};
 `;
 
 const Section = styled(SectionBase)`
@@ -14,6 +14,7 @@ const Section = styled(SectionBase)`
       align-items: flex-start;
       min-height: 100dvh;
       position: relative;
+      padding-top: ${({ theme }) => theme.spacing.header};
     `}
 `;
 

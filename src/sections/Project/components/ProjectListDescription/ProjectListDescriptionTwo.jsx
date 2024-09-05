@@ -15,15 +15,15 @@ import {
 const ProjectListDescriptionTwo = () => {
   const { projectListDescription, projectListTechnologies } =
     PROJECT_TEXT.project2;
-    
+
   return (
     <ProjectDescriptionWrapper>
       <ListDescriptionWrapper>
         <Paragraph>
-          Planificación y desarrollo de una una aplicación web{" "}
-          <Strong> de gestión de inventario</Strong> para una empresa
-          constructora, ubicada en la comuna de Trehuaco, Región de Ñuble. Este
-          sistema favoreció:
+          Planificación y desarrollo de una una aplicación web de{" "}
+          <Strong> gestión de inventario</Strong> para una empresa constructora,
+          ubicada en la comuna de Trehuaco, Región de Ñuble. Este sistema
+          favoreció:
         </Paragraph>
         <ListDescription>
           {projectListDescription.map((description) => (

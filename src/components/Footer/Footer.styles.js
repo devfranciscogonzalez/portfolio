@@ -5,7 +5,7 @@ const FooterContainer = styled.footer`
   flex-direction: column;
   width: 100%;
   max-width: ${({ theme }) => theme.breakpoints.laptop};
-  margin-top: ${({ theme }) => theme.spacing.header};
+  margin-top: ${({ theme }) => theme.spacing.section};
   padding: 0 ${({ theme }) => theme.padding.large};
 
   @media (width <= ${({ theme }) => theme.breakpoints.mobile}) {
