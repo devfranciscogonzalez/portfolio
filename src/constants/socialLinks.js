@@ -3,7 +3,7 @@ const SOCIAL_LINKS = {
   github: "https://github.com/devfranciscogonzalez",
   email: "mailto:devfranciscogonzalez@gmail.com",
   curriculum:
-    "https://drive.google.com/file/d/1ByrmKLeubE3BbWKR_sVAc6hrB7FL_GZj/view?usp=sharing",
+    "https://drive.google.com/file/d/1TPun3g_5opm5f5fq9Yy7WBW2ngqEMSz8/view?usp=sharing",
 };
 
 export { SOCIAL_LINKS };
