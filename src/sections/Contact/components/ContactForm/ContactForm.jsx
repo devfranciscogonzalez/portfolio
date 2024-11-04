@@ -65,7 +65,7 @@ const ContactForm = () => {
             placeholder="Estoy interesado en colaborar contigo en un proyecto..."
           />
         </FormLabel>
-        <ButtonForm type="submit">
+        <ButtonForm type="submit" disabled={isSent}>
           {isSent ? <SendCheck /> : <Send />}
           {isSent ? "Enviado" : "Enviar"}
         </ButtonForm>
