@@ -10,11 +10,9 @@ import {
   TextArea,
 } from "./ContactForm.styles";
 
-const EMAILJS_ID = {
-  serviceId: "service_jn22ztn",
-  templateId: "template_ar0ridz",
-  publicKey: "rWNkzNXICzokntHK6",
-};
+const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const ContactForm = () => {
   const form = useRef();
@@ -24,12 +22,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        EMAILJS_ID.serviceId,
-        EMAILJS_ID.templateId,
-        form.current,
-        EMAILJS_ID.publicKey
-      )
+      .sendForm(serviceId, templateId, form.current, publicKey)
       .then(() => {
         setIsSent(true);
         form.current.reset();
